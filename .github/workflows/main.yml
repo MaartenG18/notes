@@ -1,0 +1,23 @@
+name: CI
+
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+
+      - name: Generate hugo
+        run: |
+          cd $GITHUB_WORKSPACE
+          ./hugo
+
+      - name: commit generated hugo stuff
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Hugo regen
