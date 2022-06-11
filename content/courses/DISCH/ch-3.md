@@ -1,5 +1,6 @@
----
-title: 3. Geheugens
----
++++
+title= "3. Geheugens"
+weight= 3
++++
 
 ## Geheugens

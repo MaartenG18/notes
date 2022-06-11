@@ -1,7 +1,7 @@
----
-title: "Maarten's notes"
-weight: 1
----
++++
+title =  "Maarten's notes"
+weight = 1
++++
 
 # Maarten's notes
 

@@ -14,6 +14,20 @@
 	"content": "Maarten\u0026rsquo;s notes Current courses Analoge Elektronische Schakelingen Digitale Elektronische Schakelingen Android App Development Besturingssystemen en C Software Engineering Skills Good to know I\u0026rsquo;m currently making a portfolio, more coming soon\n"
 },
 {
+	"uri": "https://maarteng18.github.io/notes/courses/ansch/",
+	"title": "Analoge Elektronische Schakelingen",
+	"tags": [],
+	"description": "",
+	"content": "Chapters Herhaling MOSFET en BJT "
+},
+{
+	"uri": "https://maarteng18.github.io/notes/courses/disch/",
+	"title": "Digitale Elektronische Schakelingen",
+	"tags": [],
+	"description": "",
+	"content": "Chapters Inleiding Programmeerbare logica Geheugens Ontwerpprincipes voor synchrone logica Simulatie "
+},
+{
 	"uri": "https://maarteng18.github.io/notes/courses/ansch/ch-1/",
 	"title": "1. Herhaling MOSFET en BJT",
 	"tags": [],
@@ -54,20 +68,6 @@
 	"tags": [],
 	"description": "",
 	"content": "Simulatie "
-},
-{
-	"uri": "https://maarteng18.github.io/notes/courses/ansch/",
-	"title": "Analoge Elektronische Schakelingen",
-	"tags": [],
-	"description": "",
-	"content": "Chapters Herhaling MOSFET en BJT "
-},
-{
-	"uri": "https://maarteng18.github.io/notes/courses/disch/",
-	"title": "Digitale Elektronische Schakelingen",
-	"tags": [],
-	"description": "",
-	"content": "Chapters Inleiding Programmeerbare logica Geheugens Ontwerpprincipes voor synchrone logica Simulatie "
 },
 {
 	"uri": "https://maarteng18.github.io/notes/tags/",

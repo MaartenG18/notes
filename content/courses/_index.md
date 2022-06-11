@@ -1,7 +1,7 @@
----
-title: "Courses"
-weight: 1
----
++++
+title= "Courses"
+weight= 1
++++
 
 ## Current courses
 

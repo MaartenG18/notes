@@ -1,5 +1,6 @@
----
-title: 4. Ontwerpprincipes voor synchrone logica
----
++++
+title= "4. Ontwerpprincipes voor synchrone logica"
+weight= 3
++++
 
 ## Ontwerpprincipes voor synchrone logica

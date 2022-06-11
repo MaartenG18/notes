@@ -1,6 +1,7 @@
----
-title: 'Analoge Elektronische Schakelingen'
----
++++
+title= "Analoge Elektronische Schakelingen"
+weight= 2
++++
 
 ## Chapters
 

@@ -1,6 +1,7 @@
----
-title: 'Digitale Elektronische Schakelingen'
----
++++
+title= "Digitale Elektronische Schakelingen"
+weight= 2
++++
 
 ## Chapters
 
