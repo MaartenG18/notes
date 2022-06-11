@@ -12,21 +12,21 @@
     <title>1. Inleiding :: Maarten&#39;s notes</title>
 
     
-    <link href="../../../css/nucleus.css?1654979970" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1654979970" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1654979970" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1654979970" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1654979970" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1654979970" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1654979970" rel="stylesheet">
-    <link href="../../../css/theme.css?1654979970" rel="stylesheet">
-    <link href="../../../css/devselector.css?1654979970" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1654979970" rel="stylesheet">
-    <link href="../../../css/theme-kul.css?1654979970" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1654985982" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1654985982" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1654985982" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1654985982" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1654985982" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1654985982" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1654985982" rel="stylesheet">
+    <link href="../../../css/theme.css?1654985982" rel="stylesheet">
+    <link href="../../../css/devselector.css?1654985982" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1654985982" rel="stylesheet">
+    <link href="../../../css/theme-kul.css?1654985982" rel="stylesheet">
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1654979970"></script>
-    <script src="../../../js/devselector.js?1654979970"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1654985982"></script>
+    <script src="../../../js/devselector.js?1654985982"></script>
     <script id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1654979970"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1654979970"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1654985982"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1654985982"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/maarteng18.github.io\/notes\/";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1654979970"></script>
+<script type="text/javascript" src="../../../js/search.js?1654985982"></script>
 
     
   </div>
@@ -221,6 +221,90 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/courses/disch/ch-2/" title="2. Progammeerbare logica" class="dd-item ">
+        <a href="../../../courses/disch/ch-2/">
+        2. Progammeerbare logica
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/courses/disch/ch-3/" title="3. Geheugens" class="dd-item ">
+        <a href="../../../courses/disch/ch-3/">
+        3. Geheugens
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/courses/disch/ch-4/" title="4. Ontwerpprincipes voor synchrone logica" class="dd-item ">
+        <a href="../../../courses/disch/ch-4/">
+        4. Ontwerpprincipes voor synchrone logica
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/courses/disch/ch-5/" title="5. Simulatie" class="dd-item ">
+        <a href="../../../courses/disch/ch-5/">
+        5. Simulatie
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
         
         </ul>
       
@@ -307,7 +391,15 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#fpga">FPGA</a></li>
+    <li><a href="#table-of-contents">Table of contents</a></li>
+    <li><a href="#herhaling-implementatieplatformen">Herhaling implementatieplatformen</a></li>
+    <li><a href="#fpga-vs-microprocessor">FPGA vs. microprocessor</a>
+      <ul>
+        <li><a href="#fpga">FPGA</a></li>
+        <li><a href="#microprocessor">Microprocessor</a></li>
+      </ul>
+    </li>
+    <li><a href="#codevoorbeeld">Codevoorbeeld</a></li>
   </ul>
 </nav>
     </div>
@@ -332,8 +424,92 @@
         
 
 
-<h2 id="fpga">FPGA</h2>
-
+<h2 id="table-of-contents">Table of contents</h2>
+<ol>
+<li><a href="#herhaling-implementatieplatformen">Herhaling implementatieplatformen</a></li>
+<li><a href="#fpga-vs-microprocessor">FPGA vs. microprocessor</a></li>
+<li><a href="#codevoorbeeld">Codevoorbeeld</a></li>
+</ol>
+<h2 id="herhaling-implementatieplatformen">Herhaling implementatieplatformen</h2>
+<p><strong>Discrete logica</strong>: digitale schakelingen opgebouwd met bijvoorbeeld chips uit de 74-reeks.</p>
+<p><figure>
+	<a href="../../../img/DISCH/ch-1/Discrete-logica.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-1/Discrete-logica.png"  >
+	</a>
+	
+</figure>
+</p>
+<p><strong>Microprocessor</strong>: vaste hardware waarop software wordt uitgevoerd, zoals bijvoorbeeld de ATmega328-processor op het Arduino Uno-bord.</p>
+<p><figure>
+	<a href="../../../img/DISCH/ch-1/Microprocessor.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-1/Microprocessor.png"  >
+	</a>
+	
+</figure>
+</p>
+<p><strong>ASIC (Application Specific Integrated Circuit)</strong>: vaste hardware met een specifieke functie.</p>
+<p><figure>
+	<a href="../../../img/DISCH/ch-1/ASIC.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-1/ASIC.png"  >
+	</a>
+	
+</figure>
+</p>
+<p><strong>FPGA (Field-Programmable Gate Array)</strong>: configureerbare hardware met een regelmatige structuur, waarop specifieke functies geïmplementeerd kunnen worden.</p>
+<h2 id="fpga-vs-microprocessor">FPGA vs. microprocessor</h2>
+<h3 id="fpga">FPGA</h3>
+<h4 id="bouwblokken-van-de-fpga">Bouwblokken van de FPGA</h4>
+<p><figure>
+	<a href="../../../img/DISCH/ch-1/FPGA.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-1/FPGA.png"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li><strong>CLB</strong>: Configurable Logic Block</li>
+<li><strong>SM</strong>: Switch Matrix</li>
+<li><strong>IOB</strong>: Input/Output Block</li>
+</ul>
+<h4 id="basisblokken-van-een-clb">Basisblokken van een CLB</h4>
+<p><figure>
+	<a href="../../../img/DISCH/ch-1/CLB.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-1/CLB.png"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li><strong>FF</strong>: Flip-Flop</li>
+<li><strong>Mutex</strong>: Multiplexer</li>
+<li><strong>LUT</strong>: Look-Up Table
+<ul>
+<li>Kan geconfigureerd worden tot eender welke functie met 4 ingangen en 1 uitgang.</li>
+</ul>
+</li>
+</ul>
+<h3 id="microprocessor">Microprocessor</h3>
+<p>De <strong>CPU</strong> is het hart van een microprocessor en bevat o.a.:</p>
+<ul>
+<li><strong>ALU</strong>: Arithmatic Logic Unit</li>
+<li><strong>Register file</strong></li>
+<li><strong>Programmageheugen</strong></li>
+</ul>
+<h2 id="codevoorbeeld">Codevoorbeeld</h2>
+<p>We beschouwen een stukje code in een <strong>hardwarebeschrijvingstaal (VHDL)</strong> en in
+een <strong>programmeertaal (C)</strong>. //TODO(dit verder afmaken)</p>
+<div class="devselect">
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-VHDL" data-lang="VHDL"><span style="display:flex;"><span><span style="color:#00a8c8">if</span> <span style="color:#111">sel</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;1&#39;</span> <span style="color:#00a8c8">then</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#111">z</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">a</span> <span style="color:#00a8c8">sll</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">else</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#111">z</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">a</span> <span style="color:#00a8c8">srl</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">end</span> <span style="color:#00a8c8">if</span><span style="color:#111">;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#00a8c8">if</span><span style="color:#111">((</span><span style="color:#111">sel</span> <span style="color:#f92672">&amp;</span> <span style="color:#ae81ff">0x01</span><span style="color:#111">)</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#111">z</span> <span style="color:#f92672">=</span> <span style="color:#111">a</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#111">z</span> <span style="color:#f92672">=</span> <span style="color:#111">a</span> <span style="color:#f92672">&gt;&gt;</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div></div>
 
 <footer class="footline">
 	
@@ -447,6 +623,73 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -465,7 +708,7 @@
 			<a class="nav nav-prev" href="../../../courses/disch/" title="Digitale Elektronische Schakelingen"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../../courses/ansch/" title="Analoge Elektronische Schakelingen" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../../courses/disch/ch-2/" title="2. Progammeerbare logica" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -475,17 +718,17 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1654979970"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1654979970"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1654979970"></script>
-    <script src="../../../js/jquery.sticky.js?1654979970"></script>
-    <script src="../../../js/featherlight.min.js?1654979970"></script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1654979970"></script>
-    <script src="../../../js/learn.js?1654979970"></script>
-    <script src="../../../js/hugo-learn.js?1654979970"></script>
+    <script src="../../../js/clipboard.min.js?1654985982"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1654985982"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1654985982"></script>
+    <script src="../../../js/jquery.sticky.js?1654985982"></script>
+    <script src="../../../js/featherlight.min.js?1654985982"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1654985982"></script>
+    <script src="../../../js/learn.js?1654985982"></script>
+    <script src="../../../js/hugo-learn.js?1654985982"></script>
     
         
-            <script src="../../../mermaid/mermaid.js?1654979970"></script>
+            <script src="../../../mermaid/mermaid.js?1654985982"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

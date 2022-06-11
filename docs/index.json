@@ -25,7 +25,35 @@
 	"title": "1. Inleiding",
 	"tags": [],
 	"description": "",
-	"content": "FPGA "
+	"content": "Table of contents Herhaling implementatieplatformen FPGA vs. microprocessor Codevoorbeeld Herhaling implementatieplatformen Discrete logica: digitale schakelingen opgebouwd met bijvoorbeeld chips uit de 74-reeks.\nMicroprocessor: vaste hardware waarop software wordt uitgevoerd, zoals bijvoorbeeld de ATmega328-processor op het Arduino Uno-bord.\nASIC (Application Specific Integrated Circuit): vaste hardware met een specifieke functie.\nFPGA (Field-Programmable Gate Array): configureerbare hardware met een regelmatige structuur, waarop specifieke functies geïmplementeerd kunnen worden.\nFPGA vs. microprocessor FPGA Bouwblokken van de FPGA CLB: Configurable Logic Block SM: Switch Matrix IOB: Input/Output Block Basisblokken van een CLB FF: Flip-Flop Mutex: Multiplexer LUT: Look-Up Table Kan geconfigureerd worden tot eender welke functie met 4 ingangen en 1 uitgang. Microprocessor De CPU is het hart van een microprocessor en bevat o.a.:\nALU: Arithmatic Logic Unit Register file Programmageheugen Codevoorbeeld We beschouwen een stukje code in een hardwarebeschrijvingstaal (VHDL) en in een programmeertaal (C). //TODO(dit verder afmaken)\nif sel = \u0026#39;1\u0026#39; then z \u0026lt;= a sll 1; else z \u0026lt;= a srl 1; end if; if((sel \u0026amp; 0x01) == 1) { z = a \u0026lt;\u0026lt; 1; } else { z = a \u0026gt;\u0026gt; 1; } "
+},
+{
+	"uri": "https://maarteng18.github.io/notes/courses/disch/ch-2/",
+	"title": "2. Progammeerbare logica",
+	"tags": [],
+	"description": "",
+	"content": "Programmeerbare logica "
+},
+{
+	"uri": "https://maarteng18.github.io/notes/courses/disch/ch-3/",
+	"title": "3. Geheugens",
+	"tags": [],
+	"description": "",
+	"content": "Geheugens "
+},
+{
+	"uri": "https://maarteng18.github.io/notes/courses/disch/ch-4/",
+	"title": "4. Ontwerpprincipes voor synchrone logica",
+	"tags": [],
+	"description": "",
+	"content": "Ontwerpprincipes voor synchrone logica "
+},
+{
+	"uri": "https://maarteng18.github.io/notes/courses/disch/ch-5/",
+	"title": "5. Simulatie",
+	"tags": [],
+	"description": "",
+	"content": "Simulatie "
 },
 {
 	"uri": "https://maarteng18.github.io/notes/courses/ansch/",
@@ -39,7 +67,7 @@
 	"title": "Digitale Elektronische Schakelingen",
 	"tags": [],
 	"description": "",
-	"content": "Chapters Inleiding "
+	"content": "Chapters Inleiding Programmeerbare logica Geheugens Ontwerpprincipes voor synchrone logica Simulatie "
 },
 {
 	"uri": "https://maarteng18.github.io/notes/tags/",

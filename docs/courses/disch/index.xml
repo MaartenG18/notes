@@ -14,7 +14,47 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
       <guid>https://maarteng18.github.io/notes/courses/disch/ch-1/</guid>
-      <description>FPGA </description>
+      <description>Table of contents Herhaling implementatieplatformen FPGA vs. microprocessor Codevoorbeeld Herhaling implementatieplatformen Discrete logica: digitale schakelingen opgebouwd met bijvoorbeeld chips uit de 74-reeks.
+Microprocessor: vaste hardware waarop software wordt uitgevoerd, zoals bijvoorbeeld de ATmega328-processor op het Arduino Uno-bord.
+ASIC (Application Specific Integrated Circuit): vaste hardware met een specifieke functie.
+FPGA (Field-Programmable Gate Array): configureerbare hardware met een regelmatige structuur, waarop specifieke functies geïmplementeerd kunnen worden.
+FPGA vs. microprocessor FPGA Bouwblokken van de FPGA CLB: Configurable Logic Block SM: Switch Matrix IOB: Input/Output Block Basisblokken van een CLB FF: Flip-Flop Mutex: Multiplexer LUT: Look-Up Table Kan geconfigureerd worden tot eender welke functie met 4 ingangen en 1 uitgang.</description>
+    </item>
+    
+    <item>
+      <title>2. Progammeerbare logica</title>
+      <link>https://maarteng18.github.io/notes/courses/disch/ch-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/disch/ch-2/</guid>
+      <description>Programmeerbare logica </description>
+    </item>
+    
+    <item>
+      <title>3. Geheugens</title>
+      <link>https://maarteng18.github.io/notes/courses/disch/ch-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/disch/ch-3/</guid>
+      <description>Geheugens </description>
+    </item>
+    
+    <item>
+      <title>4. Ontwerpprincipes voor synchrone logica</title>
+      <link>https://maarteng18.github.io/notes/courses/disch/ch-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/disch/ch-4/</guid>
+      <description>Ontwerpprincipes voor synchrone logica </description>
+    </item>
+    
+    <item>
+      <title>5. Simulatie</title>
+      <link>https://maarteng18.github.io/notes/courses/disch/ch-5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/disch/ch-5/</guid>
+      <description>Simulatie </description>
     </item>
     
   </channel>
