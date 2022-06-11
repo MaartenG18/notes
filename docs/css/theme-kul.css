@@ -9,6 +9,10 @@ video {
     margin: 1rem auto !important;
 }
 
+#mglogo {
+    width: 150px;
+}
+
 figcaption {
     text-align: center;
     font-style: italic;
