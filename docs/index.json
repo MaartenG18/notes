@@ -1,10 +1,45 @@
 [
 {
+	"uri": "https://maarteng18.github.io/notes/courses/",
+	"title": "Courses",
+	"tags": [],
+	"description": "",
+	"content": "Current courses Analoge Elektronische Schakelingen Digitale Elektronische Schakelingen Android App Development Besturingssystemen en C Software Engineering Skills "
+},
+{
 	"uri": "https://maarteng18.github.io/notes/",
 	"title": "Maarten&#39;s notes",
 	"tags": [],
 	"description": "",
-	"content": "Dit is een titel Dit is een tussentitel "
+	"content": "Maarten\u0026rsquo;s notes Current courses Analoge Elektronische Schakelingen Digitale Elektronische Schakelingen Android App Development Besturingssystemen en C Software Engineering Skills Good to know I\u0026rsquo;m currently making a portfolio, more coming soon\n"
+},
+{
+	"uri": "https://maarteng18.github.io/notes/courses/ansch/ch-1/",
+	"title": "1. Herhaling MOSFET en BJT",
+	"tags": [],
+	"description": "",
+	"content": "MOSFET BJT "
+},
+{
+	"uri": "https://maarteng18.github.io/notes/courses/disch/ch-1/",
+	"title": "1. Inleiding",
+	"tags": [],
+	"description": "",
+	"content": "FPGA "
+},
+{
+	"uri": "https://maarteng18.github.io/notes/courses/ansch/",
+	"title": "Analoge Elektronische Schakelingen",
+	"tags": [],
+	"description": "",
+	"content": "Chapters Herhaling MOSFET en BJT "
+},
+{
+	"uri": "https://maarteng18.github.io/notes/courses/disch/",
+	"title": "Digitale Elektronische Schakelingen",
+	"tags": [],
+	"description": "",
+	"content": "Chapters Inleiding "
 },
 {
 	"uri": "https://maarteng18.github.io/notes/tags/",

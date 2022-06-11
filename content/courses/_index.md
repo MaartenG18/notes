@@ -1,9 +1,7 @@
 ---
-title: "Maarten's notes"
+title: "Courses"
 weight: 1
 ---
-
-# Maarten's notes
 
 ## Current courses
 
@@ -12,7 +10,3 @@ weight: 1
 - Android App Development
 - Besturingssystemen en C
 - Software Engineering Skills
-
-## Good to know
-
-I'm currently making a [portfolio](https://maarteng18.github.io/), more coming soon

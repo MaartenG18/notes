@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Courses on Maarten&#39;s notes</title>
+    <link>https://maarteng18.github.io/notes/course/</link>
+    <description>Recent content in Courses on Maarten&#39;s notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>maartengielkens2000@gmail.com (Maarten Gielkens)</managingEditor>
+    <webMaster>maartengielkens2000@gmail.com (Maarten Gielkens)</webMaster>
+    <lastBuildDate>Sat, 11 Jun 2022 21:03:36 +0200</lastBuildDate><atom:link href="https://maarteng18.github.io/notes/course/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Digitale Elektronische Systemen</title>
+      <link>https://maarteng18.github.io/notes/course/digitale-elektronische-systemen/</link>
+      <pubDate>Sat, 11 Jun 2022 21:03:36 +0200</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/course/digitale-elektronische-systemen/</guid>
+      <description>Chapter 1 </description>
+    </item>
+    
+  </channel>
+</rss>
