@@ -56,7 +56,7 @@ weight= 3
 - **PROM**:
 	+ Alle mogelijkheden zijn voorzien
 
-##### PLA
+#### PLA
 
 - Gemeenschappelijk gebruik van producttermen
 - Voorbeeld:
@@ -97,7 +97,7 @@ Sommige technologieën maken verbindingen i.p.v. ze op te blazen.
 
 	![](/img/DISCH/ch-2/PLA-voorbeeld.png)
 
-##### Verschil tussen PLA en PAL
+#### Verschil tussen PLA en PAL
 
 - **PAL: OR verbindingen zijn vast**
 	+ De volgorde van de AND termen moeten zo gekozen worden dat ze overeenkomen met de verbindingen in de OR matrix.
@@ -125,7 +125,7 @@ Sommige technologieën maken verbindingen i.p.v. ze op te blazen.
 
 {{% /task %}}
 
-##### ROM als PLD
+#### ROM als PLD
 
 - In tegenstelling tot een PLA is een ROM een structuur met een volledig gecodeerde AND array.
 - Elke mogelijkheid tot het samennemen van ingangen (adreslijnen) zit erin.

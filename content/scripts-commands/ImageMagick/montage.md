@@ -3,7 +3,7 @@ title= "Montage"
 weight= 3
 +++
 
-## Paste image underneath eachother
+## Paste images underneath eachother
 
 With this command you can paste images underneath eachother into a montage.
 
