@@ -185,3 +185,95 @@ Algemene structuur:
 ### Evolutie van Xilinx FPGA's
 
 ![](/img/DISCH/ch-2/Evolutie/evolution.png)
+
+### Configuratie van FPGA's
+
+- **Configuratiedata**: 
+	+ bitstream
+- **Configuratiegeheugen**:
+	+ (Anti-)fuse: one-time programmable (OTP)
+	+ Flash: niet-vluchtig
+	+ SRAM: vluchtig
+- **SRAM (vs. flash) configuratiegeheugen**:
+	+ Hogere dichtheid
+	+ Hoger vermogenverbruik
+	+ On-board of on-chip niet-vluchtig geheugen nodig om de bitsream op te slaan tijdens power-off
+	+ Hogere configuratiesnelheid
+	
+### Configuratie van een CLB
+
+![](/img/DISCH/ch-2/CLB-configuratie.PNG)
+
+### Configuratiebits
+
+Waarom 16 configuratiebits voor een 4-naar-1 LUT?
+
+- 2<sup>16</sup> mogelijke output functies:
+	+ Z<sub>0</sub> = 0
+	+ Z<sub>1</sub> = A'.B'.C'.D'
+	+ Z<sub>2</sub> = A'.B'.C'.D
+	+ Z<sub>3</sub> = A'.B'.C'
+	+ ...
+	+ Z<sub>65280</sub> = A
+	+ ...
+	+ Z<sub>65535</sub> = 1
+
+| A | B | C | D | Z<sub>0</sub> | Z<sub>1</sub> | Z<sub>2</sub> | Z<sub>3</sub> | ... | Z<sub>65280</sub> | ... | Z<sub>65535</sub> |
+|:-:|:-:|:-:|:-:|:-------------:|:-------------:|:-------------:|:-------------:|:---:|:-----------------:|:---:|:-----------------:|
+| 0 | 0 | 0 | 0 | 0             | 1             | 0             | 1             |     | 0                 |     | 1                 |
+| 0 | 0 | 0 | 1 | 0             | 0             | 1             | 1             |     | 0                 |     | 1                 |
+| 0 | 0 | 1 | 0 | 0             | 0             | 0             | 0             |     | 0                 |     | 1                 |
+| 0 | 0 | 1 | 1 | 0             | 0             | 0             | 0             |     | 0                 |     | 1                 |
+| 0 | 1 | 0 | 0 | 0             | 0             | 0             | 0             |     | 0                 |     | 1                 |
+| 0 | 1 | 0 | 1 | 0             | 0             | 0             | 0             |     | 0                 |     | 1                 |
+| 0 | 1 | 1 | 0 | 0             | 0             | 0             | 0             |     | 0                 |     | 1                 |
+| 0 | 1 | 1 | 1 | 0             | 0             | 0             | 0             |     | 0                 |     | 1                 |
+| 1 | 0 | 0 | 0 | 0             | 0             | 0             | 0             |     | 1                 |     | 1                 |
+| 1 | 0 | 0 | 1 | 0             | 0             | 0             | 0             |     | 1                 |     | 1                 |
+| 1 | 0 | 1 | 0 | 0             | 0             | 0             | 0             |     | 1                 |     | 1                 |
+| 1 | 0 | 1 | 1 | 0             | 0             | 0             | 0             |     | 1                 |     | 1                 |
+| 1 | 1 | 0 | 0 | 0             | 0             | 0             | 0             |     | 1                 |     | 1                 |
+| 1 | 1 | 0 | 1 | 0             | 0             | 0             | 0             |     | 1                 |     | 1                 |
+| 1 | 1 | 1 | 0 | 0             | 0             | 0             | 0             |     | 1                 |     | 1                 |
+| 1 | 1 | 1 | 1 | 0             | 0             | 0             | 0             |     | 1                 |     | 1                 |
+
+### Configuratie van een SM
+
+![](/img/DISCH/ch-2/SM-configuratie.PNG)
+
+### Ontwerp van een digitaal systeem op FPGA
+
+- Beschrijving van het ontwerp
+	+ Schematische invoer
+	+ Invoer via HDL (Hardware Description Language)
+		* VHDL (VHSIC HDL)
+			- VHSIC = Very High Speed Integrated Circuit
+		* Verilog
+- Implementatie van het systeem
+	+ Bitsream met configuratie-gegevens
+		* Na synthese en place & route
+	+ Inladen van de bitstream
+		* Via download kabel (parallel, USB) verbonden met PC
+		* Vanuit on-board ROM
+		
+#### Ontwerp m.b.v. VHDL
+
+- Platform-onafhankelijke code
+	+ Bruikbaar voor alle FPGA's
+	+ Bruikbaar voor ASIC standaardcel ontwerp
+- Platform-specifiek code
+	+ Geoptimaliseerd voor een specifiek FPGA
+	+ Gebruikmakend van specifieke compenenten in een FPGA
+		* Bv.: multiplexers, block RAM...
+		
+### FPGA vendors
+
+- AMD (Xilinx) en Intel:
+	+ SRAM-gebaseerde FPGA's
+	+ Meer dan 2/3 van de FPGA markt
+- Microchip (Microsemi):
+	+ Flash-gebaseerde FPGA's
+	+ Specifieke marktsector voor toepassingen met hoge betrouwbaarheid, databeveiliging, laag vermogenverbruik
+- Lattice en Quicklogic:
+	+ Laag vermogenverbruik
+	+ Specifieke functionaliteit

@@ -12,21 +12,21 @@
     <title>2. Progammeerbare logica :: Maarten&#39;s notes</title>
 
     
-    <link href="../../../css/nucleus.css?1655070056" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1655070056" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1655070056" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1655070056" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1655070056" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1655070056" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1655070056" rel="stylesheet">
-    <link href="../../../css/theme.css?1655070056" rel="stylesheet">
-    <link href="../../../css/devselector.css?1655070056" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1655070056" rel="stylesheet">
-    <link href="../../../css/theme-kul.css?1655070056" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1655072468" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1655072468" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1655072468" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1655072468" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1655072468" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1655072468" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1655072468" rel="stylesheet">
+    <link href="../../../css/theme.css?1655072468" rel="stylesheet">
+    <link href="../../../css/devselector.css?1655072468" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1655072468" rel="stylesheet">
+    <link href="../../../css/theme-kul.css?1655072468" rel="stylesheet">
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1655070056"></script>
-    <script src="../../../js/devselector.js?1655070056"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1655072468"></script>
+    <script src="../../../js/devselector.js?1655072468"></script>
     <script id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1655070056"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1655070056"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1655072468"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1655072468"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/maarteng18.github.io\/notes\/";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1655070056"></script>
+<script type="text/javascript" src="../../../js/search.js?1655072468"></script>
 
     
   </div>
@@ -498,6 +498,12 @@
         <li><a href="#basisbouwblokken-in-een-clb">Basisbouwblokken in een CLB</a></li>
         <li><a href="#basisprincipe-van-een-sm">Basisprincipe van een SM</a></li>
         <li><a href="#evolutie-van-xilinx-fpgas">Evolutie van Xilinx FPGA&rsquo;s</a></li>
+        <li><a href="#configuratie-van-fpgas">Configuratie van FPGA&rsquo;s</a></li>
+        <li><a href="#configuratie-van-een-clb">Configuratie van een CLB</a></li>
+        <li><a href="#configuratiebits">Configuratiebits</a></li>
+        <li><a href="#configuratie-van-een-sm">Configuratie van een SM</a></li>
+        <li><a href="#ontwerp-van-een-digitaal-systeem-op-fpga">Ontwerp van een digitaal systeem op FPGA</a></li>
+        <li><a href="#fpga-vendors">FPGA vendors</a></li>
       </ul>
     </li>
   </ul>
@@ -845,6 +851,378 @@
 	
 </figure>
 </p>
+<h3 id="configuratie-van-fpgas">Configuratie van FPGA&rsquo;s</h3>
+<ul>
+<li><strong>Configuratiedata</strong>:
+<ul>
+<li>bitstream</li>
+</ul>
+</li>
+<li><strong>Configuratiegeheugen</strong>:
+<ul>
+<li>(Anti-)fuse: one-time programmable (OTP)</li>
+<li>Flash: niet-vluchtig</li>
+<li>SRAM: vluchtig</li>
+</ul>
+</li>
+<li><strong>SRAM (vs. flash) configuratiegeheugen</strong>:
+<ul>
+<li>Hogere dichtheid</li>
+<li>Hoger vermogenverbruik</li>
+<li>On-board of on-chip niet-vluchtig geheugen nodig om de bitsream op te slaan tijdens power-off</li>
+<li>Hogere configuratiesnelheid</li>
+</ul>
+</li>
+</ul>
+<h3 id="configuratie-van-een-clb">Configuratie van een CLB</h3>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/CLB-configuratie.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/CLB-configuratie.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h3 id="configuratiebits">Configuratiebits</h3>
+<p>Waarom 16 configuratiebits voor een 4-naar-1 LUT?</p>
+<ul>
+<li>2<sup>16</sup> mogelijke output functies:
+<ul>
+<li>Z<sub>0</sub> = 0</li>
+<li>Z<sub>1</sub> = A&rsquo;.B&rsquo;.C&rsquo;.D'</li>
+<li>Z<sub>2</sub> = A&rsquo;.B&rsquo;.C&rsquo;.D</li>
+<li>Z<sub>3</sub> = A&rsquo;.B&rsquo;.C'</li>
+<li>&hellip;</li>
+<li>Z<sub>65280</sub> = A</li>
+<li>&hellip;</li>
+<li>Z<sub>65535</sub> = 1</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">A</th>
+<th style="text-align:center">B</th>
+<th style="text-align:center">C</th>
+<th style="text-align:center">D</th>
+<th style="text-align:center">Z<sub>0</sub></th>
+<th style="text-align:center">Z<sub>1</sub></th>
+<th style="text-align:center">Z<sub>2</sub></th>
+<th style="text-align:center">Z<sub>3</sub></th>
+<th style="text-align:center">&hellip;</th>
+<th style="text-align:center">Z<sub>65280</sub></th>
+<th style="text-align:center">&hellip;</th>
+<th style="text-align:center">Z<sub>65535</sub></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="configuratie-van-een-sm">Configuratie van een SM</h3>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/SM-configuratie.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/SM-configuratie.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h3 id="ontwerp-van-een-digitaal-systeem-op-fpga">Ontwerp van een digitaal systeem op FPGA</h3>
+<ul>
+<li>Beschrijving van het ontwerp
+<ul>
+<li>Schematische invoer</li>
+<li>Invoer via HDL (Hardware Description Language)
+<ul>
+<li>VHDL (VHSIC HDL)
+<ul>
+<li>VHSIC = Very High Speed Integrated Circuit</li>
+</ul>
+</li>
+<li>Verilog</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Implementatie van het systeem
+<ul>
+<li>Bitsream met configuratie-gegevens
+<ul>
+<li>Na synthese en place &amp; route</li>
+</ul>
+</li>
+<li>Inladen van de bitstream
+<ul>
+<li>Via download kabel (parallel, USB) verbonden met PC</li>
+<li>Vanuit on-board ROM</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="ontwerp-mbv-vhdl">Ontwerp m.b.v. VHDL</h4>
+<ul>
+<li>Platform-onafhankelijke code
+<ul>
+<li>Bruikbaar voor alle FPGA&rsquo;s</li>
+<li>Bruikbaar voor ASIC standaardcel ontwerp</li>
+</ul>
+</li>
+<li>Platform-specifiek code
+<ul>
+<li>Geoptimaliseerd voor een specifiek FPGA</li>
+<li>Gebruikmakend van specifieke compenenten in een FPGA
+<ul>
+<li>Bv.: multiplexers, block RAM&hellip;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="fpga-vendors">FPGA vendors</h3>
+<ul>
+<li>AMD (Xilinx) en Intel:
+<ul>
+<li>SRAM-gebaseerde FPGA&rsquo;s</li>
+<li>Meer dan 2/3 van de FPGA markt</li>
+</ul>
+</li>
+<li>Microchip (Microsemi):
+<ul>
+<li>Flash-gebaseerde FPGA&rsquo;s</li>
+<li>Specifieke marktsector voor toepassingen met hoge betrouwbaarheid, databeveiliging, laag vermogenverbruik</li>
+</ul>
+</li>
+<li>Lattice en Quicklogic:
+<ul>
+<li>Laag vermogenverbruik</li>
+<li>Specifieke functionaliteit</li>
+</ul>
+</li>
+</ul>
 
 
 <footer class="footline">
@@ -1107,17 +1485,17 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1655070056"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1655070056"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1655070056"></script>
-    <script src="../../../js/jquery.sticky.js?1655070056"></script>
-    <script src="../../../js/featherlight.min.js?1655070056"></script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1655070056"></script>
-    <script src="../../../js/learn.js?1655070056"></script>
-    <script src="../../../js/hugo-learn.js?1655070056"></script>
+    <script src="../../../js/clipboard.min.js?1655072468"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1655072468"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1655072468"></script>
+    <script src="../../../js/jquery.sticky.js?1655072468"></script>
+    <script src="../../../js/featherlight.min.js?1655072468"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1655072468"></script>
+    <script src="../../../js/learn.js?1655072468"></script>
+    <script src="../../../js/hugo-learn.js?1655072468"></script>
     
         
-            <script src="../../../mermaid/mermaid.js?1655070056"></script>
+            <script src="../../../mermaid/mermaid.js?1655072468"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
