@@ -136,3 +136,31 @@ De LUT's zijn op onderstaande manier geconfigureerd:
 |0|1|x|x|0|
 |1|0|x|x|0|
 |1|1|x|x|1|
+
+### C -> microprocessor
+
+Het **schuiven van bits in een microprocessor gebeurt in de ALU via een schuifbewerking**. De schuifinstructies met bijhorende machinecode zien er als volgt uit:
+
+- **Logical Shift Left (LSL)**:
+	+ De byte op adres Rd = ddddd wordt 1 bit naar links geschoven en daarna terug geschreven op hetzelfde adres. 
+	+ De opcode komt overeen met een optelling van 2 dezelfde getallen.
+	
+![](/img/DISCH/ch-1/LSL.PNG)
+
+- **Logical Shift Right (LSR)**:
+	+ De byte op adres Rd = ddddd wordt 1 bit naar rechts geschoven en daarna terug geschreven op hetzelde adres.
+
+![](/img/DISCH/ch-1/LSR.PNG)
+
+Het **controleren of een byte gelijk is aan een constante waarde gebeurt in de ALU via een aftrekking**. Als die aftrekking in 0 resulteert, is de byte gelijk aan de constante waarde en anders niet. De zero-flag aan de uitgang van de ALU geeft dus het resultaat weer. Een volgende instructie kan dan de zero-flag controleren om te kiezen tussen de volgende instructie in het programmageheugen of een instructie ergens anders in het programmageheugen.
+
+- **Compare with Immediate (CPI)**:
+	+ De Waarde KKKKKKKK wordt afgetrokken van de byte op adres Rd = 1dddd; waarbij de zero-flag al dan niet 1 wordt.
+
+![](/img/DISCH/ch-1/CPI.PNG)
+
+- **Branch if Equal (BREQ)**:
+	+ Als de zero-flag gelijk is aan 0, springt de program counter 1 plaats verder.
+	+ Als de zero-flag gelijk is aan 1, springt de program counter kkkkkkk+1 plaatsen verder.
+
+![](/img/DISCH/ch-1/BREQ.PNG)

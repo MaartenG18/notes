@@ -12,21 +12,21 @@
     <title>1. Inleiding :: Maarten&#39;s notes</title>
 
     
-    <link href="../../../css/nucleus.css?1655046684" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1655046684" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1655046684" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1655046684" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1655046684" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1655046684" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1655046684" rel="stylesheet">
-    <link href="../../../css/theme.css?1655046684" rel="stylesheet">
-    <link href="../../../css/devselector.css?1655046684" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1655046684" rel="stylesheet">
-    <link href="../../../css/theme-kul.css?1655046684" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1655050510" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1655050510" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1655050510" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1655050510" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1655050510" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1655050510" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1655050510" rel="stylesheet">
+    <link href="../../../css/theme.css?1655050510" rel="stylesheet">
+    <link href="../../../css/devselector.css?1655050510" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1655050510" rel="stylesheet">
+    <link href="../../../css/theme-kul.css?1655050510" rel="stylesheet">
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1655046684"></script>
-    <script src="../../../js/devselector.js?1655046684"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1655050510"></script>
+    <script src="../../../js/devselector.js?1655050510"></script>
     <script id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1655046684"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1655046684"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1655050510"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1655050510"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/maarteng18.github.io\/notes\/";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1655046684"></script>
+<script type="text/javascript" src="../../../js/search.js?1655050510"></script>
 
     
   </div>
@@ -402,6 +402,7 @@
     <li><a href="#codevoorbeeld">Codevoorbeeld</a>
       <ul>
         <li><a href="#vhdl---fpga">VHDL -&gt; FPGA</a></li>
+        <li><a href="#c---microprocessor">C -&gt; microprocessor</a></li>
       </ul>
     </li>
   </ul>
@@ -704,6 +705,67 @@ een <strong>programmeertaal (C)</strong>.</p>
 </tr>
 </tbody>
 </table>
+<h3 id="c---microprocessor">C -&gt; microprocessor</h3>
+<p>Het <strong>schuiven van bits in een microprocessor gebeurt in de ALU via een schuifbewerking</strong>. De schuifinstructies met bijhorende machinecode zien er als volgt uit:</p>
+<ul>
+<li><strong>Logical Shift Left (LSL)</strong>:
+<ul>
+<li>De byte op adres Rd = ddddd wordt 1 bit naar links geschoven en daarna terug geschreven op hetzelfde adres.</li>
+<li>De opcode komt overeen met een optelling van 2 dezelfde getallen.</li>
+</ul>
+</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-1/LSL.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-1/LSL.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li><strong>Logical Shift Right (LSR)</strong>:
+<ul>
+<li>De byte op adres Rd = ddddd wordt 1 bit naar rechts geschoven en daarna terug geschreven op hetzelde adres.</li>
+</ul>
+</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-1/LSR.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-1/LSR.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<p>Het <strong>controleren of een byte gelijk is aan een constante waarde gebeurt in de ALU via een aftrekking</strong>. Als die aftrekking in 0 resulteert, is de byte gelijk aan de constante waarde en anders niet. De zero-flag aan de uitgang van de ALU geeft dus het resultaat weer. Een volgende instructie kan dan de zero-flag controleren om te kiezen tussen de volgende instructie in het programmageheugen of een instructie ergens anders in het programmageheugen.</p>
+<ul>
+<li><strong>Compare with Immediate (CPI)</strong>:
+<ul>
+<li>De Waarde KKKKKKKK wordt afgetrokken van de byte op adres Rd = 1dddd; waarbij de zero-flag al dan niet 1 wordt.</li>
+</ul>
+</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-1/CPI.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-1/CPI.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li><strong>Branch if Equal (BREQ)</strong>:
+<ul>
+<li>Als de zero-flag gelijk is aan 0, springt de program counter 1 plaats verder.</li>
+<li>Als de zero-flag gelijk is aan 1, springt de program counter kkkkkkk+1 plaatsen verder.</li>
+</ul>
+</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-1/BREQ.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-1/BREQ.PNG"  >
+	</a>
+	
+</figure>
+</p>
 
 
 <footer class="footline">
@@ -913,17 +975,17 @@ een <strong>programmeertaal (C)</strong>.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1655046684"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1655046684"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1655046684"></script>
-    <script src="../../../js/jquery.sticky.js?1655046684"></script>
-    <script src="../../../js/featherlight.min.js?1655046684"></script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1655046684"></script>
-    <script src="../../../js/learn.js?1655046684"></script>
-    <script src="../../../js/hugo-learn.js?1655046684"></script>
+    <script src="../../../js/clipboard.min.js?1655050510"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1655050510"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1655050510"></script>
+    <script src="../../../js/jquery.sticky.js?1655050510"></script>
+    <script src="../../../js/featherlight.min.js?1655050510"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1655050510"></script>
+    <script src="../../../js/learn.js?1655050510"></script>
+    <script src="../../../js/hugo-learn.js?1655050510"></script>
     
         
-            <script src="../../../mermaid/mermaid.js?1655046684"></script>
+            <script src="../../../mermaid/mermaid.js?1655050510"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
