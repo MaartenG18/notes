@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.100.2" />
+    <meta name="generator" content="Hugo 0.100.1" />
     <meta name="description" content="">
 
 
@@ -12,21 +12,21 @@
     <title>1. Inleiding :: Maarten&#39;s notes</title>
 
     
-    <link href="../../../css/nucleus.css?1654987078" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1654987078" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1654987078" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1654987078" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1654987078" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1654987078" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1654987078" rel="stylesheet">
-    <link href="../../../css/theme.css?1654987078" rel="stylesheet">
-    <link href="../../../css/devselector.css?1654987078" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1654987078" rel="stylesheet">
-    <link href="../../../css/theme-kul.css?1654987078" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1655046684" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1655046684" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1655046684" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1655046684" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1655046684" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1655046684" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1655046684" rel="stylesheet">
+    <link href="../../../css/theme.css?1655046684" rel="stylesheet">
+    <link href="../../../css/devselector.css?1655046684" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1655046684" rel="stylesheet">
+    <link href="../../../css/theme-kul.css?1655046684" rel="stylesheet">
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1654987078"></script>
-    <script src="../../../js/devselector.js?1654987078"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1655046684"></script>
+    <script src="../../../js/devselector.js?1655046684"></script>
     <script id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1654987078"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1654987078"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1655046684"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1655046684"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/maarteng18.github.io\/notes\/";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1654987078"></script>
+<script type="text/javascript" src="../../../js/search.js?1655046684"></script>
 
     
   </div>
@@ -399,7 +399,11 @@
         <li><a href="#microprocessor">Microprocessor</a></li>
       </ul>
     </li>
-    <li><a href="#codevoorbeeld">Codevoorbeeld</a></li>
+    <li><a href="#codevoorbeeld">Codevoorbeeld</a>
+      <ul>
+        <li><a href="#vhdl---fpga">VHDL -&gt; FPGA</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
@@ -497,7 +501,12 @@
 </ul>
 <h2 id="codevoorbeeld">Codevoorbeeld</h2>
 <p>We beschouwen een stukje code in een <strong>hardwarebeschrijvingstaal (VHDL)</strong> en in
-een <strong>programmeertaal (C)</strong>. //TODO(dit verder afmaken)</p>
+een <strong>programmeertaal (C)</strong>.</p>
+<ul>
+<li>Het <strong>input-outputgedrag</strong> van de implementatie is <strong>functioneel hetzelfde</strong>.</li>
+<li>De <strong>implementatie</strong> gebeurt op een <strong>volledig andere manier</strong> op een <strong>FPGA</strong> dan op de <strong>microprocessor</strong></li>
+<li>In zowel VHDL als C zijn <code>a</code> en <code>z</code> bytes, in VHDL is <code>sel</code> een bit en in C is <code>sel</code> een byte</li>
+</ul>
 <div class="devselect">
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-VHDL" data-lang="VHDL"><span style="display:flex;"><span><span style="color:#00a8c8">if</span> <span style="color:#111">sel</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;1&#39;</span> <span style="color:#00a8c8">then</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#111">z</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">a</span> <span style="color:#00a8c8">sll</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
@@ -510,6 +519,192 @@ een <strong>programmeertaal (C)</strong>. //TODO(dit verder afmaken)</p>
 </span></span><span style="display:flex;"><span>	<span style="color:#111">z</span> <span style="color:#f92672">=</span> <span style="color:#111">a</span> <span style="color:#f92672">&gt;&gt;</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span></code></pre></div></div>
+<p>Beide codefragmenten implementeren een <strong>schuifbewerking naar links</strong> als de <strong>selectiebit gelijk is aan 1</strong> en <strong>anders</strong> een <strong>schuifbewerking naar rechts</strong>. Dus ofwel wordt:</p>
+<ul>
+<li>z<sub>7</sub>z<sub>6</sub>z<sub>5</sub>z<sub>4</sub>z<sub>3</sub>z<sub>2</sub>z<sub>1</sub>z<sub>0</sub> = a<sub>6</sub>a<sub>5</sub>a<sub>4</sub>a<sub>3</sub>a<sub>2</sub>a<sub>1</sub>a<sub>0</sub>0 (links)</li>
+<li>z<sub>7</sub>z<sub>6</sub>z<sub>5</sub>z<sub>4</sub>z<sub>3</sub>z<sub>2</sub>z<sub>1</sub>z<sub>0</sub> = 0a<sub>7</sub>a<sub>6</sub>a<sub>5</sub>a<sub>4</sub>a<sub>3</sub>a<sub>2</sub>a<sub>1</sub> (rechts)</li>
+</ul>
+<h3 id="vhdl---fpga">VHDL -&gt; FPGA</h3>
+<p>Er zijn er 2 hardware equivalenten van toepassing:</p>
+<ul>
+<li>Een <strong>schuifbewerking</strong> is het <em>verbinden van in- en uitgangen met elkaar op een verschoven manier</em>.</li>
+<li><em>Kiezen tussen 2 mogelijke waarden op basis van een selectiebit</em> is een <strong>multiplexer</strong></li>
+</ul>
+<p>Hiervoor zijn <strong>8 multiplexers nodig om de 8 bits van z aan te sturen</strong>. Om dit <strong>op een FPGA te configureren zullen er dus 8 LUT&rsquo;s gebruikt worden zonder FF</strong>.</p>
+<ul>
+<li>De <strong>6 middenste LUT&rsquo;s implementeren een multiplexer</strong>.</li>
+<li>De <strong>bovenste en onderste LUT&rsquo;s</strong> implementeren een functie die <strong>ofwel 0 ofwel de inkomende a<sub>i</sub> doorlaat op basis van de selectiebit</strong>.</li>
+</ul>
+<p>De <strong>LUT&rsquo;s in de CLB&rsquo;s</strong> worden <strong>verbonden met de juiste in- en uitgangen via Switch Matrices</strong>.</p>
+<p><figure>
+	<a href="../../../img/DISCH/ch-1/Configuratie.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-1/Configuratie.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<p>De LUT&rsquo;s zijn op onderstaande manier geconfigureerd:</p>
+<ul>
+<li>Bovenste LUT = bovenste multiplexer:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>LUT-out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>x</td>
+<td>x</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>x</td>
+<td>x</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>x</td>
+<td>x</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>x</td>
+<td>x</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Middelste LUT (6x) = middelste multiplexer (6x)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>LUT-out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>x</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>x</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>x</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>x</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>x</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>x</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>x</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>x</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Onderste LUT = onderster multiplexer</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>LUT-out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>x</td>
+<td>x</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>x</td>
+<td>x</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>x</td>
+<td>x</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>x</td>
+<td>x</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
 
 <footer class="footline">
 	
@@ -718,17 +913,17 @@ een <strong>programmeertaal (C)</strong>. //TODO(dit verder afmaken)</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1654987078"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1654987078"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1654987078"></script>
-    <script src="../../../js/jquery.sticky.js?1654987078"></script>
-    <script src="../../../js/featherlight.min.js?1654987078"></script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1654987078"></script>
-    <script src="../../../js/learn.js?1654987078"></script>
-    <script src="../../../js/hugo-learn.js?1654987078"></script>
+    <script src="../../../js/clipboard.min.js?1655046684"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1655046684"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1655046684"></script>
+    <script src="../../../js/jquery.sticky.js?1655046684"></script>
+    <script src="../../../js/featherlight.min.js?1655046684"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1655046684"></script>
+    <script src="../../../js/learn.js?1655046684"></script>
+    <script src="../../../js/hugo-learn.js?1655046684"></script>
     
         
-            <script src="../../../mermaid/mermaid.js?1654987078"></script>
+            <script src="../../../mermaid/mermaid.js?1655046684"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
