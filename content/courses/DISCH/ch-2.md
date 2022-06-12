@@ -181,3 +181,7 @@ Algemene structuur:
 ### Basisprincipe van een SM
 
 ![](/img/DISCH/ch-2/SM.png)
+
+### Evolutie van Xilinx FPGA's
+
+![](/img/DISCH/ch-2/Evolutie/evolution.png)

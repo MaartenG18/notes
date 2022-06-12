@@ -11,7 +11,14 @@
 	"title": "Maarten&#39;s notes",
 	"tags": [],
 	"description": "",
-	"content": "Maarten\u0026rsquo;s notes Current courses Analoge Elektronische Schakelingen Digitale Elektronische Schakelingen Android App Development Besturingssystemen en C Software Engineering Skills Good to know I\u0026rsquo;m currently making a portfolio, more coming soon\n"
+	"content": "Maarten\u0026rsquo;s notes Current courses Analoge Elektronische Schakelingen Digitale Elektronische Schakelingen Android App Development Besturingssystemen en C Software Engineering Skills Good to know I\u0026rsquo;m currently making a portfolio, more coming soon\nSome usefull commands ImageMagick "
+},
+{
+	"uri": "https://maarteng18.github.io/notes/scripts-commands/",
+	"title": "Scripts &amp; commands",
+	"tags": [],
+	"description": "",
+	"content": "Subjects ImageMagick "
 },
 {
 	"uri": "https://maarteng18.github.io/notes/courses/ansch/",
@@ -26,6 +33,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Chapters Inleiding Programmeerbare logica Geheugens Ontwerpprincipes voor synchrone logica Simulatie "
+},
+{
+	"uri": "https://maarteng18.github.io/notes/scripts-commands/imagemagick/",
+	"title": "Image Magick",
+	"tags": [],
+	"description": "",
+	"content": "Subjects Montage "
 },
 {
 	"uri": "https://maarteng18.github.io/notes/courses/ansch/ch-1/",
@@ -46,7 +60,7 @@
 	"title": "2. Progammeerbare logica",
 	"tags": [],
 	"description": "",
-	"content": "Table of contents Overzicht programmeerbare componenten FPGA-technologie Overzicht programmeerbare componenten Programmeerbare verbindingen Fuse:\nGesloten verbinding, opent onder grote stroom OTP (One-Time Programmable) Antifuse:\nOpen verbinding, sluit onder hoge spanning OTP SRAM-gebaseerde verbinding:\nPass transistors gecontroleerd door SRAM Volledig CMOS gebaseerd (E)EPROM-gebaseerd:\nFAMOS EPROM technologie (UV- erasable) FLOTOX EEPROM technologie Flash technologie Programmeerbare componenten (Simple) Programmable Logic Device ((S)PLD): Programmable Logic Array (PLA) Programmable Array Logic (PAL) Programmable Read Only Memory (PROM, EPROM, EEPROM) Complex PLD (CPLD) Field Programmable Gate Array (FPGA) SPLD Elke functie kan geraliseerd worden in een \u0026ldquo;Sum Of Products\u0026rdquo; (SOP) vorm. Een SOP vorm kan gerealiseerd worden door INV/AND/OR (of INV/NAND/NAND) De AND/OR gates zijn vooraf gemaakt. Programmeren gebeurt door het maken of verbreken van connecties tussen gates. PLA: Zowel AND als OR arrays zijn programmeerbaar PAL: AND array is programmeerbaar OR arry is vast PROM: Alle mogelijkheden zijn voorzien PLA Gemeenschappelijk gebruik van producttermen Voorbeeld: F0 = A + B\u0026rsquo;C' F1 = AC\u0026rsquo; + AB F2 = B\u0026rsquo;C + AB F3 = B\u0026rsquo;C + A Alle Mogelijke verbindingen zijn beschikbaar voor het programmeren: De niet-gewenste verbindingen worden opgeblazen Sommige technologieën maken verbindingen i.p.v. ze op te blazen.\nConventies PLA\nOm het aantal lijnen te verminderen tekenen we de verschillende ingangen op 1 lijn. Elke ingang wordt geïnverteerd zodat we zowel de niet-geïnverteerde ingang als de geïnverteerde ingang kunnen gebruiken. Voorstelling PLA\nPLA-voorstelling waarbij alle verbindingen gemaakt zijn. PLA-voorstelling voor de implementatie: F0 = AB + A\u0026rsquo;B' F1 = CD\u0026rsquo; + C\u0026rsquo;D Verschil tussen PLA en PAL PAL: OR verbindingen zijn vast\nDe volgorde van de AND termen moeten zo gekozen worden dat ze overeenkomen met de verbindingen in de OR matrix. De AND termen zijn niet herbruikbaar. Dit leidt tot een grotere matrix. Het aantal AND termen per OR is beperkt. Niet alle functies zijn implementeeraar. Enkel het AND vlak moet geprogrammeerd worden. PLA:\nZowel AND als OR verbindingen zijn programmeerbaar. De AND termen zijn herbruikbaar. Zowel het AND als het OR vlak moeten geprogrammeerd worden. Teken een PLA waarin de volgende functies geprogrammeerd zijn: Z1 = A xor B xor C Z2 = A and (B xnor C) 2-1 multiplexer Hoe ziet een PAL eruit waarin deze functies geprogrammeerd zijn? ROM als PLD In tegenstelling tot een PLA is een ROM een structuur met een volledig gecodeerde AND array. Elke mogelijkheid tot het samennemen van ingangen (adreslijnen) zit erin. Wat is de inhoud van een ROM-geheugen dat de volgende functies realiseert:\nZ1 = A xor B xor C Z2 = A and (B xnor C) 2-1 multiplexer CPLD CPLD = Complex Programmable Logic Device Een CPLD bestaat uit verschillende logische blokken die elk equivalent zijn met een (S)PLD. Deze (S)PLDs worden met elkaar verbonden via een Programmable Interconnect Matrix (PIM). Op deze manier wordt het Si-oppervlak nuttiger gebruikt in vergelijking met een grote PLD. Algemene structuur:\nFPGA-technologie FPGA = Field Programmable Gate Array Array van logische cellen die met elkaar en met de I/O cellen kunnen communiceren Horizontale en verticale verbindingen. FPGA architectuur IOB: Input/Output Block CLB: Configurable Logic Block SM: Switch Matrix Vergelijking CPLD en FPGA CPLD Continue interconnect Verbindingen hebben een vaste vertraging FPGA Gesegmenteerde verbindingen Verbindingen hebben een onvoorspelbare vertraging. Basisbouwblokken in een CLB Basisprincipe van een SM "
+	"content": "Table of contents Overzicht programmeerbare componenten FPGA-technologie Overzicht programmeerbare componenten Programmeerbare verbindingen Fuse:\nGesloten verbinding, opent onder grote stroom OTP (One-Time Programmable) Antifuse:\nOpen verbinding, sluit onder hoge spanning OTP SRAM-gebaseerde verbinding:\nPass transistors gecontroleerd door SRAM Volledig CMOS gebaseerd (E)EPROM-gebaseerd:\nFAMOS EPROM technologie (UV- erasable) FLOTOX EEPROM technologie Flash technologie Programmeerbare componenten (Simple) Programmable Logic Device ((S)PLD): Programmable Logic Array (PLA) Programmable Array Logic (PAL) Programmable Read Only Memory (PROM, EPROM, EEPROM) Complex PLD (CPLD) Field Programmable Gate Array (FPGA) SPLD Elke functie kan geraliseerd worden in een \u0026ldquo;Sum Of Products\u0026rdquo; (SOP) vorm. Een SOP vorm kan gerealiseerd worden door INV/AND/OR (of INV/NAND/NAND) De AND/OR gates zijn vooraf gemaakt. Programmeren gebeurt door het maken of verbreken van connecties tussen gates. PLA: Zowel AND als OR arrays zijn programmeerbaar PAL: AND array is programmeerbaar OR arry is vast PROM: Alle mogelijkheden zijn voorzien PLA Gemeenschappelijk gebruik van producttermen Voorbeeld: F0 = A + B\u0026rsquo;C' F1 = AC\u0026rsquo; + AB F2 = B\u0026rsquo;C + AB F3 = B\u0026rsquo;C + A Alle Mogelijke verbindingen zijn beschikbaar voor het programmeren: De niet-gewenste verbindingen worden opgeblazen Sommige technologieën maken verbindingen i.p.v. ze op te blazen.\nConventies PLA\nOm het aantal lijnen te verminderen tekenen we de verschillende ingangen op 1 lijn. Elke ingang wordt geïnverteerd zodat we zowel de niet-geïnverteerde ingang als de geïnverteerde ingang kunnen gebruiken. Voorstelling PLA\nPLA-voorstelling waarbij alle verbindingen gemaakt zijn. PLA-voorstelling voor de implementatie: F0 = AB + A\u0026rsquo;B' F1 = CD\u0026rsquo; + C\u0026rsquo;D Verschil tussen PLA en PAL PAL: OR verbindingen zijn vast\nDe volgorde van de AND termen moeten zo gekozen worden dat ze overeenkomen met de verbindingen in de OR matrix. De AND termen zijn niet herbruikbaar. Dit leidt tot een grotere matrix. Het aantal AND termen per OR is beperkt. Niet alle functies zijn implementeeraar. Enkel het AND vlak moet geprogrammeerd worden. PLA:\nZowel AND als OR verbindingen zijn programmeerbaar. De AND termen zijn herbruikbaar. Zowel het AND als het OR vlak moeten geprogrammeerd worden. Teken een PLA waarin de volgende functies geprogrammeerd zijn: Z1 = A xor B xor C Z2 = A and (B xnor C) 2-1 multiplexer Hoe ziet een PAL eruit waarin deze functies geprogrammeerd zijn? ROM als PLD In tegenstelling tot een PLA is een ROM een structuur met een volledig gecodeerde AND array. Elke mogelijkheid tot het samennemen van ingangen (adreslijnen) zit erin. Wat is de inhoud van een ROM-geheugen dat de volgende functies realiseert:\nZ1 = A xor B xor C Z2 = A and (B xnor C) 2-1 multiplexer CPLD CPLD = Complex Programmable Logic Device Een CPLD bestaat uit verschillende logische blokken die elk equivalent zijn met een (S)PLD. Deze (S)PLDs worden met elkaar verbonden via een Programmable Interconnect Matrix (PIM). Op deze manier wordt het Si-oppervlak nuttiger gebruikt in vergelijking met een grote PLD. Algemene structuur:\nFPGA-technologie FPGA = Field Programmable Gate Array Array van logische cellen die met elkaar en met de I/O cellen kunnen communiceren Horizontale en verticale verbindingen. FPGA architectuur IOB: Input/Output Block CLB: Configurable Logic Block SM: Switch Matrix Vergelijking CPLD en FPGA CPLD Continue interconnect Verbindingen hebben een vaste vertraging FPGA Gesegmenteerde verbindingen Verbindingen hebben een onvoorspelbare vertraging. Basisbouwblokken in een CLB Basisprincipe van een SM Evolutie van Xilinx FPGA\u0026rsquo;s "
 },
 {
 	"uri": "https://maarteng18.github.io/notes/courses/disch/ch-3/",
@@ -68,6 +82,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Simulatie "
+},
+{
+	"uri": "https://maarteng18.github.io/notes/scripts-commands/imagemagick/montage/",
+	"title": "Montage",
+	"tags": [],
+	"description": "",
+	"content": "Paste image underneath eachother With this command you can paste images underneath eachother into a montage.\nmontage [1-3].PNG -tile 1 -geometry 500x300+1+1 combo.png\n"
 },
 {
 	"uri": "https://maarteng18.github.io/notes/tags/",
