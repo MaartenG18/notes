@@ -27,7 +27,11 @@ FPGA vs. microprocessor FPGA Bouwblokken van de FPGA CLB: Configurable Logic Blo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
       <guid>https://maarteng18.github.io/notes/courses/disch/ch-2/</guid>
-      <description>Programmeerbare logica </description>
+      <description>Table of contents Overzicht programmeerbare componenten FPGA-technologie Overzicht programmeerbare componenten Programmeerbare verbindingen Fuse:
+Gesloten verbinding, opent onder grote stroom OTP (One-Time Programmable) Antifuse:
+Open verbinding, sluit onder hoge spanning OTP SRAM-gebaseerde verbinding:
+Pass transistors gecontroleerd door SRAM Volledig CMOS gebaseerd (E)EPROM-gebaseerd:
+FAMOS EPROM technologie (UV- erasable) FLOTOX EEPROM technologie Flash technologie Programmeerbare componenten (Simple) Programmable Logic Device ((S)PLD): Programmable Logic Array (PLA) Programmable Array Logic (PAL) Programmable Read Only Memory (PROM, EPROM, EEPROM) Complex PLD (CPLD) Field Programmable Gate Array (FPGA) SPLD Elke functie kan geraliseerd worden in een &amp;ldquo;Sum Of Products&amp;rdquo; (SOP) vorm.</description>
     </item>
     
     <item>

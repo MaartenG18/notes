@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.100.1" />
+    <meta name="generator" content="Hugo 0.100.2" />
     <meta name="description" content="">
 
 
@@ -12,21 +12,21 @@
     <title>1. Inleiding :: Maarten&#39;s notes</title>
 
     
-    <link href="../../../css/nucleus.css?1655050510" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1655050510" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1655050510" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1655050510" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1655050510" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1655050510" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1655050510" rel="stylesheet">
-    <link href="../../../css/theme.css?1655050510" rel="stylesheet">
-    <link href="../../../css/devselector.css?1655050510" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1655050510" rel="stylesheet">
-    <link href="../../../css/theme-kul.css?1655050510" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1655064963" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1655064963" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1655064963" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1655064963" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1655064963" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1655064963" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1655064963" rel="stylesheet">
+    <link href="../../../css/theme.css?1655064963" rel="stylesheet">
+    <link href="../../../css/devselector.css?1655064963" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1655064963" rel="stylesheet">
+    <link href="../../../css/theme-kul.css?1655064963" rel="stylesheet">
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1655050510"></script>
-    <script src="../../../js/devselector.js?1655050510"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1655064963"></script>
+    <script src="../../../js/devselector.js?1655064963"></script>
     <script id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1655050510"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1655050510"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1655064963"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1655064963"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/maarteng18.github.io\/notes\/";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1655050510"></script>
+<script type="text/javascript" src="../../../js/search.js?1655064963"></script>
 
     
   </div>
@@ -736,7 +736,7 @@ een <strong>programmeertaal (C)</strong>.</p>
 	
 </figure>
 </p>
-<p>Het <strong>controleren of een byte gelijk is aan een constante waarde gebeurt in de ALU via een aftrekking</strong>. Als die aftrekking in 0 resulteert, is de byte gelijk aan de constante waarde en anders niet. De zero-flag aan de uitgang van de ALU geeft dus het resultaat weer. Een volgende instructie kan dan de zero-flag controleren om te kiezen tussen de volgende instructie in het programmageheugen of een instructie ergens anders in het programmageheugen.</p>
+<p>Het <strong>controleren of een byte gelijk is aan een constante waarde gebeurt in de ALU via een aftrekking</strong>. Als die aftrekking in 0 resulteert, is de byte gelijk aan de constante waarde en anders niet. De zero-flag aan de uitgang van de ALU geeft dus het resultaat weer. Een <strong>volgende instructie kan dan de zero-flag controleren om te kiezen tussen de volgende instructie in het programmageheugen of een instructie ergens anders in het programmageheugen</strong>.</p>
 <ul>
 <li><strong>Compare with Immediate (CPI)</strong>:
 <ul>
@@ -766,6 +766,83 @@ een <strong>programmeertaal (C)</strong>.</p>
 	
 </figure>
 </p>
+<p>Vermits we alle <strong>bewerkingen op bytes uitvoeren, moeten we een bit isoleren uit een byte om met 1 selectiebit te werken</strong>. We gebruiken een <strong>bitmask om 1 bit te selecteren</strong>. Dat doen we door een <em>AND-bewerking uit te voeren met een constante byte die uit zeven 0-en en één 1 bestaat. De plaats van de 1 bepaalt welke bit we willen gebruiken</em>.</p>
+<p><figure>
+	<a href="../../../img/DISCH/ch-1/ANDI.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-1/ANDI.png"  >
+	</a>
+	
+</figure>
+</p>
+<p>In dit voorbeeld zouden het programmageheugen, de register file en de zero-flag er als volgt kunnen uitzien:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Programmageheugen</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td><code>0111000001000001</code></td>
+<td>ANDI r20, 1</td>
+</tr>
+<tr>
+<td>1</td>
+<td><code>0011000001000001</code></td>
+<td>CPI r20, 1</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>1111000000011001</code></td>
+<td>BREQ 3</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>1001010000000110</code></td>
+<td>LSR r0</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>0000110000000000</code></td>
+<td>LSL r0</td>
+</tr>
+</tbody>
+</table>
+<p><figure>
+	<a href="../../../img/DISCH/ch-1/Register-file.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-1/Register-file.png"  >
+	</a>
+	
+</figure>
+</p>
+
+<div class="ex">
+	<div class="inner">
+    	<p>Geef aan hoe onderstaand codevoorbeeld kan omgezet worden in een implementatie op een FPGA en een microprocessor, waarbij c, d en z bytes zijn en waarbij sel een bit is in de VHDL-code en een byte is in C-code. Geeft aan hoe de LUT&rsquo;s geconfigureerd zijn in de FPGA-implementatie. Geef aan wat er in het programmageheugen en de register file zit in de microprocessorimplementatie. Gebruik de <a href="../../../pdf/DISCH/AVR-instructies.pdf">AVR-instructieset</a> om de gepaste instructies te vinden. 
+<br></p>
+<div class="devselect">
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-VHDL" data-lang="VHDL"><span style="display:flex;"><span><span style="color:#00a8c8">if</span> <span style="color:#111">sel</span> <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">‘</span><span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">’</span> <span style="color:#00a8c8">then</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#111">z</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">c</span> <span style="color:#00a8c8">and</span> <span style="color:#111">d</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">else</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#111">z</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">c</span> <span style="color:#00a8c8">or</span> <span style="color:#111">d</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">end</span> <span style="color:#00a8c8">if</span><span style="color:#111">;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#00a8c8">if</span><span style="color:#111">((</span><span style="color:#111">sel</span> <span style="color:#f92672">&amp;</span> <span style="color:#ae81ff">0x80</span><span style="color:#111">)</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0x80</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#111">z</span> <span style="color:#f92672">=</span> <span style="color:#111">c</span> <span style="color:#f92672">&amp;</span> <span style="color:#111">d</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#111">z</span> <span style="color:#f92672">=</span> <span style="color:#111">c</span> <span style="color:#f92672">|</span> <span style="color:#111">d</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div></div>
+
+	</div>
+</div>
 
 
 <footer class="footline">
@@ -975,17 +1052,17 @@ een <strong>programmeertaal (C)</strong>.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1655050510"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1655050510"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1655050510"></script>
-    <script src="../../../js/jquery.sticky.js?1655050510"></script>
-    <script src="../../../js/featherlight.min.js?1655050510"></script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1655050510"></script>
-    <script src="../../../js/learn.js?1655050510"></script>
-    <script src="../../../js/hugo-learn.js?1655050510"></script>
+    <script src="../../../js/clipboard.min.js?1655064963"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1655064963"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1655064963"></script>
+    <script src="../../../js/jquery.sticky.js?1655064963"></script>
+    <script src="../../../js/featherlight.min.js?1655064963"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1655064963"></script>
+    <script src="../../../js/learn.js?1655064963"></script>
+    <script src="../../../js/hugo-learn.js?1655064963"></script>
     
         
-            <script src="../../../mermaid/mermaid.js?1655050510"></script>
+            <script src="../../../mermaid/mermaid.js?1655064963"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

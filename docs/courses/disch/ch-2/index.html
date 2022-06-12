@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.100.1" />
+    <meta name="generator" content="Hugo 0.100.2" />
     <meta name="description" content="">
 
 
@@ -12,21 +12,21 @@
     <title>2. Progammeerbare logica :: Maarten&#39;s notes</title>
 
     
-    <link href="../../../css/nucleus.css?1655050510" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1655050510" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1655050510" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1655050510" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1655050510" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1655050510" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1655050510" rel="stylesheet">
-    <link href="../../../css/theme.css?1655050510" rel="stylesheet">
-    <link href="../../../css/devselector.css?1655050510" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1655050510" rel="stylesheet">
-    <link href="../../../css/theme-kul.css?1655050510" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1655064963" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1655064963" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1655064963" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1655064963" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1655064963" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1655064963" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1655064963" rel="stylesheet">
+    <link href="../../../css/theme.css?1655064963" rel="stylesheet">
+    <link href="../../../css/devselector.css?1655064963" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1655064963" rel="stylesheet">
+    <link href="../../../css/theme-kul.css?1655064963" rel="stylesheet">
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1655050510"></script>
-    <script src="../../../js/devselector.js?1655050510"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1655064963"></script>
+    <script src="../../../js/devselector.js?1655064963"></script>
     <script id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1655050510"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1655050510"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1655064963"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1655064963"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/maarteng18.github.io\/notes\/";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1655050510"></script>
+<script type="text/javascript" src="../../../js/search.js?1655064963"></script>
 
     
   </div>
@@ -391,7 +391,21 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#programmeerbare-logica">Programmeerbare logica</a></li>
+    <li><a href="#table-of-contents">Table of contents</a></li>
+    <li><a href="#overzicht-programmeerbare-componenten">Overzicht programmeerbare componenten</a>
+      <ul>
+        <li><a href="#programmeerbare-verbindingen">Programmeerbare verbindingen</a></li>
+        <li><a href="#programmeerbare-componenten">Programmeerbare componenten</a></li>
+      </ul>
+    </li>
+    <li><a href="#fpga-technologie">FPGA-technologie</a>
+      <ul>
+        <li><a href="#fpga-architectuur">FPGA architectuur</a></li>
+        <li><a href="#vergelijking-cpld-en-fpga">Vergelijking CPLD en FPGA</a></li>
+        <li><a href="#basisbouwblokken-in-een-clb">Basisbouwblokken in een CLB</a></li>
+        <li><a href="#basisprincipe-van-een-sm">Basisprincipe van een SM</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
@@ -416,7 +430,319 @@
         
 
 
-<h2 id="programmeerbare-logica">Programmeerbare logica</h2>
+<h2 id="table-of-contents">Table of contents</h2>
+<ol>
+<li><a href="#overzicht-programmeerbare-componenten">Overzicht programmeerbare componenten</a></li>
+<li><a href="#fpga-technologie">FPGA-technologie</a></li>
+</ol>
+<h2 id="overzicht-programmeerbare-componenten">Overzicht programmeerbare componenten</h2>
+<h3 id="programmeerbare-verbindingen">Programmeerbare verbindingen</h3>
+<ul>
+<li>
+<p><strong>Fuse</strong>:</p>
+<ul>
+<li>Gesloten verbinding, opent onder grote stroom</li>
+<li>OTP (One-Time Programmable)</li>
+</ul>
+</li>
+<li>
+<p><strong>Antifuse</strong>:</p>
+<ul>
+<li>Open verbinding, sluit onder hoge spanning</li>
+<li>OTP</li>
+</ul>
+</li>
+<li>
+<p><strong>SRAM</strong>-gebaseerde verbinding:</p>
+<ul>
+<li>Pass transistors gecontroleerd door SRAM</li>
+<li>Volledig CMOS gebaseerd</li>
+</ul>
+</li>
+<li>
+<p><strong>(E)EPROM</strong>-gebaseerd:</p>
+<ul>
+<li>FAMOS EPROM technologie (UV- erasable)</li>
+<li>FLOTOX EEPROM technologie</li>
+<li>Flash technologie</li>
+</ul>
+</li>
+</ul>
+<h3 id="programmeerbare-componenten">Programmeerbare componenten</h3>
+<ul>
+<li><strong>(Simple) Programmable Logic Device ((S)PLD)</strong>:
+<ul>
+<li>Programmable Logic Array (PLA)</li>
+<li>Programmable Array Logic (PAL)</li>
+<li>Programmable Read Only Memory (PROM, EPROM, EEPROM)</li>
+</ul>
+</li>
+<li><strong>Complex PLD (CPLD)</strong></li>
+<li><strong>Field Programmable Gate Array (FPGA)</strong></li>
+</ul>
+<h4 id="spld">SPLD</h4>
+<ul>
+<li><strong>Elke functie</strong> kan geraliseerd worden in een <strong>&ldquo;Sum Of Products&rdquo; (SOP)</strong> vorm.</li>
+<li>Een <strong>SOP</strong> vorm kan <strong>gerealiseerd worden door INV/AND/OR (of INV/NAND/NAND)</strong></li>
+<li>De <strong>AND/OR gates zijn vooraf gemaakt</strong>.</li>
+<li><strong>Programmeren</strong> gebeurt door het <strong>maken of verbreken van connecties tussen gates.</strong></li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/SPLD.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/SPLD.png"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li><strong>PLA</strong>:
+<ul>
+<li>Zowel AND als OR arrays zijn programmeerbaar</li>
+</ul>
+</li>
+<li><strong>PAL</strong>:
+<ul>
+<li>AND array is programmeerbaar</li>
+<li>OR arry is vast</li>
+</ul>
+</li>
+<li><strong>PROM</strong>:
+<ul>
+<li>Alle mogelijkheden zijn voorzien</li>
+</ul>
+</li>
+</ul>
+<h5 id="pla">PLA</h5>
+<ul>
+<li>Gemeenschappelijk gebruik van producttermen</li>
+<li>Voorbeeld:
+<ul>
+<li>F0 = A + B&rsquo;C'</li>
+<li>F1 = AC&rsquo; + AB</li>
+<li>F2 = B&rsquo;C + AB</li>
+<li>F3 = B&rsquo;C + A</li>
+</ul>
+</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/PLA-tabel.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/PLA-tabel.png"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li>Alle Mogelijke verbindingen zijn beschikbaar voor het programmeren:</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/PLA-clean.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/PLA-clean.png"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li>De niet-gewenste verbindingen worden opgeblazen</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/PLA-ready.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/PLA-ready.png"  >
+	</a>
+	
+</figure>
+</p>
+
+<div class="notices note" ><p>Sommige technologieën maken verbindingen i.p.v. ze op te blazen.</p>
+</div>
+
+<ul>
+<li>
+<p>Conventies PLA</p>
+<ul>
+<li>Om het aantal lijnen te verminderen tekenen we de verschillende ingangen op 1 lijn.</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/PLA-conventie.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/PLA-conventie.png"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li>Elke ingang wordt geïnverteerd zodat we zowel de niet-geïnverteerde ingang als de geïnverteerde ingang kunnen gebruiken.</li>
+</ul>
+</li>
+<li>
+<p>Voorstelling PLA</p>
+<ul>
+<li>PLA-voorstelling waarbij alle verbindingen gemaakt zijn.</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/PLA-all.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/PLA-all.png"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li>PLA-voorstelling voor de implementatie:
+<ul>
+<li>F0 = AB + A&rsquo;B'</li>
+<li>F1 = CD&rsquo; + C&rsquo;D</li>
+</ul>
+</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/PLA-voorbeeld.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/PLA-voorbeeld.png"  >
+	</a>
+	
+</figure>
+</p>
+</li>
+</ul>
+<h5 id="verschil-tussen-pla-en-pal">Verschil tussen PLA en PAL</h5>
+<ul>
+<li>
+<p><strong>PAL: OR verbindingen zijn vast</strong></p>
+<ul>
+<li>De volgorde van de AND termen moeten zo gekozen worden dat ze overeenkomen met de verbindingen in de OR matrix.</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/PAL-clean.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/PAL-clean.png"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li>De AND termen zijn niet herbruikbaar.
+<ul>
+<li>Dit leidt tot een grotere matrix.</li>
+</ul>
+</li>
+<li>Het aantal AND termen per OR is beperkt.
+<ul>
+<li>Niet alle functies zijn implementeeraar.</li>
+</ul>
+</li>
+<li>Enkel het AND vlak moet geprogrammeerd worden.</li>
+</ul>
+</li>
+<li>
+<p><strong>PLA</strong>:</p>
+<ul>
+<li>Zowel AND als OR verbindingen zijn programmeerbaar.</li>
+<li>De AND termen zijn herbruikbaar.</li>
+<li>Zowel het AND als het OR vlak moeten geprogrammeerd worden.</li>
+</ul>
+</li>
+</ul>
+
+<div class="ex">
+	<div class="inner">
+    	<ul>
+<li>Teken een PLA waarin de volgende functies geprogrammeerd zijn:
+<ul>
+<li>Z1 = A xor B xor C</li>
+<li>Z2 = A and (B xnor C)</li>
+<li>2-1 multiplexer</li>
+</ul>
+</li>
+<li>Hoe ziet een PAL eruit waarin deze functies geprogrammeerd zijn?</li>
+</ul>
+
+	</div>
+</div>
+<h5 id="rom-als-pld">ROM als PLD</h5>
+<ul>
+<li>In tegenstelling tot een PLA is een ROM een structuur met een volledig gecodeerde AND array.</li>
+<li>Elke mogelijkheid tot het samennemen van ingangen (adreslijnen) zit erin.</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/ROM-example.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/ROM-example.png"  >
+	</a>
+	
+</figure>
+</p>
+
+<div class="ex">
+	<div class="inner">
+    	<p>Wat is de inhoud van een ROM-geheugen dat de volgende functies realiseert:</p>
+<ul>
+<li>Z1 = A xor B xor C</li>
+<li>Z2 = A and (B xnor C)</li>
+<li>2-1 multiplexer</li>
+</ul>
+
+	</div>
+</div>
+<h4 id="cpld">CPLD</h4>
+<ul>
+<li>CPLD = Complex Programmable Logic Device</li>
+<li>Een CPLD bestaat uit verschillende logische blokken die elk equivalent zijn met een (S)PLD.</li>
+<li>Deze (S)PLDs worden met elkaar verbonden via een Programmable Interconnect Matrix (PIM).</li>
+<li>Op deze manier wordt het Si-oppervlak nuttiger gebruikt in vergelijking met een grote PLD.</li>
+</ul>
+<p>Algemene structuur:</p>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/CPLD.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/CPLD.png"  >
+	</a>
+	
+</figure>
+</p>
+<h2 id="fpga-technologie">FPGA-technologie</h2>
+<ul>
+<li>FPGA = Field Programmable Gate Array</li>
+<li>Array van logische cellen die met elkaar en met de I/O cellen kunnen communiceren</li>
+<li>Horizontale en verticale verbindingen.</li>
+</ul>
+<h3 id="fpga-architectuur">FPGA architectuur</h3>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/FPGA.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/FPGA.png"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li><strong>IOB</strong>: Input/Output Block</li>
+<li><strong>CLB</strong>: Configurable Logic Block</li>
+<li><strong>SM</strong>: Switch Matrix</li>
+</ul>
+<h3 id="vergelijking-cpld-en-fpga">Vergelijking CPLD en FPGA</h3>
+<ul>
+<li><strong>CPLD</strong>
+<ul>
+<li>Continue interconnect</li>
+<li>Verbindingen hebben een vaste vertraging</li>
+</ul>
+</li>
+<li><strong>FPGA</strong>
+<ul>
+<li>Gesegmenteerde verbindingen</li>
+<li>Verbindingen hebben een onvoorspelbare vertraging.</li>
+</ul>
+</li>
+</ul>
+<h3 id="basisbouwblokken-in-een-clb">Basisbouwblokken in een CLB</h3>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/CLB.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/CLB.png"  >
+	</a>
+	
+</figure>
+</p>
+<h3 id="basisprincipe-van-een-sm">Basisprincipe van een SM</h3>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/SM.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/SM.png"  >
+	</a>
+	
+</figure>
+</p>
 
 
 <footer class="footline">
@@ -629,17 +955,17 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1655050510"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1655050510"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1655050510"></script>
-    <script src="../../../js/jquery.sticky.js?1655050510"></script>
-    <script src="../../../js/featherlight.min.js?1655050510"></script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1655050510"></script>
-    <script src="../../../js/learn.js?1655050510"></script>
-    <script src="../../../js/hugo-learn.js?1655050510"></script>
+    <script src="../../../js/clipboard.min.js?1655064963"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1655064963"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1655064963"></script>
+    <script src="../../../js/jquery.sticky.js?1655064963"></script>
+    <script src="../../../js/featherlight.min.js?1655064963"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1655064963"></script>
+    <script src="../../../js/learn.js?1655064963"></script>
+    <script src="../../../js/hugo-learn.js?1655064963"></script>
     
         
-            <script src="../../../mermaid/mermaid.js?1655050510"></script>
+            <script src="../../../mermaid/mermaid.js?1655064963"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

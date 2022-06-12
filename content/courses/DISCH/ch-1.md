@@ -152,7 +152,7 @@ Het **schuiven van bits in een microprocessor gebeurt in de ALU via een schuifbe
 
 ![](/img/DISCH/ch-1/LSR.PNG)
 
-Het **controleren of een byte gelijk is aan een constante waarde gebeurt in de ALU via een aftrekking**. Als die aftrekking in 0 resulteert, is de byte gelijk aan de constante waarde en anders niet. De zero-flag aan de uitgang van de ALU geeft dus het resultaat weer. Een volgende instructie kan dan de zero-flag controleren om te kiezen tussen de volgende instructie in het programmageheugen of een instructie ergens anders in het programmageheugen.
+Het **controleren of een byte gelijk is aan een constante waarde gebeurt in de ALU via een aftrekking**. Als die aftrekking in 0 resulteert, is de byte gelijk aan de constante waarde en anders niet. De zero-flag aan de uitgang van de ALU geeft dus het resultaat weer. Een **volgende instructie kan dan de zero-flag controleren om te kiezen tussen de volgende instructie in het programmageheugen of een instructie ergens anders in het programmageheugen**.
 
 - **Compare with Immediate (CPI)**:
 	+ De Waarde KKKKKKKK wordt afgetrokken van de byte op adres Rd = 1dddd; waarbij de zero-flag al dan niet 1 wordt.
@@ -164,3 +164,45 @@ Het **controleren of een byte gelijk is aan een constante waarde gebeurt in de A
 	+ Als de zero-flag gelijk is aan 1, springt de program counter kkkkkkk+1 plaatsen verder.
 
 ![](/img/DISCH/ch-1/BREQ.PNG)
+
+Vermits we alle **bewerkingen op bytes uitvoeren, moeten we een bit isoleren uit een byte om met 1 selectiebit te werken**. We gebruiken een **bitmask om 1 bit te selecteren**. Dat doen we door een *AND-bewerking uit te voeren met een constante byte die uit zeven 0-en en één 1 bestaat. De plaats van de 1 bepaalt welke bit we willen gebruiken*.
+
+![](/img/DISCH/ch-1/ANDI.png)
+
+In dit voorbeeld zouden het programmageheugen, de register file en de zero-flag er als volgt kunnen uitzien:
+
+|| Programmageheugen||
+|---|--------|-|
+| 0 | `0111000001000001` | ANDI r20, 1 |
+| 1 | `0011000001000001` | CPI r20, 1|
+| 2 | `1111000000011001` | BREQ 3 |
+| 3 | `1001010000000110` | LSR r0 |
+|...| | |
+| 6 | `0000110000000000` | LSL r0 |
+
+![](/img/DISCH/ch-1/Register-file.png)
+
+{{% task %}}
+Geef aan hoe onderstaand codevoorbeeld kan omgezet worden in een implementatie op een FPGA en een microprocessor, waarbij c, d en z bytes zijn en waarbij sel een bit is in de VHDL-code en een byte is in C-code. Geeft aan hoe de LUT's geconfigureerd zijn in de FPGA-implementatie. Geef aan wat er in het programmageheugen en de register file zit in de microprocessorimplementatie. Gebruik de [AVR-instructieset](/pdf/DISCH/AVR-instructies.pdf) om de gepaste instructies te vinden. 
+<br> 
+
+<div class="devselect">
+
+```VHDL
+if sel = ‘1’ then
+	z <= c and d;
+else
+	z <= c or d;
+end if;
+```
+
+```C
+if((sel & 0x80) == 0x80) {
+	z = c & d;
+} else {
+	z = c | d;
+}
+```
+
+</div>
+{{% /task %}}
