@@ -189,7 +189,7 @@ Geef aan hoe onderstaand codevoorbeeld kan omgezet worden in een implementatie o
 <div class="devselect">
 
 ```VHDL
-if sel = ‘1’ then
+if sel = '1' then
 	z <= c and d;
 else
 	z <= c or d;
