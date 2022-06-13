@@ -40,7 +40,7 @@ FAMOS EPROM technologie (UV- erasable) FLOTOX EEPROM technologie Flash technolog
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
       <guid>https://maarteng18.github.io/notes/courses/disch/ch-3/</guid>
-      <description>Table of contents RAM-geheugens ROM-geheugens RAM-geheugens Situering RAM Indeling RAM SRAM (Statische RAM) Eigenschappen: Snel toegangelijk Veel oppervlakte Gebruiksgebied: Cachegeheugen DRAM (Dynamische RAM) Eigenschappen: Hoge densiteit Relatief trage uitlezing Gebruiksgebied: Hoofdgeheugen Massageheugen Opbouw van een SRAM-cel Het basis geheugenelement is een lus van invertoren. Deze lus moet onderbroken worden om te schrijven (8 transistors nodig). We kunnen deze onderbreking weglaten als de transistors die schrijven meer stroom leveren dan de transistores in de geheugencel.</description>
+      <description>Table of contents RAM-geheugens ROM-geheugens Geheugenuitbreiding RAM-geheugens Situering RAM Indeling RAM SRAM (Statische RAM) Eigenschappen: Snel toegangelijk Veel oppervlakte Gebruiksgebied: Cachegeheugen DRAM (Dynamische RAM) Eigenschappen: Hoge densiteit Relatief trage uitlezing Gebruiksgebied: Hoofdgeheugen Massageheugen SRAM Opbouw van een SRAM-cel Het basis geheugenelement is een lus van invertoren. Deze lus moet onderbroken worden om te schrijven (8 transistors nodig). We kunnen deze onderbreking weglaten als de transistors die schrijven meer stroom leveren dan de transistores in de geheugencel.</description>
     </item>
     
     <item>

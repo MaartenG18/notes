@@ -12,21 +12,21 @@
     <title>3. Geheugens :: Maarten&#39;s notes</title>
 
     
-    <link href="../../../css/nucleus.css?1655118020" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1655118020" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1655118020" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1655118020" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1655118020" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1655118020" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1655118020" rel="stylesheet">
-    <link href="../../../css/theme.css?1655118020" rel="stylesheet">
-    <link href="../../../css/devselector.css?1655118020" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1655118020" rel="stylesheet">
-    <link href="../../../css/theme-kul.css?1655118020" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1655127047" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1655127047" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1655127047" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1655127047" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1655127047" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1655127047" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1655127047" rel="stylesheet">
+    <link href="../../../css/theme.css?1655127047" rel="stylesheet">
+    <link href="../../../css/devselector.css?1655127047" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1655127047" rel="stylesheet">
+    <link href="../../../css/theme-kul.css?1655127047" rel="stylesheet">
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1655118020"></script>
-    <script src="../../../js/devselector.js?1655118020"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1655127047"></script>
+    <script src="../../../js/devselector.js?1655127047"></script>
     <script id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1655118020"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1655118020"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1655127047"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1655127047"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/maarteng18.github.io\/notes\/";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1655118020"></script>
+<script type="text/javascript" src="../../../js/search.js?1655127047"></script>
 
     
   </div>
@@ -489,11 +489,29 @@
       <ul>
         <li><a href="#situering-ram">Situering RAM</a></li>
         <li><a href="#indeling-ram">Indeling RAM</a></li>
-        <li><a href="#opbouw-van-een-sram-cel">Opbouw van een SRAM-cel</a></li>
-        <li><a href="#sram-geheugenstructuur">SRAM-geheugenstructuur</a></li>
+        <li><a href="#sram">SRAM</a></li>
       </ul>
     </li>
-    <li><a href="#rom-geheugens">ROM-geheugens</a></li>
+    <li><a href="#rom-geheugens">ROM-geheugens</a>
+      <ul>
+        <li><a href="#opbouw-van-een-dram-cel">Opbouw van een DRAM-cel</a></li>
+        <li><a href="#situering-rom">Situering ROM</a></li>
+        <li><a href="#masker-rom-met-diodes">Masker ROM met diodes</a></li>
+        <li><a href="#masker-rom-met-transistors">Masker ROM met transistors</a></li>
+        <li><a href="#masker-rom-met-precharge">Masker ROM met precharge</a></li>
+        <li><a href="#prom">PROM</a></li>
+        <li><a href="#eprom-famos-technologie">EPROM FAMOS technologie</a></li>
+        <li><a href="#eprom">EPROM</a></li>
+        <li><a href="#flotox-eeprom-technologie">FLOTOX EEPROM technologie</a></li>
+        <li><a href="#flash-geheugen">FLASH geheugen</a></li>
+        <li><a href="#niet-vluchtig-ram">Niet-vluchtig RAM</a></li>
+      </ul>
+    </li>
+    <li><a href="#geheugenuitbreiding">Geheugenuitbreiding</a>
+      <ul>
+        <li><a href="#geheugenmodules">Geheugenmodules</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
@@ -522,6 +540,7 @@
 <ol>
 <li><a href="#ram-geheugens">RAM-geheugens</a></li>
 <li><a href="#rom-geheugens">ROM-geheugens</a></li>
+<li><a href="#geheugenuitbreiding">Geheugenuitbreiding</a></li>
 </ol>
 <h2 id="ram-geheugens">RAM-geheugens</h2>
 <h3 id="situering-ram">Situering RAM</h3>
@@ -566,7 +585,8 @@
 </ul>
 </li>
 </ul>
-<h3 id="opbouw-van-een-sram-cel">Opbouw van een SRAM-cel</h3>
+<h3 id="sram">SRAM</h3>
+<h4 id="opbouw-van-een-sram-cel">Opbouw van een SRAM-cel</h4>
 <ul>
 <li><strong>Het basis geheugenelement is een lus van invertoren.</strong></li>
 </ul>
@@ -619,7 +639,7 @@
 	
 </figure>
 </p>
-<h3 id="sram-geheugenstructuur">SRAM-geheugenstructuur</h3>
+<h4 id="sram-geheugenstructuur">SRAM-geheugenstructuur</h4>
 <p><figure>
 	<a href="../../../img/DISCH/ch-3/SRAM-geheugenstructuur.PNG" data-featherlight="image">
 		<img src="../../../img/DISCH/ch-3/SRAM-geheugenstructuur.PNG"  >
@@ -627,7 +647,274 @@
 	
 </figure>
 </p>
+<h4 id="sram-adresdecoder">SRAM adresdecoder</h4>
+<ul>
+<li>Om een <strong>woordlijn te selecteren</strong>, gaan we:
+<ul>
+<li>Niet alle woordlijnen extern doorgeven</li>
+<li>Wel het nummer van de woordlijn</li>
+</ul>
+</li>
+<li>Bv.:
+<ul>
+<li>64 woordlijnen</li>
+<li>Adres is een 6-bit getal</li>
+<li>6 adreslijnen nodig</li>
+</ul>
+</li>
+<li>De <strong>omzetting van het adres naar de overeenstemmende woordlijnen gebeurt in de adresdecoder</strong>, hoe meer bits het adres bevat:
+<ul>
+<li>Hoe groter de decoder</li>
+<li>Hoe trager de decoder</li>
+</ul>
+</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/SRAM-adresdecoder.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/SRAM-adresdecoder.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h4 id="sram-organisatie">SRAM-organisatie</h4>
+<p>In- en uitgangen:</p>
+<ul>
+<li><strong>CS</strong> = Chip Select (actief laag)</li>
+<li><strong>WE</strong> = Write Enable (actief laag)</li>
+<li><strong>10 adreslijnen</strong></li>
+<li><strong>4 bi-directionele datalijnen</strong></li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/SRAM-organisatie.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/SRAM-organisatie.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h4 id="sram-timing">SRAM-timing</h4>
+<p>Vereenvoudigde read timing:</p>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/SRAM-read-timing.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/SRAM-read-timing.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<p>Vereenvoudigde write timing:</p>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/SRAM-write-timing.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/SRAM-write-timing.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h4 id="battery-back-up">Battery back-up</h4>
+<p><strong>RAM is per definite vluchtig</strong></p>
+<ul>
+<li>Zodra de spanning wegvalt, gaat de inhoud van het geheugen verloren.</li>
+<li>Batterij kan ervoor zorgen dat de inhoud toch niet verloren gaat.
+<ul>
+<li>De batterij kan zelfs ingebouwd worden in de IC-behuizing.</li>
+</ul>
+</li>
+</ul>
 <h2 id="rom-geheugens">ROM-geheugens</h2>
+<h3 id="opbouw-van-een-dram-cel">Opbouw van een DRAM-cel</h3>
+<ul>
+<li><strong>Geheugenelement = 1 tranistor (+ capiciteit)</strong>
+<ul>
+<li>Lezen: laad bitlijn vooraf op tot vaste spanning, stuur woordlijn, meet bitlijn</li>
+<li>Schrijven: stuur bitlijn, stuur woordlijn</li>
+</ul>
+</li>
+<li><strong>Read-out is destructief</strong></li>
+<li><strong>Refresh cyclus</strong> nodig, want opslag verdwijnt op minder dan een ms.
+<ul>
+<li>Een intern circuit leest het woord en schrijft het terug.</li>
+</ul>
+</li>
+</ul>
+<h3 id="situering-rom">Situering ROM</h3>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/ROM-situering.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/ROM-situering.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h3 id="masker-rom-met-diodes">Masker ROM met diodes</h3>
+<ul>
+<li>Er worden overal diodes geplaatst</li>
+<li>Het masker bepaalt welke diodes verbonden worden</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/ROM-masker-diodes.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/ROM-masker-diodes.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<p>Dit is veruit de meest eenvoudige wijze om een masker ROM te maken. Alle data lijnen zijn via een weerstand met de voeding verbonden en de uitgangen van de decoder zijn in rust ook verbonden met de voedingsspanning. Het zijn actief lage signalen, zoals aangegeven door het driehoekje aan de uitgang. Over de diodes staat geen spanning en er loopt ook geen stroom. Wanneer er een adres aangelegd wordt aan de ingang van de decoder, zal de overeenkomstige woordlijn laag worden (0V). Als gevolg hiervan gaan de diodes die met deze woordlijn verbonden zijn geleiden, waarbij de stroom niet bepaald wordt door de diode maar door de weerstand die ermee in serie staat. Aan de uitgangen (D3…D0) hebben we dus typisch 0,7V of VCC, afhankelijk van het feit of er al dan niet een diode aanwezig is. Deze 0,7V ligt onder de drempelspanning van het hierop volgende circuit zodat ze als een digitale 0 herkend wordt. De diodes staan dus op de plaatsen waar er een 0 aanwezig moet zijn in het geheugen. Dit schema geeft een zeer compact ROM geheugen.</p>
+<p>Het is belangrijk op te merken dat er een DC stroom vloeit tussen de voedingsspanning en de uitgangen van de decoder, waardoor de decoder zwaar belast wordt. Een ROM geheugen dat op deze manier geïmplementeerd is, zal dus veel vermogen verbruiken.</p>
+<h3 id="masker-rom-met-transistors">Masker ROM met transistors</h3>
+<ul>
+<li>Een masker ROM kan ook met transistors worden uitgevoerd</li>
+<li>De decoder wordt hierdoor niet belast.</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/ROM-masker-transistor.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/ROM-masker-transistor.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<p>We kunnen in de voorgaande schakeling de diodes vervangen door transistors. Hierdoor moet de decoder niet meer die belangrijke stroom leveren. De stroom van de decoder is beperkt tot de laadstroom van de gate capaciteiten van de transistors. Er blijft nog steeds een DC-stroom lopen, maar deze loopt van de voeding naar de grond via de transistors.</p>
+<p>Merk op dat de uitgang van de decoder in deze schakeling actief hoog is.</p>
+<h3 id="masker-rom-met-precharge">Masker ROM met precharge</h3>
+<ul>
+<li>De precharge zorgt ervoor dat er geen DC-stroom door de bitlijnen loopt.</li>
+<li>De bitlijnen worden telkens geprecharged vooraleer de decoder wordt uitgelezen.</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/ROM-masker-precharge.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/ROM-masker-precharge.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h3 id="prom">PROM</h3>
+<ul>
+<li><strong>PROM = Programmable ROM</strong></li>
+<li>Het geheugen kan geprogrammeerd worden door bepaalde fuses/antifuses op te blazen.</li>
+<li>Er is geen specifiek masker nodig bij de productie.</li>
+<li>Programmeren gebeurt door hoge spanningspulsen aan te leggen (hogere spanning bij normale werking).</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/PROM.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/PROM.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h3 id="eprom-famos-technologie">EPROM FAMOS technologie</h3>
+<ul>
+<li><strong>Erasable Programmable ROM</strong></li>
+<li><strong>FAMOS = FLoating gate Avalanche injection MOS transistor</strong></li>
+<li><strong>UV-wisbaar</strong></li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/EPROM-FAMOS.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/EPROM-FAMOS.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<p>Een FAMOS transistor is uitgevoerd met een dubbele gate. De bovenste gate is verbonden met de woordlijn. De onderste gate is echter met niets verbonden en is dus zwevend. In normale omstandigheden is er geen lading aanwezig op de onderste gate. Wanneer er echter, door het aanleggen van een hogere voedingsspanning aan de gate, langdurig een zeer grote stroom tussen source en drain getrokken wordt, gaan er elektronen zijn die door botsingen een voldoende grote energie bekomen om in staat te zijn over het oxide heen te vliegen (lawine-effect). In dit geval wordt de zwevende gate opgeladen met elektronen.</p>
+<p>Tijdens de normale werking van deze nMOS transistor in FAMOS technologie leggen we een positieve spanning aan aan de bovenste gate. Dit zorgt voor een positieve lading op de bovenste gate en een kanaal van elektronen onder de gates waardoor de transistor geleidt. Wanneer de zwevende gate echter is opgeladen met elektronen zal de positieve lading op de bovenste gate gecompenseerd worden door de elektronenlading op de zwevende gate en bekomen we geen elektronen meer in het kanaal tussen source en drain. De transistor zal dus niet geleiden.</p>
+<p>De lading van de zwevende gate kan verdwijnen als de ladingsdragers voldoende energie krijgen. Dit kan m.b.v. UV-licht.</p>
+<h3 id="eprom">EPROM</h3>
+<p>Het programmeren van het geheugen gebeurt in een speciale EPROM-programmer. Het wissen gebeurt a.d.h.v. UV-licht.</p>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/EPROM.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/EPROM.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<p>In een EPROM geheugen is er een FAMOS transistor aanwezig op elke positie. Door het aanleggen van een hogere voedingsspanning kan er gekozen worden welke transistors niet mogen geleiden. Het hele geheugen kan gewist worden m.b.v. UV-licht. Het is niet mogelijk om enkel specifieke geheugenplaatsen te wissen.</p>
+<h3 id="flotox-eeprom-technologie">FLOTOX EEPROM technologie</h3>
+<ul>
+<li><strong>EEPROM = Electrically Erasable Programmable ROM</strong></li>
+<li><strong>FLOTOX = Floating gate Tunnel Oxide</strong></li>
+<li>Er wordt gebruik gemaakt van een dun oxide.</li>
+<li>Op die manier is er geen UV-licht nodig om te wissen, het wissen gebeurt elektrisch (in-circuit programming).</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/EEPROM.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/EEPROM.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<p>Een EEPROM maakt gebruik van het doortunneleffect om een zwevende gate op te laden. Er is een dun oxide voorzien boven de drain van de transistor. De elektronen gaan doortunnelen naar de zwevende gate wanneer er een voldoende hoge spanning wordt aangelegd aan de bovenste gate.</p>
+<p>Een belangrijk voordeel van het opladen van de zwevende gate door doortunnelen, is dat dit principe ook omkeerbaar is, zodat een EEPROM elektrisch kan gewist worden. Het wissen gebeurt door een spanning aan te leggen tussen drain en source zonder de bovenste gate op te laden. De elektronen tunnelen dan terug door het dunne oxide. Het gevolg hiervan is wel dat tijdens het gebruik van het geheugen de bovenste gate steeds moet verbonden zijn met de voedingsspanning om ervoor te zorgen dat de elektronen niet terug doortunnelen naar de drain. De woordlijntransistor en de programmeertransistor kunnen dus niet meer dezelfde zijn. Daarom hebben we voor een EEPROM geheugen een tweede transistor nodig per geheugenelement.</p>
+<h3 id="flash-geheugen">FLASH geheugen</h3>
+<ul>
+<li>Vergelijkbaar met EEPROM</li>
+<li>Veel sneller en compacter dan EEPROM, omdat het wissen en herprogrammeren in grote blokken gebeurt.</li>
+</ul>
+<h3 id="niet-vluchtig-ram">Niet-vluchtig RAM</h3>
+<ul>
+<li>Combinatie van
+<ul>
+<li>SRAM (snel)</li>
+<li>EEPROM (traag)</li>
+</ul>
+</li>
+<li>Onder normale werking: SRAM</li>
+<li>Een &ldquo;store&rdquo;-bevel slaat alles op in de EEPROM</li>
+<li>Een &ldquo;recall&rdquo;-bevel haalt alles uit de EEPROM</li>
+<li>Wanneer de voedingsspanning wegvalt, kan een &ldquo;power failure&rdquo; schakelingen dit selecteren en tijdig een &ldquo;store&rdquo;-bevel geven.</li>
+</ul>
+<h2 id="geheugenuitbreiding">Geheugenuitbreiding</h2>
+<p>Het principe van geheugenuitbreiding is van toepassing op zowel ROM- als RAM-geheugens</p>
+<ul>
+<li>Uitbreiding van de woordbreedte:
+<ul>
+<li>Het aantal bereikbare adressen blijft gelijk</li>
+<li>Het aantal bits per adres wordt uitgebreid</li>
+</ul>
+</li>
+<li>Uitbreiding van het adresbereik:
+<ul>
+<li>Het aantal bits per adres blijven gelijk</li>
+<li>Het aantal bereikbare adressen worden uitgebreid</li>
+</ul>
+</li>
+</ul>
+
+<div class="ex">
+	<div class="inner">
+    	<ul>
+<li>We vertrekken van twee ROM IC&rsquo;s met een adres van 10 bits (dus een adresbereik van 2<sup>10</sup> adressen) en een woordbreedte van 4 bits.</li>
+<li>Beide IC&rsquo;s krijgen hetzelfde adres.</li>
+<li>Beide IC&rsquo;s produceren 4 bits van de data.</li>
+<li>In totaal zijn er 8 databits beschikbaar.</li>
+</ul>
+
+	</div>
+</div>
+
+<div class="ex">
+	<div class="inner">
+    	<ul>
+<li>We vertrekken van dezelfde 2 IC&rsquo;s.</li>
+<li>Beide IC&rsquo;s krijgen de 10 minst beduidende adreslijnen.</li>
+<li>De 11de adreslijn wordt gebruikt voor de &ldquo;chip select&rdquo;.</li>
+<li>De 4 data bits komen van 1 van de 2 chips.</li>
+</ul>
+
+	</div>
+</div>
+<h3 id="geheugenmodules">Geheugenmodules</h3>
+<ul>
+<li>Per module staan een aantal IC&rsquo;s georganiseerd volgens het principe van het uitbreiden van de woordbreedte.</li>
+<li>Indien de woordbreedte van de module kleiner is dan de breedte van de databus, moeten meerdere modules gelijktijdig gebruikt worden zodat de woordbreedte kan worden uitgebreid tot de breedte van een databus. Deze combinatie noemen we een geheugenbank.</li>
+<li>Meerdere geheugenbanken kunnen gecombineerd worden voor het uitbreiden van het adresbereik.</li>
+<li>Moderne geheugenmodules hebben een woordbreedte die overeenstemt met de breedt van de databus.</li>
+</ul>
+
+<div class="ex">
+	<div class="inner">
+    	<p>Startende van geheugenblokken met een woordbreedte van 64 bits en een diepte van 128 woorden:</p>
+<ol>
+<li>Teken het schema van een geheugen met een woordbreedte van 256 bits en een diepte van 128 woorden.</li>
+<li>Teken het schema van een geheugen met een woordbreedte van 64 bits en een diepte van 256 woorden.</li>
+<li>Teken het schema van een geheugen met een woordbreedte van 256 bits en een diepte van 512 woorden.</li>
+</ol>
+
+	</div>
+</div>
 
 
 <footer class="footline">
@@ -890,17 +1177,17 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1655118020"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1655118020"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1655118020"></script>
-    <script src="../../../js/jquery.sticky.js?1655118020"></script>
-    <script src="../../../js/featherlight.min.js?1655118020"></script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1655118020"></script>
-    <script src="../../../js/learn.js?1655118020"></script>
-    <script src="../../../js/hugo-learn.js?1655118020"></script>
+    <script src="../../../js/clipboard.min.js?1655127047"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1655127047"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1655127047"></script>
+    <script src="../../../js/jquery.sticky.js?1655127047"></script>
+    <script src="../../../js/featherlight.min.js?1655127047"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1655127047"></script>
+    <script src="../../../js/learn.js?1655127047"></script>
+    <script src="../../../js/hugo-learn.js?1655127047"></script>
     
         
-            <script src="../../../mermaid/mermaid.js?1655118020"></script>
+            <script src="../../../mermaid/mermaid.js?1655127047"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
