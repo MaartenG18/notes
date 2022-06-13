@@ -88,7 +88,7 @@ Beide codefragmenten implementeren een **schuifbewerking naar links** als de **s
 - z<sub>7</sub>z<sub>6</sub>z<sub>5</sub>z<sub>4</sub>z<sub>3</sub>z<sub>2</sub>z<sub>1</sub>z<sub>0</sub> = a<sub>6</sub>a<sub>5</sub>a<sub>4</sub>a<sub>3</sub>a<sub>2</sub>a<sub>1</sub>a<sub>0</sub>0 (links)
 - z<sub>7</sub>z<sub>6</sub>z<sub>5</sub>z<sub>4</sub>z<sub>3</sub>z<sub>2</sub>z<sub>1</sub>z<sub>0</sub> = 0a<sub>7</sub>a<sub>6</sub>a<sub>5</sub>a<sub>4</sub>a<sub>3</sub>a<sub>2</sub>a<sub>1</sub> (rechts)
 
-### VHDL -> FPGA
+### VHDL → FPGA
 
 Er zijn er 2 hardware equivalenten van toepassing:
 
@@ -137,7 +137,7 @@ De LUT's zijn op onderstaande manier geconfigureerd:
 |1|0|x|x|0|
 |1|1|x|x|1|
 
-### C -> microprocessor
+### C → microprocessor
 
 Het **schuiven van bits in een microprocessor gebeurt in de ALU via een schuifbewerking**. De schuifinstructies met bijhorende machinecode zien er als volgt uit:
 

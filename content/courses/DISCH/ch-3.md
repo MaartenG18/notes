@@ -219,23 +219,19 @@ Het principe van geheugenuitbreiding is van toepassing op zowel ROM- als RAM-geh
 	+ Het aantal bits per adres blijven gelijk
 	+ Het aantal bereikbare adressen worden uitgebreid
 	
-{{% task %}}
+### Uitbreiding van de woordbreedte (voorbeeld)
 
 - We vertrekken van twee ROM IC's met een adres van 10 bits (dus een adresbereik van 2<sup>10</sup> adressen) en een woordbreedte van 4 bits.
 - Beide IC's krijgen hetzelfde adres.
 - Beide IC's produceren 4 bits van de data.
 - In totaal zijn er 8 databits beschikbaar.
 
-{{% /task %}}
-
-{{% task %}}
+### Uitbreiding van het adresbereik (voorbeeld)
 
 - We vertrekken van dezelfde 2 IC's.
 - Beide IC's krijgen de 10 minst beduidende adreslijnen.
 - De 11de adreslijn wordt gebruikt voor de "chip select".
 - De 4 data bits komen van 1 van de 2 chips.
-
-{{% /task %}}
 
 ### Geheugenmodules
 

@@ -12,21 +12,21 @@
     <title>4. Ontwerpprincipes voor synchrone logica :: Maarten&#39;s notes</title>
 
     
-    <link href="../../../css/nucleus.css?1655127047" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1655127047" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1655127047" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1655127047" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1655127047" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1655127047" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1655127047" rel="stylesheet">
-    <link href="../../../css/theme.css?1655127047" rel="stylesheet">
-    <link href="../../../css/devselector.css?1655127047" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1655127047" rel="stylesheet">
-    <link href="../../../css/theme-kul.css?1655127047" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1655135662" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1655135662" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1655135662" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1655135662" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1655135662" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1655135662" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1655135662" rel="stylesheet">
+    <link href="../../../css/theme.css?1655135662" rel="stylesheet">
+    <link href="../../../css/devselector.css?1655135662" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1655135662" rel="stylesheet">
+    <link href="../../../css/theme-kul.css?1655135662" rel="stylesheet">
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1655127047"></script>
-    <script src="../../../js/devselector.js?1655127047"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1655135662"></script>
+    <script src="../../../js/devselector.js?1655135662"></script>
     <script id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1655127047"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1655127047"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1655135662"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1655135662"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/maarteng18.github.io\/notes\/";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1655127047"></script>
+<script type="text/javascript" src="../../../js/search.js?1655135662"></script>
 
     
   </div>
@@ -484,7 +484,20 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#ontwerpprincipes-voor-synchrone-logica">Ontwerpprincipes voor synchrone logica</a></li>
+    <li><a href="#table-of-contents">Table of contents</a></li>
+    <li><a href="#voorbeeld-ter-introductie">Voorbeeld ter introductie</a>
+      <ul>
+        <li><a href="#1-wasmand-verwerken">1 wasmand verwerken</a></li>
+        <li><a href="#3-wasmanden-verwerken">3 wasmanden verwerken</a></li>
+        <li><a href="#verhogen-van-de-throughput">Verhogen van de throughput</a></li>
+      </ul>
+    </li>
+    <li><a href="#ontwerpvoorbeeld-aes">Ontwerpvoorbeeld: AES</a>
+      <ul>
+        <li><a href="#loop-architectuur">Loop architectuur</a></li>
+        <li><a href="#loop-unrolling-1">Loop unrolling</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
@@ -509,7 +522,133 @@
         
 
 
-<h2 id="ontwerpprincipes-voor-synchrone-logica">Ontwerpprincipes voor synchrone logica</h2>
+<h2 id="table-of-contents">Table of contents</h2>
+<ol>
+<li><a href="#voorbeeld-ter-introductie">Voorbeeld ter introductie</a></li>
+<li><a href="#ontwerpvoorbeeld-aes">Ontwerpvoorbeeld: AES</a></li>
+</ol>
+<h2 id="voorbeeld-ter-introductie">Voorbeeld ter introductie</h2>
+<p>Kleren worden gewassen in 3 stappen:</p>
+<p><figure>
+	<a href="../../../img/DISCH/ch-4/Wassen-time.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-4/Wassen-time.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h3 id="1-wasmand-verwerken">1 wasmand verwerken</h3>
+<ul>
+<li>Het verwerken van 1 wasmand duurt 1 uur</li>
+<li>Throughput = 1 wasmand/uur</li>
+<li>Latency per wasmand = 1 uur</li>
+</ul>
+<h3 id="3-wasmanden-verwerken">3 wasmanden verwerken</h3>
+<ul>
+<li>Het verwerken van 3 wasmanden duurt 3 uren als we de wasmanden 1 voor 1 volledig verwerken</li>
+<li>Throughput = 1 wasmand/uur</li>
+<li>Latency per wasmand = 1 uur</li>
+</ul>
+<h3 id="verhogen-van-de-throughput">Verhogen van de throughput</h3>
+<h4 id="parallellisatie">Parallellisatie</h4>
+<ul>
+<li>Elke machine wordt 3x voorzien</li>
+<li>Het verwerken van 3 wasmanden duurt 1 uur</li>
+<li>Throughput = 3 wasmanden/uur</li>
+<li>Latency per wasmand = 1 uur</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-4/Wassen-parallel.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-4/Wassen-parallel.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h4 id="pipelining">Pipelining</h4>
+<ul>
+<li>Throughput = 3 wasmanden/uur (na de opstartfase)</li>
+<li>Latency per wasmand = 1 uur</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-4/Wassen-pipelining.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-4/Wassen-pipelining.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h4 id="wat-als-het-proces-meerdere-keren-wordt-doorlopen">Wat als het proces meerdere keren wordt doorlopen</h4>
+<ul>
+<li>Stel dat een wasmand 3 keer na mekaar het hele proces moet doorlopen.</li>
+<li>Dan kunnen we geen pipelining gebruiken als elke machine maar 1 keer voorzien is.</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-4/Wassen-1-machine.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-4/Wassen-1-machine.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h4 id="loop-unrolling">Loop unrolling</h4>
+<ul>
+<li>Elke machine 3 keer voorzien + pipelining toepassen</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-4/Wassen-loop.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-4/Wassen-loop.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h2 id="ontwerpvoorbeeld-aes">Ontwerpvoorbeeld: AES</h2>
+<p><a href="https://www.youtube.com/watch?v=mlzxpkdXP58">Animatie</a></p>
+<p><figure>
+	<a href="../../../img/DISCH/ch-4/AES-schema.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-4/AES-schema.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h3 id="loop-architectuur">Loop architectuur</h3>
+<p>AES: 1 klokcyclus per ronde (parallelle verwerking van 128 bits):</p>
+<ul>
+<li>Throughput = T</li>
+<li>Oppervlakte = A</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-4/Loop-1.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-4/Loop-1.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<p>AES: 16 klokcycli per ronde (verwerking byte-per-byte):</p>
+<ul>
+<li>Throughput ≈ T/16</li>
+<li>Oppervlakte &gt; A/16</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-4/Loop-16.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-4/Loop-16.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h3 id="loop-unrolling-1">Loop unrolling</h3>
+<p>Loop unrolling zonder pipelining: throughput = T, oppervlakte ≈ 10 * A</p>
+<p><figure>
+	<a href="../../../img/DISCH/ch-4/Loop-unrolling-zonder-pipelining.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-4/Loop-unrolling-zonder-pipelining.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<p>Loop unrolling met pipelining: throughput ≈ 10 * T, oppervlakte ≈ 10 * A</p>
+<p><figure>
+	<a href="../../../img/DISCH/ch-4/Loop-unrolling-met-pipelining.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-4/Loop-unrolling-met-pipelining.PNG"  >
+	</a>
+	
+</figure>
+</p>
 
 
 <footer class="footline">
@@ -772,17 +911,17 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1655127047"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1655127047"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1655127047"></script>
-    <script src="../../../js/jquery.sticky.js?1655127047"></script>
-    <script src="../../../js/featherlight.min.js?1655127047"></script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1655127047"></script>
-    <script src="../../../js/learn.js?1655127047"></script>
-    <script src="../../../js/hugo-learn.js?1655127047"></script>
+    <script src="../../../js/clipboard.min.js?1655135662"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1655135662"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1655135662"></script>
+    <script src="../../../js/jquery.sticky.js?1655135662"></script>
+    <script src="../../../js/featherlight.min.js?1655135662"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1655135662"></script>
+    <script src="../../../js/learn.js?1655135662"></script>
+    <script src="../../../js/hugo-learn.js?1655135662"></script>
     
         
-            <script src="../../../mermaid/mermaid.js?1655127047"></script>
+            <script src="../../../mermaid/mermaid.js?1655135662"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
