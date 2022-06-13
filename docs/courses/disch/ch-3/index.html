@@ -12,21 +12,21 @@
     <title>3. Geheugens :: Maarten&#39;s notes</title>
 
     
-    <link href="../../../css/nucleus.css?1655072635" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1655072635" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1655072635" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1655072635" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1655072635" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1655072635" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1655072635" rel="stylesheet">
-    <link href="../../../css/theme.css?1655072635" rel="stylesheet">
-    <link href="../../../css/devselector.css?1655072635" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1655072635" rel="stylesheet">
-    <link href="../../../css/theme-kul.css?1655072635" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1655118020" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1655118020" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1655118020" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1655118020" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1655118020" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1655118020" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1655118020" rel="stylesheet">
+    <link href="../../../css/theme.css?1655118020" rel="stylesheet">
+    <link href="../../../css/devselector.css?1655118020" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1655118020" rel="stylesheet">
+    <link href="../../../css/theme-kul.css?1655118020" rel="stylesheet">
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1655072635"></script>
-    <script src="../../../js/devselector.js?1655072635"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1655118020"></script>
+    <script src="../../../js/devselector.js?1655118020"></script>
     <script id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1655072635"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1655072635"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1655118020"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1655118020"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/maarteng18.github.io\/notes\/";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1655072635"></script>
+<script type="text/javascript" src="../../../js/search.js?1655118020"></script>
 
     
   </div>
@@ -485,7 +485,14 @@
 <nav id="TableOfContents">
   <ul>
     <li><a href="#table-of-contents">Table of contents</a></li>
-    <li><a href="#ram-geheugens">RAM-geheugens</a></li>
+    <li><a href="#ram-geheugens">RAM-geheugens</a>
+      <ul>
+        <li><a href="#situering-ram">Situering RAM</a></li>
+        <li><a href="#indeling-ram">Indeling RAM</a></li>
+        <li><a href="#opbouw-van-een-sram-cel">Opbouw van een SRAM-cel</a></li>
+        <li><a href="#sram-geheugenstructuur">SRAM-geheugenstructuur</a></li>
+      </ul>
+    </li>
     <li><a href="#rom-geheugens">ROM-geheugens</a></li>
   </ul>
 </nav>
@@ -517,6 +524,15 @@
 <li><a href="#rom-geheugens">ROM-geheugens</a></li>
 </ol>
 <h2 id="ram-geheugens">RAM-geheugens</h2>
+<h3 id="situering-ram">Situering RAM</h3>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/RAM-situering.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/RAM-situering.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h3 id="indeling-ram">Indeling RAM</h3>
 <ul>
 <li><strong>SRAM (Statische RAM)</strong>
 <ul>
@@ -550,6 +566,67 @@
 </ul>
 </li>
 </ul>
+<h3 id="opbouw-van-een-sram-cel">Opbouw van een SRAM-cel</h3>
+<ul>
+<li><strong>Het basis geheugenelement is een lus van invertoren.</strong></li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/SRAM-basis.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/SRAM-basis.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li>Deze <strong>lus moet onderbroken worden om te schrijven</strong> (8 transistors nodig).</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/SRAM-onderbroken.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/SRAM-onderbroken.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li>We kunnen deze <strong>onderbreking weglaten als de transistors die schrijven meer stroom leveren dan de transistores in de geheugencel</strong>. Dit geeft een stroompad tussen voeding en grond, wat zorgt voor een belangrijke opwarming.</li>
+<li>Gebruik ban <strong>transistors met minimale dimensies</strong></li>
+<li><strong>nMOS heeft een betere geleidbaarheid da pMOS</strong></li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/SRAM-niet-onderbroken.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/SRAM-niet-onderbroken.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li><strong>Dubbel gebruik</strong>
+<ul>
+<li>Schrijven
+<ul>
+<li>Beide lijnen sturen</li>
+<li>1 lijn trekt stroom</li>
+</ul>
+</li>
+<li>Uitlezen</li>
+</ul>
+</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/SRAM-finaal.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/SRAM-finaal.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h3 id="sram-geheugenstructuur">SRAM-geheugenstructuur</h3>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/SRAM-geheugenstructuur.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/SRAM-geheugenstructuur.PNG"  >
+	</a>
+	
+</figure>
+</p>
 <h2 id="rom-geheugens">ROM-geheugens</h2>
 
 
@@ -813,17 +890,17 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1655072635"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1655072635"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1655072635"></script>
-    <script src="../../../js/jquery.sticky.js?1655072635"></script>
-    <script src="../../../js/featherlight.min.js?1655072635"></script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1655072635"></script>
-    <script src="../../../js/learn.js?1655072635"></script>
-    <script src="../../../js/hugo-learn.js?1655072635"></script>
+    <script src="../../../js/clipboard.min.js?1655118020"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1655118020"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1655118020"></script>
+    <script src="../../../js/jquery.sticky.js?1655118020"></script>
+    <script src="../../../js/featherlight.min.js?1655118020"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1655118020"></script>
+    <script src="../../../js/learn.js?1655118020"></script>
+    <script src="../../../js/hugo-learn.js?1655118020"></script>
     
         
-            <script src="../../../mermaid/mermaid.js?1655072635"></script>
+            <script src="../../../mermaid/mermaid.js?1655118020"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

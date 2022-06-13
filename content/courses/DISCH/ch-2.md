@@ -58,7 +58,7 @@ weight= 3
 
 #### PLA
 
-- Gemeenschappelijk gebruik van producttermen
+- **Gemeenschappelijk gebruik van producttermen**
 - Voorbeeld:
 	+ F0 = A + B'C'
 	+ F1 = AC' + AB
@@ -67,11 +67,11 @@ weight= 3
 
 ![](/img/DISCH/ch-2/PLA-tabel.png)
 
-- Alle Mogelijke verbindingen zijn beschikbaar voor het programmeren:
+- **Alle Mogelijke verbindingen zijn beschikbaar voor het programmeren:**
 
 ![](/img/DISCH/ch-2/PLA-clean.png)
 
-- De niet-gewenste verbindingen worden opgeblazen
+- **De niet-gewenste verbindingen worden opgeblazen**
 
 ![](/img/DISCH/ch-2/PLA-ready.png)
 
@@ -79,14 +79,14 @@ weight= 3
 Sommige technologieën maken verbindingen i.p.v. ze op te blazen.
 {{% /notice %}}
 
-- Conventies PLA
+- **Conventies PLA**
 	+ Om het aantal lijnen te verminderen tekenen we de verschillende ingangen op 1 lijn.
 
 	![](/img/DISCH/ch-2/PLA-conventie.png)
 
 	+ Elke ingang wordt geïnverteerd zodat we zowel de niet-geïnverteerde ingang als de geïnverteerde ingang kunnen gebruiken.
 
-- Voorstelling PLA
+- **Voorstelling PLA**
 	+ PLA-voorstelling waarbij alle verbindingen gemaakt zijn.
 
 	![](/img/DISCH/ch-2/PLA-all.png)
@@ -127,9 +127,8 @@ Sommige technologieën maken verbindingen i.p.v. ze op te blazen.
 
 #### ROM als PLD
 
-- In tegenstelling tot een PLA is een ROM een structuur met een volledig gecodeerde AND array.
-- Elke mogelijkheid tot het samennemen van ingangen (adreslijnen) zit erin.
-
+- In tegenstelling tot een PLA is een **ROM een structuur met een volledig gecodeerde AND array**.
+- **Elke mogelijkheid tot het samen nemen van ingangen (adreslijnen) zit erin**.
 ![](/img/DISCH/ch-2/ROM-example.png)
 
 {{% task %}}
@@ -141,10 +140,10 @@ Wat is de inhoud van een ROM-geheugen dat de volgende functies realiseert:
 
 #### CPLD
 
-- CPLD = Complex Programmable Logic Device
-- Een CPLD bestaat uit verschillende logische blokken die elk equivalent zijn met een (S)PLD.
-- Deze (S)PLDs worden met elkaar verbonden via een Programmable Interconnect Matrix (PIM).
-- Op deze manier wordt het Si-oppervlak nuttiger gebruikt in vergelijking met een grote PLD.
+- **CPLD = Complex Programmable Logic Device**
+- Een CPLD **bestaat uit verschillende logische blokken die elk equivalent zijn met een (S)PLD**.
+- Deze **(S)PLDs worden met elkaar verbonden via een Programmable Interconnect Matrix (PIM)**.
+- Op deze manier wordt het **Si-oppervlak nuttiger gebruikt in vergelijking met een grote PLD**.
 
 Algemene structuur:
 
@@ -153,8 +152,8 @@ Algemene structuur:
 
 ## FPGA-technologie
 
-- FPGA = Field Programmable Gate Array
-- Array van logische cellen die met elkaar en met de I/O cellen kunnen communiceren
+- **FPGA = Field Programmable Gate Array**
+- **Array van logische cellen die met elkaar en met de I/O cellen kunnen communiceren**
 - Horizontale en verticale verbindingen.
 
 ### FPGA architectuur
@@ -243,13 +242,13 @@ Waarom 16 configuratiebits voor een 4-naar-1 LUT?
 
 ### Ontwerp van een digitaal systeem op FPGA
 
-- Beschrijving van het ontwerp
+- **Beschrijving van het ontwerp**
 	+ Schematische invoer
 	+ Invoer via HDL (Hardware Description Language)
 		* VHDL (VHSIC HDL)
 			- VHSIC = Very High Speed Integrated Circuit
 		* Verilog
-- Implementatie van het systeem
+- **Implementatie van het systeem**
 	+ Bitsream met configuratie-gegevens
 		* Na synthese en place & route
 	+ Inladen van de bitstream
@@ -258,10 +257,10 @@ Waarom 16 configuratiebits voor een 4-naar-1 LUT?
 		
 #### Ontwerp m.b.v. VHDL
 
-- Platform-onafhankelijke code
+- **Platform-onafhankelijke code**
 	+ Bruikbaar voor alle FPGA's
 	+ Bruikbaar voor ASIC standaardcel ontwerp
-- Platform-specifiek code
+- **Platform-specifiek code**
 	+ Geoptimaliseerd voor een specifiek FPGA
 	+ Gebruikmakend van specifieke compenenten in een FPGA
 		* Bv.: multiplexers, block RAM...
