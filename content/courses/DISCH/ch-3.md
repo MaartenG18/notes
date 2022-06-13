@@ -13,21 +13,23 @@ weight= 3
 
 ### Situering RAM
 
+![](/img/DISCH/ch-3/RAM-situering1.PNG)
+
 ### Indeling RAM
 
 - **SRAM (Statische RAM)**
 	+ Eigenschappen:
-		* Snel toegangelijk
-		* Veel oppervlakte
+		* **Snel toegangelijk**
+		* **Veel oppervlakte**
 	+ Gebruiksgebied:
-		* Cachegeheugen
+		* **Cachegeheugen**
 - **DRAM (Dynamische RAM)**
 	+ Eigenschappen:
-		* Hoge densiteit
-		* Relatief trage uitlezing
+		* **Hoge densiteit**
+		* **Relatief trage uitlezing**
 	+ Gebruiksgebied:
-		* Hoofdgeheugen
-		* Massageheugen
+		* **Hoofdgeheugen**
+		* **Massageheugen**
 		
 ### SRAM
 
@@ -48,16 +50,16 @@ weight= 3
 ![](/img/DISCH/ch-3/SRAM-niet-onderbroken.PNG)
 
 - **Dubbel gebruik**
-	+ Schrijven
+	+ **Schrijven**
 		* Beide lijnen sturen
 		* 1 lijn trekt stroom
-	+ Uitlezen
+	+ **Uitlezen**
 	
 ![](/img/DISCH/ch-3/SRAM-finaal.PNG)
 
 #### SRAM-geheugenstructuur
 
-
+![](/img/DISCH/ch-3/SRAM-geheugenstructuur1.PNG)
 
 #### SRAM adresdecoder
 
@@ -87,11 +89,11 @@ In- en uitgangen:
 
 #### SRAM-timing
 
-Vereenvoudigde read timing:
+**Vereenvoudigde read timing:**
 
 ![](/img/DISCH/ch-3/SRAM-read-timing.PNG)
 
-Vereenvoudigde write timing:
+**Vereenvoudigde write timing:**
 
 ![](/img/DISCH/ch-3/SRAM-write-timing.PNG)
 
@@ -99,8 +101,8 @@ Vereenvoudigde write timing:
 
 **RAM is per definite vluchtig**
 
-- Zodra de spanning wegvalt, gaat de inhoud van het geheugen verloren.
-- Batterij kan ervoor zorgen dat de inhoud toch niet verloren gaat.
+- Zodra de **spanning wegvalt, gaat de inhoud van het geheugen verloren.**
+- **Batterij kan ervoor zorgen dat de inhoud toch niet verloren gaat.**
 	+ De batterij kan zelfs ingebouwd worden in de IC-behuizing.
 
 ## ROM-geheugens
@@ -120,39 +122,50 @@ Vereenvoudigde write timing:
 
 ### Masker ROM met diodes
 
-- Er worden overal diodes geplaatst
-- Het masker bepaalt welke diodes verbonden worden
+- Er worden **overal diodes** geplaatst
+- Het **masker bepaalt welke diodes verbonden worden**
 
 ![](/img/DISCH/ch-3/ROM-masker-diodes.PNG)
 
-Dit is veruit de meest eenvoudige wijze om een masker ROM te maken. Alle data lijnen zijn via een weerstand met de voeding verbonden en de uitgangen van de decoder zijn in rust ook verbonden met de voedingsspanning. Het zijn actief lage signalen, zoals aangegeven door het driehoekje aan de uitgang. Over de diodes staat geen spanning en er loopt ook geen stroom. Wanneer er een adres aangelegd wordt aan de ingang van de decoder, zal de overeenkomstige woordlijn laag worden (0V). Als gevolg hiervan gaan de diodes die met deze woordlijn verbonden zijn geleiden, waarbij de stroom niet bepaald wordt door de diode maar door de weerstand die ermee in serie staat. Aan de uitgangen (D3…D0) hebben we dus typisch 0,7V of VCC, afhankelijk van het feit of er al dan niet een diode aanwezig is. Deze 0,7V ligt onder de drempelspanning van het hierop volgende circuit zodat ze als een digitale 0 herkend wordt. De diodes staan dus op de plaatsen waar er een 0 aanwezig moet zijn in het geheugen. Dit schema geeft een zeer compact ROM geheugen. 
+Dit is veruit de **meest eenvoudige wijze om een masker ROM te maken**. 
 
-Het is belangrijk op te merken dat er een DC stroom vloeit tussen de voedingsspanning en de uitgangen van de decoder, waardoor de decoder zwaar belast wordt. Een ROM geheugen dat op deze manier geïmplementeerd is, zal dus veel vermogen verbruiken.
+- Alle **data lijnen zijn via een weerstand met de voeding verbonden.**
+- **Uitgangen van de decoder zijn in rust verbonden met de voedingsspanning.**
+- Het zijn **actief lage signalen**, zoals aangegeven door het *driehoekje aan de uitgang*. 
+- **Over de diodes staat geen spanning en er loopt ook geen stroom.**
+- Wanneer er een **adres aangelegd wordt** aan de ingang van de decoder:
+	+ Zal de **overeenkomstige woordlijn laag worden (0V).** 
+	+ Als gevolg hiervan gaan de **diodes die met deze woordlijn verbonden zijn geleiden**, *waarbij de stroom niet bepaald wordt door de diode maar door de weerstand die ermee in serie staat.*
+	+ Aan de uitgangen **(D3…D0) hebben we dus typisch 0,7V of VCC, afhankelijk van het feit of er al dan niet een diode aanwezig is**. 
+	+ Deze **0,7V ligt onder de drempelspanning van het hierop volgende circuit zodat ze als een digitale 0 herkend wordt.** 
+	+ **De diodes staan dus op de plaatsen waar er een 0 aanwezig moet zijn in het geheugen.**
+
+Het is belangrijk op te merken dat er een **DC stroom vloeit tussen de voedingsspanning en de uitgangen van de decoder, waardoor de decoder zwaar belast wordt.** Een ROM geheugen dat op deze manier geïmplementeerd is, zal dus **veel vermogen verbruiken**.
 
 ### Masker ROM met transistors
 
-- Een masker ROM kan ook met transistors worden uitgevoerd
-- De decoder wordt hierdoor niet belast.
+- Een **masker ROM kan ook met transistors worden uitgevoerd**
+- De **decoder wordt hierdoor niet belast**.
 
 ![](/img/DISCH/ch-3/ROM-masker-transistor.PNG)
 
-We kunnen in de voorgaande schakeling de diodes vervangen door transistors. Hierdoor moet de decoder niet meer die belangrijke stroom leveren. De stroom van de decoder is beperkt tot de laadstroom van de gate capaciteiten van de transistors. Er blijft nog steeds een DC-stroom lopen, maar deze loopt van de voeding naar de grond via de transistors.
+We kunnen in de voorgaande schakeling de diodes vervangen door transistors. Hierdoor moet de decoder niet meer die belangrijke stroom leveren. De **stroom van de decoder is beperkt tot de laadstroom van de gate capaciteiten van de transistors**. Er blijft nog steeds een DC-stroom lopen, maar deze loopt van de voeding naar de grond via de transistors.
 
-Merk op dat de uitgang van de decoder in deze schakeling actief hoog is.
+Merk op dat de **uitgang van de decoder in deze schakeling actief hoog is.**
 
 ### Masker ROM met precharge
 
-- De precharge zorgt ervoor dat er geen DC-stroom door de bitlijnen loopt.
-- De bitlijnen worden telkens geprecharged vooraleer de decoder wordt uitgelezen.
+- De **precharge zorgt ervoor dat er geen DC-stroom door de bitlijnen loopt.**
+- De **bitlijnen worden telkens geprecharged vooraleer de decoder wordt uitgelezen.**
 
 ![](/img/DISCH/ch-3/ROM-masker-precharge.PNG)
 
 ### PROM
 
 - **PROM = Programmable ROM**
-- Het geheugen kan geprogrammeerd worden door bepaalde fuses/antifuses op te blazen.
-- Er is geen specifiek masker nodig bij de productie.
-- Programmeren gebeurt door hoge spanningspulsen aan te leggen (hogere spanning bij normale werking).
+- Het geheugen kan **geprogrammeerd worden door bepaalde fuses/antifuses op te blazen.**
+- Er is **geen specifiek masker nodig bij de productie.**
+- **Programmeren gebeurt door hoge spanningspulsen aan te leggen (hogere spanning bij normale werking).**
 
 ![](/img/DISCH/ch-3/PROM.PNG)
 
@@ -164,11 +177,15 @@ Merk op dat de uitgang van de decoder in deze schakeling actief hoog is.
 
 ![](/img/DISCH/ch-3/EPROM-FAMOS.PNG)
 
-Een FAMOS transistor is uitgevoerd met een dubbele gate. De bovenste gate is verbonden met de woordlijn. De onderste gate is echter met niets verbonden en is dus zwevend. In normale omstandigheden is er geen lading aanwezig op de onderste gate. Wanneer er echter, door het aanleggen van een hogere voedingsspanning aan de gate, langdurig een zeer grote stroom tussen source en drain getrokken wordt, gaan er elektronen zijn die door botsingen een voldoende grote energie bekomen om in staat te zijn over het oxide heen te vliegen (lawine-effect). In dit geval wordt de zwevende gate opgeladen met elektronen.
+Een **FAMOS transistor is uitgevoerd met een dubbele gate**. 
+- De **bovenste gate is verbonden met de woordlijn.**
+- De **onderste gate is echter met niets verbonden en is dus zwevend.**
 
-Tijdens de normale werking van deze nMOS transistor in FAMOS technologie leggen we een positieve spanning aan aan de bovenste gate. Dit zorgt voor een positieve lading op de bovenste gate en een kanaal van elektronen onder de gates waardoor de transistor geleidt. Wanneer de zwevende gate echter is opgeladen met elektronen zal de positieve lading op de bovenste gate gecompenseerd worden door de elektronenlading op de zwevende gate en bekomen we geen elektronen meer in het kanaal tussen source en drain. De transistor zal dus niet geleiden.
+In **normale omstandigheden is er geen lading aanwezig op de onderste gate**. Wanneer er echter, door het **aanleggen van een hogere voedingsspanning aan de gate, langdurig een zeer grote stroom tussen source en drain getrokken wordt, gaan er elektronen zijn die door botsingen een voldoende grote energie bekomen om in staat te zijn over het oxide heen te vliegen (lawine-effect). In dit geval wordt de zwevende gate opgeladen met elektronen.**
 
-De lading van de zwevende gate kan verdwijnen als de ladingsdragers voldoende energie krijgen. Dit kan m.b.v. UV-licht.
+Tijdens de **normale werking van deze nMOS transistor in FAMOS technologie leggen we een positieve spanning aan aan de bovenste gate. Dit zorgt voor een positieve lading op de bovenste gate en een kanaal van elektronen onder de gates waardoor de transistor geleidt. Wanneer de zwevende gate echter is opgeladen met elektronen zal de positieve lading op de bovenste gate gecompenseerd worden door de elektronenlading op de zwevende gate en bekomen we geen elektronen meer in het kanaal tussen source en drain. De transistor zal dus niet geleiden.** 
+
+De **lading van de zwevende gate kan verdwijnen als de ladingsdragers voldoende energie krijgen. Dit kan m.b.v. UV-licht.** 
 
 ### EPROM
 
