@@ -68,7 +68,7 @@ FAMOS EPROM technologie (UV- erasable) FLOTOX EEPROM technologie Flash technolog
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
       <guid>https://maarteng18.github.io/notes/courses/disch/ch-5/</guid>
-      <description>Simulatie </description>
+      <description>Table of contents Testbenches Evalutie van een hardware-ontwerp Testbenches Doelstelling van testbenches Het testen van VHDL code (of delen van code) zodat de juiste werking kan getest worden voordat de code geïmplementeerd wordt in een hardware component. Het definiëren van een omgeving die in eens testmachine kan gebruikt worden om een bestaande component te testen. Een elektronisch ontwerp maken op zich volstaat niet. Bij een goed ontwerp bestaat minstens 50 % van de ontwerptijd uit het uitdenken en uitwerken van testen die verzekeren dat het ontwerp functioneert zoals het moet.</description>
     </item>
     
     <item>

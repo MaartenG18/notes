@@ -13,8 +13,6 @@ weight= 3
 
 ### Situering RAM
 
-![](/img/DISCH/ch-3/RAM-situering.PNG)
-
 ### Indeling RAM
 
 - **SRAM (Statische RAM)**
@@ -59,7 +57,7 @@ weight= 3
 
 #### SRAM-geheugenstructuur
 
-![](/img/DISCH/ch-3/SRAM-geheugenstructuur.PNG)
+
 
 #### SRAM adresdecoder
 
