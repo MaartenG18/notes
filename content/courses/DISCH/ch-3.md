@@ -215,17 +215,17 @@ Een belangrijk voordeel van het opladen van de zwevende gate door doortunnelen, 
 
 ### Niet-vluchtig RAM
 
-- Combinatie van
+- **Combinatie van**
 	+ SRAM (snel)
 	+ EEPROM (traag)
-- Onder normale werking: SRAM
-- Een "store"-bevel slaat alles op in de EEPROM
-- Een "recall"-bevel haalt alles uit de EEPROM
+- **Onder normale werking: SRAM**
+- **Een "store"-bevel slaat alles op in de EEPROM**
+- **Een "recall"-bevel haalt alles uit de EEPROM**
 - Wanneer de voedingsspanning wegvalt, kan een "power failure" schakelingen dit selecteren en tijdig een "store"-bevel geven.
 
 ## Geheugenuitbreiding
 
-Het principe van geheugenuitbreiding is van toepassing op zowel ROM- als RAM-geheugens
+Het **principe van geheugenuitbreiding is van toepassing op zowel ROM- als RAM-geheugens**
 
 - Uitbreiding van de woordbreedte:
 	+ Het aantal bereikbare adressen blijft gelijk
