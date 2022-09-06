@@ -10,20 +10,19 @@
     <webMaster>maartengielkens2000@gmail.com (Maarten Gielkens)</webMaster><atom:link href="https://maarteng18.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1. Herhaling MOSFET en BJT</title>
-      <link>https://maarteng18.github.io/notes/courses/ansch/ch-1/</link>
+      <link>https://maarteng18.github.io/notes/archive/ansch/ch-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
-      <guid>https://maarteng18.github.io/notes/courses/ansch/ch-1/</guid>
-      <description>MOSFET {{% notice note %}} A notice disclaimer {{% /notice %}} A notice disclaimer
-BJT </description>
+      <guid>https://maarteng18.github.io/notes/archive/ansch/ch-1/</guid>
+      <description>MOSFET Werking MOS transistor De MOS transistor bestaat uit: een gate gemaakt uit polykristallijn Si boven op een heel dun oxide dat op het Si neergelegd is. een source en een drain die geïmplementeerd zijn a.d.h.v. een pn-junctie gescheiden van de bulk. Wanneer er een spanning aangelegd wordt aan de gate: Eerst zorgen dat ladingsdragers van de bulk, die van een tegengesteld type zijn dan de gewenste ladingsdragers, voldoende ver van onder de gate verdwijnen.</description>
     </item>
     
     <item>
       <title>1. Inleiding</title>
-      <link>https://maarteng18.github.io/notes/courses/disch/ch-1/</link>
+      <link>https://maarteng18.github.io/notes/archive/disch/ch-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
-      <guid>https://maarteng18.github.io/notes/courses/disch/ch-1/</guid>
+      <guid>https://maarteng18.github.io/notes/archive/disch/ch-1/</guid>
       <description>Table of contents Herhaling implementatieplatformen FPGA vs. microprocessor Codevoorbeeld Herhaling implementatieplatformen Discrete logica: digitale schakelingen opgebouwd met bijvoorbeeld chips uit de 74-reeks.
 Microprocessor: vaste hardware waarop software wordt uitgevoerd, zoals bijvoorbeeld de ATmega328-processor op het Arduino Uno-bord.
 ASIC (Application Specific Integrated Circuit): vaste hardware met een specifieke functie.
@@ -33,10 +32,10 @@ FPGA vs. microprocessor FPGA Bouwblokken van de FPGA CLB: Configurable Logic Blo
     
     <item>
       <title>2. Progammeerbare logica</title>
-      <link>https://maarteng18.github.io/notes/courses/disch/ch-2/</link>
+      <link>https://maarteng18.github.io/notes/archive/disch/ch-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
-      <guid>https://maarteng18.github.io/notes/courses/disch/ch-2/</guid>
+      <guid>https://maarteng18.github.io/notes/archive/disch/ch-2/</guid>
       <description>Table of contents Overzicht programmeerbare componenten FPGA-technologie Overzicht programmeerbare componenten Programmeerbare verbindingen Fuse:
 Gesloten verbinding, opent onder grote stroom OTP (One-Time Programmable) Antifuse:
 Open verbinding, sluit onder hoge spanning OTP SRAM-gebaseerde verbinding:
@@ -45,31 +44,103 @@ FAMOS EPROM technologie (UV- erasable) FLOTOX EEPROM technologie Flash technolog
     </item>
     
     <item>
-      <title>3. Geheugens</title>
-      <link>https://maarteng18.github.io/notes/courses/disch/ch-3/</link>
+      <title>2. Transistor configuraties</title>
+      <link>https://maarteng18.github.io/notes/archive/ansch/ch-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
-      <guid>https://maarteng18.github.io/notes/courses/disch/ch-3/</guid>
+      <guid>https://maarteng18.github.io/notes/archive/ansch/ch-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3. Geheugens</title>
+      <link>https://maarteng18.github.io/notes/archive/disch/ch-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/archive/disch/ch-3/</guid>
       <description>Table of contents RAM-geheugens ROM-geheugens Geheugenuitbreiding RAM-geheugens Situering RAM Indeling RAM SRAM (Statische RAM) Eigenschappen: Snel toegangelijk Veel oppervlakte Gebruiksgebied: Cachegeheugen DRAM (Dynamische RAM) Eigenschappen: Hoge densiteit Relatief trage uitlezing Gebruiksgebied: Hoofdgeheugen Massageheugen SRAM Opbouw van een SRAM-cel Het basis geheugenelement is een lus van invertoren. Deze lus moet onderbroken worden om te schrijven (8 transistors nodig). We kunnen deze onderbreking weglaten als de transistors die schrijven meer stroom leveren dan de transistores in de geheugencel.</description>
     </item>
     
     <item>
-      <title>4. Ontwerpprincipes voor synchrone logica</title>
-      <link>https://maarteng18.github.io/notes/courses/disch/ch-4/</link>
+      <title>3. Klasse A versterker</title>
+      <link>https://maarteng18.github.io/notes/archive/ansch/ch-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
-      <guid>https://maarteng18.github.io/notes/courses/disch/ch-4/</guid>
+      <guid>https://maarteng18.github.io/notes/archive/ansch/ch-3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>4. Klasse B versterker</title>
+      <link>https://maarteng18.github.io/notes/archive/ansch/ch-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/archive/ansch/ch-4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>4. Ontwerpprincipes voor synchrone logica</title>
+      <link>https://maarteng18.github.io/notes/archive/disch/ch-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/archive/disch/ch-4/</guid>
       <description>Table of contents Voorbeeld ter introductie Ontwerpvoorbeeld: AES Voorbeeld ter introductie Kleren worden gewassen in 3 stappen:
 1 wasmand verwerken Het verwerken van 1 wasmand duurt 1 uur Throughput = 1 wasmand/uur Latency per wasmand = 1 uur 3 wasmanden verwerken Het verwerken van 3 wasmanden duurt 3 uren als we de wasmanden 1 voor 1 volledig verwerken Throughput = 1 wasmand/uur Latency per wasmand = 1 uur Verhogen van de throughput Parallellisatie Elke machine wordt 3x voorzien Het verwerken van 3 wasmanden duurt 1 uur Throughput = 3 wasmanden/uur Latency per wasmand = 1 uur Pipelining Throughput = 3 wasmanden/uur (na de opstartfase) Latency per wasmand = 1 uur Wat als het proces meerdere keren wordt doorlopen Stel dat een wasmand 3 keer na mekaar het hele proces moet doorlopen.</description>
     </item>
     
     <item>
       <title>5. Simulatie</title>
-      <link>https://maarteng18.github.io/notes/courses/disch/ch-5/</link>
+      <link>https://maarteng18.github.io/notes/archive/disch/ch-5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
-      <guid>https://maarteng18.github.io/notes/courses/disch/ch-5/</guid>
+      <guid>https://maarteng18.github.io/notes/archive/disch/ch-5/</guid>
       <description>Table of contents Testbenches Evalutie van een hardware-ontwerp Testbenches Doelstelling van testbenches Het testen van VHDL code (of delen van code) zodat de juiste werking kan getest worden voordat de code geïmplementeerd wordt in een hardware component. Het definiëren van een omgeving die in eens testmachine kan gebruikt worden om een bestaande component te testen. Een elektronisch ontwerp maken op zich volstaat niet. Bij een goed ontwerp bestaat minstens 50 % van de ontwerptijd uit het uitdenken en uitwerken van testen die verzekeren dat het ontwerp functioneert zoals het moet.</description>
+    </item>
+    
+    <item>
+      <title>5. voedingen</title>
+      <link>https://maarteng18.github.io/notes/archive/ansch/ch-5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/archive/ansch/ch-5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>6. GaN transistor toepassingen</title>
+      <link>https://maarteng18.github.io/notes/archive/ansch/ch-6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/archive/ansch/ch-6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>7. Thyristors</title>
+      <link>https://maarteng18.github.io/notes/archive/ansch/ch-7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/archive/ansch/ch-7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>8. Berekening van elektronische circuits</title>
+      <link>https://maarteng18.github.io/notes/archive/ansch/ch-8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/archive/ansch/ch-8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>9. Niet-lineaire OpAMP schakelingen</title>
+      <link>https://maarteng18.github.io/notes/archive/ansch/ch-9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/archive/ansch/ch-9/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -106,6 +177,15 @@ A notice disclaimer
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
       <guid>https://maarteng18.github.io/notes/courses/databases/les1/</guid>
       <description>This is a the title of a new note </description>
+    </item>
+    
+    <item>
+      <title>10. OTA schakelingen</title>
+      <link>https://maarteng18.github.io/notes/archive/ansch/ch-10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/archive/ansch/ch-10/</guid>
+      <description></description>
     </item>
     
   </channel>

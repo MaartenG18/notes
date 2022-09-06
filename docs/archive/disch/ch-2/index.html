@@ -1,0 +1,2261 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.100.1" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="../../../images/logo_transparent.png" type="image/png">
+
+    <title>2. Progammeerbare logica :: Maarten&#39;s notes</title>
+
+    
+    <link href="../../../css/nucleus.css?1662466005" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1662466005" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1662466005" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1662466005" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1662466005" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1662466005" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1662466005" rel="stylesheet">
+    <link href="../../../css/theme.css?1662466005" rel="stylesheet">
+    <link href="../../../css/devselector.css?1662466005" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1662466005" rel="stylesheet">
+    <link href="../../../css/theme-kul.css?1662466005" rel="stylesheet">
+    
+
+    <script src="../../../js/jquery-3.3.1.min.js?1662466005"></script>
+    <script src="../../../js/devselector.js?1662466005"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="../../../archive/disch/ch-2/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="https://maarteng18.github.io/" target="_blank">
+  <img src="../../../images/logo_transparent.png" alt="UHasselt" id="mglogo" />
+</a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../../js/lunr.min.js?1662466005"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1662466005"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/maarteng18.github.io\/notes\/";
+    
+</script>
+<script type="text/javascript" src="../../../js/search.js?1662466005"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='../../../'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/" title="Current Courses" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../courses/">
+          Current Courses
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/algoritmen-en-datasctructuren/" title="Algoritmen en datasctructuren" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../courses/algoritmen-en-datasctructuren/">
+          Algoritmen en datasctructuren
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/cct/" title="Cloud Computing &amp; toepassingen" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../courses/cct/">
+          Cloud Computing &amp; toepassingen
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/databases/" title="Databases" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../courses/databases/">
+          Databases
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/courses/databases/les1/" title="Les 1" class="dd-item ">
+        <a href="../../../courses/databases/les1/">
+        Les 1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/obj/" title="Objectgeoriënteerd programmeren" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../courses/obj/">
+          Objectgeoriënteerd programmeren
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/regeltechniek/" title="Regeltechniek" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../courses/regeltechniek/">
+          Regeltechniek
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/scripts-commands/" title="Scripts &amp; commands" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../scripts-commands/">
+          Scripts &amp; commands
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/scripts-commands/imagemagick/" title="Image Magick" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../scripts-commands/imagemagick/">
+          Image Magick
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/scripts-commands/imagemagick/montage/" title="Montage" class="dd-item ">
+        <a href="../../../scripts-commands/imagemagick/montage/">
+        Montage
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/scripts-commands/markdown/" title="Markdown" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../scripts-commands/markdown/">
+          Markdown
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/scripts-commands/markdown/notices/" title="Notices" class="dd-item ">
+        <a href="../../../scripts-commands/markdown/notices/">
+        Notices
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/archive/" title="Archive" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="../../../archive/">
+          Archive
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/archive/ansch/" title="Analoge Elektronische Schakelingen" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../archive/ansch/">
+          Analoge Elektronische Schakelingen
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-1/" title="1. Herhaling MOSFET en BJT" class="dd-item ">
+        <a href="../../../archive/ansch/ch-1/">
+        1. Herhaling MOSFET en BJT
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-2/" title="2. Transistor configuraties" class="dd-item ">
+        <a href="../../../archive/ansch/ch-2/">
+        2. Transistor configuraties
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-3/" title="3. Klasse A versterker" class="dd-item ">
+        <a href="../../../archive/ansch/ch-3/">
+        3. Klasse A versterker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-4/" title="4. Klasse B versterker" class="dd-item ">
+        <a href="../../../archive/ansch/ch-4/">
+        4. Klasse B versterker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-5/" title="5. voedingen" class="dd-item ">
+        <a href="../../../archive/ansch/ch-5/">
+        5. voedingen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-6/" title="6. GaN transistor toepassingen" class="dd-item ">
+        <a href="../../../archive/ansch/ch-6/">
+        6. GaN transistor toepassingen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-7/" title="7. Thyristors" class="dd-item ">
+        <a href="../../../archive/ansch/ch-7/">
+        7. Thyristors
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-8/" title="8. Berekening van elektronische circuits" class="dd-item ">
+        <a href="../../../archive/ansch/ch-8/">
+        8. Berekening van elektronische circuits
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-9/" title="9. Niet-lineaire OpAMP schakelingen" class="dd-item ">
+        <a href="../../../archive/ansch/ch-9/">
+        9. Niet-lineaire OpAMP schakelingen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-10/" title="10. OTA schakelingen" class="dd-item ">
+        <a href="../../../archive/ansch/ch-10/">
+        10. OTA schakelingen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/archive/disch/" title="Digitale Elektronische Schakelingen" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="../../../archive/disch/">
+          Digitale Elektronische Schakelingen
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/disch/ch-1/" title="1. Inleiding" class="dd-item ">
+        <a href="../../../archive/disch/ch-1/">
+        1. Inleiding
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/disch/ch-2/" title="2. Progammeerbare logica" class="dd-item active">
+        <a href="../../../archive/disch/ch-2/">
+        2. Progammeerbare logica
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/disch/ch-3/" title="3. Geheugens" class="dd-item ">
+        <a href="../../../archive/disch/ch-3/">
+        3. Geheugens
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/disch/ch-4/" title="4. Ontwerpprincipes voor synchrone logica" class="dd-item ">
+        <a href="../../../archive/disch/ch-4/">
+        4. Ontwerpprincipes voor synchrone logica
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/disch/ch-5/" title="5. Simulatie" class="dd-item ">
+        <a href="../../../archive/disch/ch-5/">
+        5. Simulatie
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../../'>Maarten's notes</a> > <a href='../../../archive/'>Archive</a> > <a href='../../../archive/disch/'>Digitale Elektronische Schakelingen</a> > 2. Progammeerbare logica
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#table-of-contents">Table of contents</a></li>
+    <li><a href="#overzicht-programmeerbare-componenten">Overzicht programmeerbare componenten</a>
+      <ul>
+        <li><a href="#programmeerbare-verbindingen">Programmeerbare verbindingen</a></li>
+        <li><a href="#programmeerbare-componenten">Programmeerbare componenten</a></li>
+      </ul>
+    </li>
+    <li><a href="#fpga-technologie">FPGA-technologie</a>
+      <ul>
+        <li><a href="#fpga-architectuur">FPGA architectuur</a></li>
+        <li><a href="#vergelijking-cpld-en-fpga">Vergelijking CPLD en FPGA</a></li>
+        <li><a href="#basisbouwblokken-in-een-clb">Basisbouwblokken in een CLB</a></li>
+        <li><a href="#basisprincipe-van-een-sm">Basisprincipe van een SM</a></li>
+        <li><a href="#evolutie-van-xilinx-fpgas">Evolutie van Xilinx FPGA&rsquo;s</a></li>
+        <li><a href="#configuratie-van-fpgas">Configuratie van FPGA&rsquo;s</a></li>
+        <li><a href="#configuratie-van-een-clb">Configuratie van een CLB</a></li>
+        <li><a href="#configuratiebits">Configuratiebits</a></li>
+        <li><a href="#configuratie-van-een-sm">Configuratie van een SM</a></li>
+        <li><a href="#ontwerp-van-een-digitaal-systeem-op-fpga">Ontwerp van een digitaal systeem op FPGA</a></li>
+        <li><a href="#fpga-vendors">FPGA vendors</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              2. Progammeerbare logica
+            </h1>
+          
+
+        
+
+
+<h2 id="table-of-contents">Table of contents</h2>
+<ol>
+<li><a href="#overzicht-programmeerbare-componenten">Overzicht programmeerbare componenten</a></li>
+<li><a href="#fpga-technologie">FPGA-technologie</a></li>
+</ol>
+<h2 id="overzicht-programmeerbare-componenten">Overzicht programmeerbare componenten</h2>
+<h3 id="programmeerbare-verbindingen">Programmeerbare verbindingen</h3>
+<ul>
+<li>
+<p><strong>Fuse</strong>:</p>
+<ul>
+<li>Gesloten verbinding, opent onder grote stroom</li>
+<li>OTP (One-Time Programmable)</li>
+</ul>
+</li>
+<li>
+<p><strong>Antifuse</strong>:</p>
+<ul>
+<li>Open verbinding, sluit onder hoge spanning</li>
+<li>OTP</li>
+</ul>
+</li>
+<li>
+<p><strong>SRAM</strong>-gebaseerde verbinding:</p>
+<ul>
+<li>Pass transistors gecontroleerd door SRAM</li>
+<li>Volledig CMOS gebaseerd</li>
+</ul>
+</li>
+<li>
+<p><strong>(E)EPROM</strong>-gebaseerd:</p>
+<ul>
+<li>FAMOS EPROM technologie (UV- erasable)</li>
+<li>FLOTOX EEPROM technologie</li>
+<li>Flash technologie</li>
+</ul>
+</li>
+</ul>
+<h3 id="programmeerbare-componenten">Programmeerbare componenten</h3>
+<ul>
+<li><strong>(Simple) Programmable Logic Device ((S)PLD)</strong>:
+<ul>
+<li>Programmable Logic Array (PLA)</li>
+<li>Programmable Array Logic (PAL)</li>
+<li>Programmable Read Only Memory (PROM, EPROM, EEPROM)</li>
+</ul>
+</li>
+<li><strong>Complex PLD (CPLD)</strong></li>
+<li><strong>Field Programmable Gate Array (FPGA)</strong></li>
+</ul>
+<h4 id="spld">SPLD</h4>
+<ul>
+<li><strong>Elke functie</strong> kan geraliseerd worden in een <strong>&ldquo;Sum Of Products&rdquo; (SOP)</strong> vorm.</li>
+<li>Een <strong>SOP</strong> vorm kan <strong>gerealiseerd worden door INV/AND/OR (of INV/NAND/NAND)</strong></li>
+<li>De <strong>AND/OR gates zijn vooraf gemaakt</strong>.</li>
+<li><strong>Programmeren</strong> gebeurt door het <strong>maken of verbreken van connecties tussen gates.</strong></li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/SPLD.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/SPLD.png"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li><strong>PLA</strong>:
+<ul>
+<li>Zowel AND als OR arrays zijn programmeerbaar</li>
+</ul>
+</li>
+<li><strong>PAL</strong>:
+<ul>
+<li>AND array is programmeerbaar</li>
+<li>OR arry is vast</li>
+</ul>
+</li>
+<li><strong>PROM</strong>:
+<ul>
+<li>Alle mogelijkheden zijn voorzien</li>
+</ul>
+</li>
+</ul>
+<h4 id="pla">PLA</h4>
+<ul>
+<li><strong>Gemeenschappelijk gebruik van producttermen</strong></li>
+<li>Voorbeeld:
+<ul>
+<li>F0 = A + B&rsquo;C'</li>
+<li>F1 = AC&rsquo; + AB</li>
+<li>F2 = B&rsquo;C + AB</li>
+<li>F3 = B&rsquo;C + A</li>
+</ul>
+</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/PLA-tabel.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/PLA-tabel.png"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li><strong>Alle Mogelijke verbindingen zijn beschikbaar voor het programmeren:</strong></li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/PLA-clean.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/PLA-clean.png"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li><strong>De niet-gewenste verbindingen worden opgeblazen</strong></li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/PLA-ready.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/PLA-ready.png"  >
+	</a>
+	
+</figure>
+</p>
+
+<div class="notices note" ><p>Sommige technologieën maken verbindingen i.p.v. ze op te blazen.</p>
+</div>
+
+<ul>
+<li>
+<p><strong>Conventies PLA</strong></p>
+<ul>
+<li>Om het aantal lijnen te verminderen tekenen we de verschillende ingangen op 1 lijn.</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/PLA-conventie.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/PLA-conventie.png"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li>Elke ingang wordt geïnverteerd zodat we zowel de niet-geïnverteerde ingang als de geïnverteerde ingang kunnen gebruiken.</li>
+</ul>
+</li>
+<li>
+<p><strong>Voorstelling PLA</strong></p>
+<ul>
+<li>PLA-voorstelling waarbij alle verbindingen gemaakt zijn.</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/PLA-all.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/PLA-all.png"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li>PLA-voorstelling voor de implementatie:
+<ul>
+<li>F0 = AB + A&rsquo;B'</li>
+<li>F1 = CD&rsquo; + C&rsquo;D</li>
+</ul>
+</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/PLA-voorbeeld.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/PLA-voorbeeld.png"  >
+	</a>
+	
+</figure>
+</p>
+</li>
+</ul>
+<h4 id="verschil-tussen-pla-en-pal">Verschil tussen PLA en PAL</h4>
+<ul>
+<li>
+<p><strong>PAL: OR verbindingen zijn vast</strong></p>
+<ul>
+<li>De volgorde van de AND termen moeten zo gekozen worden dat ze overeenkomen met de verbindingen in de OR matrix.</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/PAL-clean.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/PAL-clean.png"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li>De AND termen zijn niet herbruikbaar.
+<ul>
+<li>Dit leidt tot een grotere matrix.</li>
+</ul>
+</li>
+<li>Het aantal AND termen per OR is beperkt.
+<ul>
+<li>Niet alle functies zijn implementeeraar.</li>
+</ul>
+</li>
+<li>Enkel het AND vlak moet geprogrammeerd worden.</li>
+</ul>
+</li>
+<li>
+<p><strong>PLA</strong>:</p>
+<ul>
+<li>Zowel AND als OR verbindingen zijn programmeerbaar.</li>
+<li>De AND termen zijn herbruikbaar.</li>
+<li>Zowel het AND als het OR vlak moeten geprogrammeerd worden.</li>
+</ul>
+</li>
+</ul>
+
+<div class="ex">
+	<div class="inner">
+    	<ul>
+<li>Teken een PLA waarin de volgende functies geprogrammeerd zijn:
+<ul>
+<li>Z1 = A xor B xor C</li>
+<li>Z2 = A and (B xnor C)</li>
+<li>2-1 multiplexer</li>
+</ul>
+</li>
+<li>Hoe ziet een PAL eruit waarin deze functies geprogrammeerd zijn?</li>
+</ul>
+
+	</div>
+</div>
+<h4 id="rom-als-pld">ROM als PLD</h4>
+<ul>
+<li>In tegenstelling tot een PLA is een <strong>ROM een structuur met een volledig gecodeerde AND array</strong>.</li>
+<li><strong>Elke mogelijkheid tot het samen nemen van ingangen (adreslijnen) zit erin</strong>.
+<figure>
+	<a href="../../../img/DISCH/ch-2/ROM-example.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/ROM-example.png"  >
+	</a>
+	
+</figure>
+</li>
+</ul>
+
+<div class="ex">
+	<div class="inner">
+    	<p>Wat is de inhoud van een ROM-geheugen dat de volgende functies realiseert:</p>
+<ul>
+<li>Z1 = A xor B xor C</li>
+<li>Z2 = A and (B xnor C)</li>
+<li>2-1 multiplexer</li>
+</ul>
+
+	</div>
+</div>
+<h4 id="cpld">CPLD</h4>
+<ul>
+<li><strong>CPLD = Complex Programmable Logic Device</strong></li>
+<li>Een CPLD <strong>bestaat uit verschillende logische blokken die elk equivalent zijn met een (S)PLD</strong>.</li>
+<li>Deze <strong>(S)PLDs worden met elkaar verbonden via een Programmable Interconnect Matrix (PIM)</strong>.</li>
+<li>Op deze manier wordt het <strong>Si-oppervlak nuttiger gebruikt in vergelijking met een grote PLD</strong>.</li>
+</ul>
+<p>Algemene structuur:</p>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/CPLD.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/CPLD.png"  >
+	</a>
+	
+</figure>
+</p>
+<h2 id="fpga-technologie">FPGA-technologie</h2>
+<ul>
+<li><strong>FPGA = Field Programmable Gate Array</strong></li>
+<li><strong>Array van logische cellen die met elkaar en met de I/O cellen kunnen communiceren</strong></li>
+<li>Horizontale en verticale verbindingen.</li>
+</ul>
+<h3 id="fpga-architectuur">FPGA architectuur</h3>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/FPGA.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/FPGA.png"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li><strong>IOB</strong>: Input/Output Block</li>
+<li><strong>CLB</strong>: Configurable Logic Block</li>
+<li><strong>SM</strong>: Switch Matrix</li>
+</ul>
+<h3 id="vergelijking-cpld-en-fpga">Vergelijking CPLD en FPGA</h3>
+<ul>
+<li><strong>CPLD</strong>
+<ul>
+<li>Continue interconnect</li>
+<li>Verbindingen hebben een vaste vertraging</li>
+</ul>
+</li>
+<li><strong>FPGA</strong>
+<ul>
+<li>Gesegmenteerde verbindingen</li>
+<li>Verbindingen hebben een onvoorspelbare vertraging.</li>
+</ul>
+</li>
+</ul>
+<h3 id="basisbouwblokken-in-een-clb">Basisbouwblokken in een CLB</h3>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/CLB.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/CLB.png"  >
+	</a>
+	
+</figure>
+</p>
+<h3 id="basisprincipe-van-een-sm">Basisprincipe van een SM</h3>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/SM.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/SM.png"  >
+	</a>
+	
+</figure>
+</p>
+<h3 id="evolutie-van-xilinx-fpgas">Evolutie van Xilinx FPGA&rsquo;s</h3>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/Evolutie/evolution.png" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/Evolutie/evolution.png"  >
+	</a>
+	
+</figure>
+</p>
+<h3 id="configuratie-van-fpgas">Configuratie van FPGA&rsquo;s</h3>
+<ul>
+<li><strong>Configuratiedata</strong>:
+<ul>
+<li>bitstream</li>
+</ul>
+</li>
+<li><strong>Configuratiegeheugen</strong>:
+<ul>
+<li>(Anti-)fuse: one-time programmable (OTP)</li>
+<li>Flash: niet-vluchtig</li>
+<li>SRAM: vluchtig</li>
+</ul>
+</li>
+<li><strong>SRAM (vs. flash) configuratiegeheugen</strong>:
+<ul>
+<li>Hogere dichtheid</li>
+<li>Hoger vermogenverbruik</li>
+<li>On-board of on-chip niet-vluchtig geheugen nodig om de bitsream op te slaan tijdens power-off</li>
+<li>Hogere configuratiesnelheid</li>
+</ul>
+</li>
+</ul>
+<h3 id="configuratie-van-een-clb">Configuratie van een CLB</h3>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/CLB-configuratie.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/CLB-configuratie.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h3 id="configuratiebits">Configuratiebits</h3>
+<p>Waarom 16 configuratiebits voor een 4-naar-1 LUT?</p>
+<ul>
+<li>2<sup>16</sup> mogelijke output functies:
+<ul>
+<li>Z<sub>0</sub> = 0</li>
+<li>Z<sub>1</sub> = A&rsquo;.B&rsquo;.C&rsquo;.D'</li>
+<li>Z<sub>2</sub> = A&rsquo;.B&rsquo;.C&rsquo;.D</li>
+<li>Z<sub>3</sub> = A&rsquo;.B&rsquo;.C'</li>
+<li>&hellip;</li>
+<li>Z<sub>65280</sub> = A</li>
+<li>&hellip;</li>
+<li>Z<sub>65535</sub> = 1</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">A</th>
+<th style="text-align:center">B</th>
+<th style="text-align:center">C</th>
+<th style="text-align:center">D</th>
+<th style="text-align:center">Z<sub>0</sub></th>
+<th style="text-align:center">Z<sub>1</sub></th>
+<th style="text-align:center">Z<sub>2</sub></th>
+<th style="text-align:center">Z<sub>3</sub></th>
+<th style="text-align:center">&hellip;</th>
+<th style="text-align:center">Z<sub>65280</sub></th>
+<th style="text-align:center">&hellip;</th>
+<th style="text-align:center">Z<sub>65535</sub></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="configuratie-van-een-sm">Configuratie van een SM</h3>
+<p><figure>
+	<a href="../../../img/DISCH/ch-2/SM-configuratie.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-2/SM-configuratie.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h3 id="ontwerp-van-een-digitaal-systeem-op-fpga">Ontwerp van een digitaal systeem op FPGA</h3>
+<ul>
+<li><strong>Beschrijving van het ontwerp</strong>
+<ul>
+<li>Schematische invoer</li>
+<li>Invoer via HDL (Hardware Description Language)
+<ul>
+<li>VHDL (VHSIC HDL)
+<ul>
+<li>VHSIC = Very High Speed Integrated Circuit</li>
+</ul>
+</li>
+<li>Verilog</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Implementatie van het systeem</strong>
+<ul>
+<li>Bitsream met configuratie-gegevens
+<ul>
+<li>Na synthese en place &amp; route</li>
+</ul>
+</li>
+<li>Inladen van de bitstream
+<ul>
+<li>Via download kabel (parallel, USB) verbonden met PC</li>
+<li>Vanuit on-board ROM</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="ontwerp-mbv-vhdl">Ontwerp m.b.v. VHDL</h4>
+<ul>
+<li><strong>Platform-onafhankelijke code</strong>
+<ul>
+<li>Bruikbaar voor alle FPGA&rsquo;s</li>
+<li>Bruikbaar voor ASIC standaardcel ontwerp</li>
+</ul>
+</li>
+<li><strong>Platform-specifiek code</strong>
+<ul>
+<li>Geoptimaliseerd voor een specifiek FPGA</li>
+<li>Gebruikmakend van specifieke compenenten in een FPGA
+<ul>
+<li>Bv.: multiplexers, block RAM&hellip;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="fpga-vendors">FPGA vendors</h3>
+<ul>
+<li>AMD (Xilinx) en Intel:
+<ul>
+<li>SRAM-gebaseerde FPGA&rsquo;s</li>
+<li>Meer dan 2/3 van de FPGA markt</li>
+</ul>
+</li>
+<li>Microchip (Microsemi):
+<ul>
+<li>Flash-gebaseerde FPGA&rsquo;s</li>
+<li>Specifieke marktsector voor toepassingen met hoge betrouwbaarheid, databeveiliging, laag vermogenverbruik</li>
+</ul>
+</li>
+<li>Lattice en Quicklogic:
+<ul>
+<li>Laag vermogenverbruik</li>
+<li>Specifieke functionaliteit</li>
+</ul>
+</li>
+</ul>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../../archive/disch/ch-1/" title="1. Inleiding"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../../archive/disch/ch-3/" title="3. Geheugens" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../js/clipboard.min.js?1662466005"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1662466005"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1662466005"></script>
+    <script src="../../../js/jquery.sticky.js?1662466005"></script>
+    <script src="../../../js/featherlight.min.js?1662466005"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1662466005"></script>
+    <script src="../../../js/learn.js?1662466005"></script>
+    <script src="../../../js/hugo-learn.js?1662466005"></script>
+    
+        
+            <script src="../../../mermaid/mermaid.js?1662466005"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    <script>
+    window.MathJax = {
+      chtml: {
+        scale: 2,                      
+        minScale: .5,                  
+        matchFontHeight: true,         
+        mtextInheritFont: false,       
+        merrorInheritFont: true,       
+        mathmlSpacing: false,          
+        skipAttributes: {},            
+        exFactor: .5,                  
+        displayAlign: 'center',        
+        displayIndent: '0'             
+      }
+    };
+    </script>
+    
+    
+
+  </body>
+</html>
+

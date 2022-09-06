@@ -1,0 +1,1965 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.100.1" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="../../../images/logo_transparent.png" type="image/png">
+
+    <title>3. Geheugens :: Maarten&#39;s notes</title>
+
+    
+    <link href="../../../css/nucleus.css?1662466005" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1662466005" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1662466005" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1662466005" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1662466005" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1662466005" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1662466005" rel="stylesheet">
+    <link href="../../../css/theme.css?1662466005" rel="stylesheet">
+    <link href="../../../css/devselector.css?1662466005" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1662466005" rel="stylesheet">
+    <link href="../../../css/theme-kul.css?1662466005" rel="stylesheet">
+    
+
+    <script src="../../../js/jquery-3.3.1.min.js?1662466005"></script>
+    <script src="../../../js/devselector.js?1662466005"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="../../../archive/disch/ch-3/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="https://maarteng18.github.io/" target="_blank">
+  <img src="../../../images/logo_transparent.png" alt="UHasselt" id="mglogo" />
+</a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../../js/lunr.min.js?1662466005"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1662466005"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/maarteng18.github.io\/notes\/";
+    
+</script>
+<script type="text/javascript" src="../../../js/search.js?1662466005"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='../../../'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/" title="Current Courses" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../courses/">
+          Current Courses
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/algoritmen-en-datasctructuren/" title="Algoritmen en datasctructuren" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../courses/algoritmen-en-datasctructuren/">
+          Algoritmen en datasctructuren
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/cct/" title="Cloud Computing &amp; toepassingen" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../courses/cct/">
+          Cloud Computing &amp; toepassingen
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/databases/" title="Databases" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../courses/databases/">
+          Databases
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/courses/databases/les1/" title="Les 1" class="dd-item ">
+        <a href="../../../courses/databases/les1/">
+        Les 1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/obj/" title="Objectgeoriënteerd programmeren" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../courses/obj/">
+          Objectgeoriënteerd programmeren
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/regeltechniek/" title="Regeltechniek" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../courses/regeltechniek/">
+          Regeltechniek
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/scripts-commands/" title="Scripts &amp; commands" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../scripts-commands/">
+          Scripts &amp; commands
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/scripts-commands/imagemagick/" title="Image Magick" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../scripts-commands/imagemagick/">
+          Image Magick
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/scripts-commands/imagemagick/montage/" title="Montage" class="dd-item ">
+        <a href="../../../scripts-commands/imagemagick/montage/">
+        Montage
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/scripts-commands/markdown/" title="Markdown" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../scripts-commands/markdown/">
+          Markdown
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/scripts-commands/markdown/notices/" title="Notices" class="dd-item ">
+        <a href="../../../scripts-commands/markdown/notices/">
+        Notices
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/archive/" title="Archive" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="../../../archive/">
+          Archive
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/archive/ansch/" title="Analoge Elektronische Schakelingen" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../archive/ansch/">
+          Analoge Elektronische Schakelingen
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-1/" title="1. Herhaling MOSFET en BJT" class="dd-item ">
+        <a href="../../../archive/ansch/ch-1/">
+        1. Herhaling MOSFET en BJT
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-2/" title="2. Transistor configuraties" class="dd-item ">
+        <a href="../../../archive/ansch/ch-2/">
+        2. Transistor configuraties
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-3/" title="3. Klasse A versterker" class="dd-item ">
+        <a href="../../../archive/ansch/ch-3/">
+        3. Klasse A versterker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-4/" title="4. Klasse B versterker" class="dd-item ">
+        <a href="../../../archive/ansch/ch-4/">
+        4. Klasse B versterker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-5/" title="5. voedingen" class="dd-item ">
+        <a href="../../../archive/ansch/ch-5/">
+        5. voedingen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-6/" title="6. GaN transistor toepassingen" class="dd-item ">
+        <a href="../../../archive/ansch/ch-6/">
+        6. GaN transistor toepassingen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-7/" title="7. Thyristors" class="dd-item ">
+        <a href="../../../archive/ansch/ch-7/">
+        7. Thyristors
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-8/" title="8. Berekening van elektronische circuits" class="dd-item ">
+        <a href="../../../archive/ansch/ch-8/">
+        8. Berekening van elektronische circuits
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-9/" title="9. Niet-lineaire OpAMP schakelingen" class="dd-item ">
+        <a href="../../../archive/ansch/ch-9/">
+        9. Niet-lineaire OpAMP schakelingen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-10/" title="10. OTA schakelingen" class="dd-item ">
+        <a href="../../../archive/ansch/ch-10/">
+        10. OTA schakelingen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/archive/disch/" title="Digitale Elektronische Schakelingen" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="../../../archive/disch/">
+          Digitale Elektronische Schakelingen
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/disch/ch-1/" title="1. Inleiding" class="dd-item ">
+        <a href="../../../archive/disch/ch-1/">
+        1. Inleiding
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/disch/ch-2/" title="2. Progammeerbare logica" class="dd-item ">
+        <a href="../../../archive/disch/ch-2/">
+        2. Progammeerbare logica
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/disch/ch-3/" title="3. Geheugens" class="dd-item active">
+        <a href="../../../archive/disch/ch-3/">
+        3. Geheugens
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/disch/ch-4/" title="4. Ontwerpprincipes voor synchrone logica" class="dd-item ">
+        <a href="../../../archive/disch/ch-4/">
+        4. Ontwerpprincipes voor synchrone logica
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/disch/ch-5/" title="5. Simulatie" class="dd-item ">
+        <a href="../../../archive/disch/ch-5/">
+        5. Simulatie
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../../'>Maarten's notes</a> > <a href='../../../archive/'>Archive</a> > <a href='../../../archive/disch/'>Digitale Elektronische Schakelingen</a> > 3. Geheugens
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#table-of-contents">Table of contents</a></li>
+    <li><a href="#ram-geheugens">RAM-geheugens</a>
+      <ul>
+        <li><a href="#situering-ram">Situering RAM</a></li>
+        <li><a href="#indeling-ram">Indeling RAM</a></li>
+        <li><a href="#sram">SRAM</a></li>
+      </ul>
+    </li>
+    <li><a href="#rom-geheugens">ROM-geheugens</a>
+      <ul>
+        <li><a href="#opbouw-van-een-dram-cel">Opbouw van een DRAM-cel</a></li>
+        <li><a href="#situering-rom">Situering ROM</a></li>
+        <li><a href="#masker-rom-met-diodes">Masker ROM met diodes</a></li>
+        <li><a href="#masker-rom-met-transistors">Masker ROM met transistors</a></li>
+        <li><a href="#masker-rom-met-precharge">Masker ROM met precharge</a></li>
+        <li><a href="#prom">PROM</a></li>
+        <li><a href="#eprom-famos-technologie">EPROM FAMOS technologie</a></li>
+        <li><a href="#eprom">EPROM</a></li>
+        <li><a href="#flotox-eeprom-technologie">FLOTOX EEPROM technologie</a></li>
+        <li><a href="#flash-geheugen">FLASH geheugen</a></li>
+        <li><a href="#niet-vluchtig-ram">Niet-vluchtig RAM</a></li>
+      </ul>
+    </li>
+    <li><a href="#geheugenuitbreiding">Geheugenuitbreiding</a>
+      <ul>
+        <li><a href="#uitbreiding-van-de-woordbreedte-voorbeeld">Uitbreiding van de woordbreedte (voorbeeld)</a></li>
+        <li><a href="#uitbreiding-van-het-adresbereik-voorbeeld">Uitbreiding van het adresbereik (voorbeeld)</a></li>
+        <li><a href="#geheugenmodules">Geheugenmodules</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              3. Geheugens
+            </h1>
+          
+
+        
+
+
+<h2 id="table-of-contents">Table of contents</h2>
+<ol>
+<li><a href="#ram-geheugens">RAM-geheugens</a></li>
+<li><a href="#rom-geheugens">ROM-geheugens</a></li>
+<li><a href="#geheugenuitbreiding">Geheugenuitbreiding</a></li>
+</ol>
+<h2 id="ram-geheugens">RAM-geheugens</h2>
+<h3 id="situering-ram">Situering RAM</h3>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/RAM-situering1.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/RAM-situering1.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h3 id="indeling-ram">Indeling RAM</h3>
+<ul>
+<li><strong>SRAM (Statische RAM)</strong>
+<ul>
+<li>Eigenschappen:
+<ul>
+<li><strong>Snel toegangelijk</strong></li>
+<li><strong>Veel oppervlakte</strong></li>
+</ul>
+</li>
+<li>Gebruiksgebied:
+<ul>
+<li><strong>Cachegeheugen</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>DRAM (Dynamische RAM)</strong>
+<ul>
+<li>Eigenschappen:
+<ul>
+<li><strong>Hoge densiteit</strong></li>
+<li><strong>Relatief trage uitlezing</strong></li>
+</ul>
+</li>
+<li>Gebruiksgebied:
+<ul>
+<li><strong>Hoofdgeheugen</strong></li>
+<li><strong>Massageheugen</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="sram">SRAM</h3>
+<h4 id="opbouw-van-een-sram-cel">Opbouw van een SRAM-cel</h4>
+<ul>
+<li><strong>Het basis geheugenelement is een lus van invertoren.</strong></li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/SRAM-basis.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/SRAM-basis.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li>Deze <strong>lus moet onderbroken worden om te schrijven</strong> (8 transistors nodig).</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/SRAM-onderbroken.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/SRAM-onderbroken.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li>We kunnen deze <strong>onderbreking weglaten als de transistors die schrijven meer stroom leveren dan de transistores in de geheugencel</strong>. Dit geeft een stroompad tussen voeding en grond, wat zorgt voor een belangrijke opwarming.</li>
+<li>Gebruik ban <strong>transistors met minimale dimensies</strong></li>
+<li><strong>nMOS heeft een betere geleidbaarheid da pMOS</strong></li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/SRAM-niet-onderbroken.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/SRAM-niet-onderbroken.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<ul>
+<li><strong>Dubbel gebruik</strong>
+<ul>
+<li><strong>Schrijven</strong>
+<ul>
+<li>Beide lijnen sturen</li>
+<li>1 lijn trekt stroom</li>
+</ul>
+</li>
+<li><strong>Uitlezen</strong></li>
+</ul>
+</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/SRAM-finaal.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/SRAM-finaal.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h4 id="sram-geheugenstructuur">SRAM-geheugenstructuur</h4>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/SRAM-geheugenstructuur1.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/SRAM-geheugenstructuur1.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h4 id="sram-adresdecoder">SRAM adresdecoder</h4>
+<ul>
+<li>Om een <strong>woordlijn te selecteren</strong>, gaan we:
+<ul>
+<li>Niet alle woordlijnen extern doorgeven</li>
+<li>Wel het nummer van de woordlijn</li>
+</ul>
+</li>
+<li>Bv.:
+<ul>
+<li>64 woordlijnen</li>
+<li>Adres is een 6-bit getal</li>
+<li>6 adreslijnen nodig</li>
+</ul>
+</li>
+<li>De <strong>omzetting van het adres naar de overeenstemmende woordlijnen gebeurt in de adresdecoder</strong>, hoe meer bits het adres bevat:
+<ul>
+<li>Hoe groter de decoder</li>
+<li>Hoe trager de decoder</li>
+</ul>
+</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/SRAM-adresdecoder.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/SRAM-adresdecoder.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h4 id="sram-organisatie">SRAM-organisatie</h4>
+<p>In- en uitgangen:</p>
+<ul>
+<li><strong>CS</strong> = Chip Select (actief laag)</li>
+<li><strong>WE</strong> = Write Enable (actief laag)</li>
+<li><strong>10 adreslijnen</strong></li>
+<li><strong>4 bi-directionele datalijnen</strong></li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/SRAM-organisatie.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/SRAM-organisatie.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h4 id="sram-timing">SRAM-timing</h4>
+<p><strong>Vereenvoudigde read timing:</strong></p>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/SRAM-read-timing.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/SRAM-read-timing.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<p><strong>Vereenvoudigde write timing:</strong></p>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/SRAM-write-timing.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/SRAM-write-timing.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h4 id="battery-back-up">Battery back-up</h4>
+<p><strong>RAM is per definite vluchtig</strong></p>
+<ul>
+<li>Zodra de <strong>spanning wegvalt, gaat de inhoud van het geheugen verloren.</strong></li>
+<li><strong>Batterij kan ervoor zorgen dat de inhoud toch niet verloren gaat.</strong>
+<ul>
+<li>De batterij kan zelfs ingebouwd worden in de IC-behuizing.</li>
+</ul>
+</li>
+</ul>
+<h2 id="rom-geheugens">ROM-geheugens</h2>
+<h3 id="opbouw-van-een-dram-cel">Opbouw van een DRAM-cel</h3>
+<ul>
+<li><strong>Geheugenelement = 1 tranistor (+ capiciteit)</strong>
+<ul>
+<li>Lezen: laad bitlijn vooraf op tot vaste spanning, stuur woordlijn, meet bitlijn</li>
+<li>Schrijven: stuur bitlijn, stuur woordlijn</li>
+</ul>
+</li>
+<li><strong>Read-out is destructief</strong></li>
+<li><strong>Refresh cyclus</strong> nodig, want opslag verdwijnt op minder dan een ms.
+<ul>
+<li>Een intern circuit leest het woord en schrijft het terug.</li>
+</ul>
+</li>
+</ul>
+<h3 id="situering-rom">Situering ROM</h3>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/ROM-situering.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/ROM-situering.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h3 id="masker-rom-met-diodes">Masker ROM met diodes</h3>
+<ul>
+<li>Er worden <strong>overal diodes</strong> geplaatst</li>
+<li>Het <strong>masker bepaalt welke diodes verbonden worden</strong></li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/ROM-masker-diodes.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/ROM-masker-diodes.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<p>Dit is veruit de <strong>meest eenvoudige wijze om een masker ROM te maken</strong>.</p>
+<ul>
+<li>Alle <strong>data lijnen zijn via een weerstand met de voeding verbonden.</strong></li>
+<li><strong>Uitgangen van de decoder zijn in rust verbonden met de voedingsspanning.</strong></li>
+<li>Het zijn <strong>actief lage signalen</strong>, zoals aangegeven door het <em>driehoekje aan de uitgang</em>.</li>
+<li><strong>Over de diodes staat geen spanning en er loopt ook geen stroom.</strong></li>
+<li>Wanneer er een <strong>adres aangelegd wordt</strong> aan de ingang van de decoder:
+<ul>
+<li>Zal de <strong>overeenkomstige woordlijn laag worden (0V).</strong></li>
+<li>Als gevolg hiervan gaan de <strong>diodes die met deze woordlijn verbonden zijn geleiden</strong>, <em>waarbij de stroom niet bepaald wordt door de diode maar door de weerstand die ermee in serie staat.</em></li>
+<li>Aan de uitgangen <strong>(D3…D0) hebben we dus typisch 0,7V of VCC, afhankelijk van het feit of er al dan niet een diode aanwezig is</strong>.</li>
+<li>Deze <strong>0,7V ligt onder de drempelspanning van het hierop volgende circuit zodat ze als een digitale 0 herkend wordt.</strong></li>
+<li><strong>De diodes staan dus op de plaatsen waar er een 0 aanwezig moet zijn in het geheugen.</strong></li>
+</ul>
+</li>
+</ul>
+<p>Het is belangrijk op te merken dat er een <strong>DC stroom vloeit tussen de voedingsspanning en de uitgangen van de decoder, waardoor de decoder zwaar belast wordt.</strong> Een ROM geheugen dat op deze manier geïmplementeerd is, zal dus <strong>veel vermogen verbruiken</strong>.</p>
+<h3 id="masker-rom-met-transistors">Masker ROM met transistors</h3>
+<ul>
+<li>Een <strong>masker ROM kan ook met transistors worden uitgevoerd</strong></li>
+<li>De <strong>decoder wordt hierdoor niet belast</strong>.</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/ROM-masker-transistor.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/ROM-masker-transistor.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<p>We kunnen in de voorgaande schakeling de diodes vervangen door transistors. Hierdoor moet de decoder niet meer die belangrijke stroom leveren. De <strong>stroom van de decoder is beperkt tot de laadstroom van de gate capaciteiten van de transistors</strong>. Er blijft nog steeds een DC-stroom lopen, maar deze loopt van de voeding naar de grond via de transistors.</p>
+<p>Merk op dat de <strong>uitgang van de decoder in deze schakeling actief hoog is.</strong></p>
+<h3 id="masker-rom-met-precharge">Masker ROM met precharge</h3>
+<ul>
+<li>De <strong>precharge zorgt ervoor dat er geen DC-stroom door de bitlijnen loopt.</strong></li>
+<li>De <strong>bitlijnen worden telkens geprecharged vooraleer de decoder wordt uitgelezen.</strong></li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/ROM-masker-precharge.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/ROM-masker-precharge.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h3 id="prom">PROM</h3>
+<ul>
+<li><strong>PROM = Programmable ROM</strong></li>
+<li>Het geheugen kan <strong>geprogrammeerd worden door bepaalde fuses/antifuses op te blazen.</strong></li>
+<li>Er is <strong>geen specifiek masker nodig bij de productie.</strong></li>
+<li><strong>Programmeren gebeurt door hoge spanningspulsen aan te leggen (hogere spanning bij normale werking).</strong></li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/PROM.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/PROM.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<h3 id="eprom-famos-technologie">EPROM FAMOS technologie</h3>
+<ul>
+<li><strong>Erasable Programmable ROM</strong></li>
+<li><strong>FAMOS = FLoating gate Avalanche injection MOS transistor</strong></li>
+<li><strong>UV-wisbaar</strong></li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/EPROM-FAMOS.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/EPROM-FAMOS.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<p>Een <strong>FAMOS transistor is uitgevoerd met een dubbele gate</strong>.</p>
+<ul>
+<li>De <strong>bovenste gate is verbonden met de woordlijn.</strong></li>
+<li>De <strong>onderste gate is echter met niets verbonden en is dus zwevend.</strong></li>
+</ul>
+<p>In <strong>normale omstandigheden is er geen lading aanwezig op de onderste gate</strong>. Wanneer er echter, door het <strong>aanleggen van een hogere voedingsspanning aan de gate, langdurig een zeer grote stroom tussen source en drain getrokken wordt, gaan er elektronen zijn die door botsingen een voldoende grote energie bekomen om in staat te zijn over het oxide heen te vliegen (lawine-effect). In dit geval wordt de zwevende gate opgeladen met elektronen.</strong></p>
+<p>Tijdens de <strong>normale werking van deze nMOS transistor in FAMOS technologie leggen we een positieve spanning aan aan de bovenste gate. Dit zorgt voor een positieve lading op de bovenste gate en een kanaal van elektronen onder de gates waardoor de transistor geleidt. Wanneer de zwevende gate echter is opgeladen met elektronen zal de positieve lading op de bovenste gate gecompenseerd worden door de elektronenlading op de zwevende gate en bekomen we geen elektronen meer in het kanaal tussen source en drain. De transistor zal dus niet geleiden.</strong></p>
+<p>De <strong>lading van de zwevende gate kan verdwijnen als de ladingsdragers voldoende energie krijgen. Dit kan m.b.v. UV-licht.</strong></p>
+<h3 id="eprom">EPROM</h3>
+<p>Het programmeren van het geheugen gebeurt in een speciale EPROM-programmer. Het wissen gebeurt a.d.h.v. UV-licht.</p>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/EPROM.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/EPROM.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<p>In een EPROM geheugen is er een FAMOS transistor aanwezig op elke positie. Door het aanleggen van een hogere voedingsspanning kan er gekozen worden welke transistors niet mogen geleiden. Het hele geheugen kan gewist worden m.b.v. UV-licht. Het is niet mogelijk om enkel specifieke geheugenplaatsen te wissen.</p>
+<h3 id="flotox-eeprom-technologie">FLOTOX EEPROM technologie</h3>
+<ul>
+<li><strong>EEPROM = Electrically Erasable Programmable ROM</strong></li>
+<li><strong>FLOTOX = Floating gate Tunnel Oxide</strong></li>
+<li>Er wordt gebruik gemaakt van een dun oxide.</li>
+<li>Op die manier is er geen UV-licht nodig om te wissen, het wissen gebeurt elektrisch (in-circuit programming).</li>
+</ul>
+<p><figure>
+	<a href="../../../img/DISCH/ch-3/EEPROM.PNG" data-featherlight="image">
+		<img src="../../../img/DISCH/ch-3/EEPROM.PNG"  >
+	</a>
+	
+</figure>
+</p>
+<p>Een EEPROM maakt gebruik van het doortunneleffect om een zwevende gate op te laden. Er is een dun oxide voorzien boven de drain van de transistor. De elektronen gaan doortunnelen naar de zwevende gate wanneer er een voldoende hoge spanning wordt aangelegd aan de bovenste gate.</p>
+<p>Een belangrijk voordeel van het opladen van de zwevende gate door doortunnelen, is dat dit principe ook omkeerbaar is, zodat een EEPROM elektrisch kan gewist worden. Het wissen gebeurt door een spanning aan te leggen tussen drain en source zonder de bovenste gate op te laden. De elektronen tunnelen dan terug door het dunne oxide. Het gevolg hiervan is wel dat tijdens het gebruik van het geheugen de bovenste gate steeds moet verbonden zijn met de voedingsspanning om ervoor te zorgen dat de elektronen niet terug doortunnelen naar de drain. De woordlijntransistor en de programmeertransistor kunnen dus niet meer dezelfde zijn. Daarom hebben we voor een EEPROM geheugen een tweede transistor nodig per geheugenelement.</p>
+<h3 id="flash-geheugen">FLASH geheugen</h3>
+<ul>
+<li>Vergelijkbaar met EEPROM</li>
+<li>Veel sneller en compacter dan EEPROM, omdat het wissen en herprogrammeren in grote blokken gebeurt.</li>
+</ul>
+<h3 id="niet-vluchtig-ram">Niet-vluchtig RAM</h3>
+<ul>
+<li><strong>Combinatie van</strong>
+<ul>
+<li>SRAM (snel)</li>
+<li>EEPROM (traag)</li>
+</ul>
+</li>
+<li><strong>Onder normale werking: SRAM</strong></li>
+<li><strong>Een &ldquo;store&rdquo;-bevel slaat alles op in de EEPROM</strong></li>
+<li><strong>Een &ldquo;recall&rdquo;-bevel haalt alles uit de EEPROM</strong></li>
+<li>Wanneer de voedingsspanning wegvalt, kan een &ldquo;power failure&rdquo; schakelingen dit selecteren en tijdig een &ldquo;store&rdquo;-bevel geven.</li>
+</ul>
+<h2 id="geheugenuitbreiding">Geheugenuitbreiding</h2>
+<p>Het <strong>principe van geheugenuitbreiding is van toepassing op zowel ROM- als RAM-geheugens</strong></p>
+<ul>
+<li>Uitbreiding van de woordbreedte:
+<ul>
+<li>Het aantal bereikbare adressen blijft gelijk</li>
+<li>Het aantal bits per adres wordt uitgebreid</li>
+</ul>
+</li>
+<li>Uitbreiding van het adresbereik:
+<ul>
+<li>Het aantal bits per adres blijven gelijk</li>
+<li>Het aantal bereikbare adressen worden uitgebreid</li>
+</ul>
+</li>
+</ul>
+<h3 id="uitbreiding-van-de-woordbreedte-voorbeeld">Uitbreiding van de woordbreedte (voorbeeld)</h3>
+<ul>
+<li>We vertrekken van twee ROM IC&rsquo;s met een adres van 10 bits (dus een adresbereik van 2<sup>10</sup> adressen) en een woordbreedte van 4 bits.</li>
+<li>Beide IC&rsquo;s krijgen hetzelfde adres.</li>
+<li>Beide IC&rsquo;s produceren 4 bits van de data.</li>
+<li>In totaal zijn er 8 databits beschikbaar.</li>
+</ul>
+<h3 id="uitbreiding-van-het-adresbereik-voorbeeld">Uitbreiding van het adresbereik (voorbeeld)</h3>
+<ul>
+<li>We vertrekken van dezelfde 2 IC&rsquo;s.</li>
+<li>Beide IC&rsquo;s krijgen de 10 minst beduidende adreslijnen.</li>
+<li>De 11de adreslijn wordt gebruikt voor de &ldquo;chip select&rdquo;.</li>
+<li>De 4 data bits komen van 1 van de 2 chips.</li>
+</ul>
+<h3 id="geheugenmodules">Geheugenmodules</h3>
+<ul>
+<li>Per module staan een aantal IC&rsquo;s georganiseerd volgens het principe van het uitbreiden van de woordbreedte.</li>
+<li>Indien de woordbreedte van de module kleiner is dan de breedte van de databus, moeten meerdere modules gelijktijdig gebruikt worden zodat de woordbreedte kan worden uitgebreid tot de breedte van een databus. Deze combinatie noemen we een geheugenbank.</li>
+<li>Meerdere geheugenbanken kunnen gecombineerd worden voor het uitbreiden van het adresbereik.</li>
+<li>Moderne geheugenmodules hebben een woordbreedte die overeenstemt met de breedt van de databus.</li>
+</ul>
+
+<div class="ex">
+	<div class="inner">
+    	<p>Startende van geheugenblokken met een woordbreedte van 64 bits en een diepte van 128 woorden:</p>
+<ol>
+<li>Teken het schema van een geheugen met een woordbreedte van 256 bits en een diepte van 128 woorden.</li>
+<li>Teken het schema van een geheugen met een woordbreedte van 64 bits en een diepte van 256 woorden.</li>
+<li>Teken het schema van een geheugen met een woordbreedte van 256 bits en een diepte van 512 woorden.</li>
+</ol>
+
+	</div>
+</div>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../../archive/disch/ch-2/" title="2. Progammeerbare logica"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../../archive/disch/ch-4/" title="4. Ontwerpprincipes voor synchrone logica" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../js/clipboard.min.js?1662466005"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1662466005"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1662466005"></script>
+    <script src="../../../js/jquery.sticky.js?1662466005"></script>
+    <script src="../../../js/featherlight.min.js?1662466005"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1662466005"></script>
+    <script src="../../../js/learn.js?1662466005"></script>
+    <script src="../../../js/hugo-learn.js?1662466005"></script>
+    
+        
+            <script src="../../../mermaid/mermaid.js?1662466005"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    <script>
+    window.MathJax = {
+      chtml: {
+        scale: 2,                      
+        minScale: .5,                  
+        matchFontHeight: true,         
+        mtextInheritFont: false,       
+        merrorInheritFont: true,       
+        mathmlSpacing: false,          
+        skipAttributes: {},            
+        exFactor: .5,                  
+        displayAlign: 'center',        
+        displayIndent: '0'             
+      }
+    };
+    </script>
+    
+    
+
+  </body>
+</html>
+

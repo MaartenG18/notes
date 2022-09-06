@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.100.1" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="../../images/logo_transparent.png" type="image/png">
+
+    <title>Regeltechniek :: Maarten&#39;s notes</title>
+
+    
+    <link href="../../css/nucleus.css?1662466005" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1662466005" rel="stylesheet">
+    <link href="../../css/hybrid.css?1662466005" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1662466005" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1662466005" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1662466005" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1662466005" rel="stylesheet">
+    <link href="../../css/theme.css?1662466005" rel="stylesheet">
+    <link href="../../css/devselector.css?1662466005" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1662466005" rel="stylesheet">
+    <link href="../../css/theme-kul.css?1662466005" rel="stylesheet">
+    
+
+    <script src="../../js/jquery-3.3.1.min.js?1662466005"></script>
+    <script src="../../js/devselector.js?1662466005"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="../../courses/regeltechniek/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="https://maarteng18.github.io/" target="_blank">
+  <img src="../../images/logo_transparent.png" alt="UHasselt" id="mglogo" />
+</a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../js/lunr.min.js?1662466005"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1662466005"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/maarteng18.github.io\/notes\/";
+    
+</script>
+<script type="text/javascript" src="../../js/search.js?1662466005"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='../../'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/" title="Current Courses" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="../../courses/">
+          Current Courses
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/algoritmen-en-datasctructuren/" title="Algoritmen en datasctructuren" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../courses/algoritmen-en-datasctructuren/">
+          Algoritmen en datasctructuren
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/cct/" title="Cloud Computing &amp; toepassingen" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../courses/cct/">
+          Cloud Computing &amp; toepassingen
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/databases/" title="Databases" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../courses/databases/">
+          Databases
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/courses/databases/les1/" title="Les 1" class="dd-item ">
+        <a href="../../courses/databases/les1/">
+        Les 1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/obj/" title="Objectgeoriënteerd programmeren" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../courses/obj/">
+          Objectgeoriënteerd programmeren
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/regeltechniek/" title="Regeltechniek" class="dd-item
+        
+        active
+        
+        ">
+      <a href="../../courses/regeltechniek/">
+          Regeltechniek
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/scripts-commands/" title="Scripts &amp; commands" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../scripts-commands/">
+          Scripts &amp; commands
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/scripts-commands/imagemagick/" title="Image Magick" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../scripts-commands/imagemagick/">
+          Image Magick
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/scripts-commands/imagemagick/montage/" title="Montage" class="dd-item ">
+        <a href="../../scripts-commands/imagemagick/montage/">
+        Montage
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/scripts-commands/markdown/" title="Markdown" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../scripts-commands/markdown/">
+          Markdown
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/scripts-commands/markdown/notices/" title="Notices" class="dd-item ">
+        <a href="../../scripts-commands/markdown/notices/">
+        Notices
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/archive/" title="Archive" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../archive/">
+          Archive
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/archive/ansch/" title="Analoge Elektronische Schakelingen" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../archive/ansch/">
+          Analoge Elektronische Schakelingen
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-1/" title="1. Herhaling MOSFET en BJT" class="dd-item ">
+        <a href="../../archive/ansch/ch-1/">
+        1. Herhaling MOSFET en BJT
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-2/" title="2. Transistor configuraties" class="dd-item ">
+        <a href="../../archive/ansch/ch-2/">
+        2. Transistor configuraties
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-3/" title="3. Klasse A versterker" class="dd-item ">
+        <a href="../../archive/ansch/ch-3/">
+        3. Klasse A versterker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-4/" title="4. Klasse B versterker" class="dd-item ">
+        <a href="../../archive/ansch/ch-4/">
+        4. Klasse B versterker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-5/" title="5. voedingen" class="dd-item ">
+        <a href="../../archive/ansch/ch-5/">
+        5. voedingen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-6/" title="6. GaN transistor toepassingen" class="dd-item ">
+        <a href="../../archive/ansch/ch-6/">
+        6. GaN transistor toepassingen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-7/" title="7. Thyristors" class="dd-item ">
+        <a href="../../archive/ansch/ch-7/">
+        7. Thyristors
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-8/" title="8. Berekening van elektronische circuits" class="dd-item ">
+        <a href="../../archive/ansch/ch-8/">
+        8. Berekening van elektronische circuits
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-9/" title="9. Niet-lineaire OpAMP schakelingen" class="dd-item ">
+        <a href="../../archive/ansch/ch-9/">
+        9. Niet-lineaire OpAMP schakelingen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-10/" title="10. OTA schakelingen" class="dd-item ">
+        <a href="../../archive/ansch/ch-10/">
+        10. OTA schakelingen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/archive/disch/" title="Digitale Elektronische Schakelingen" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../archive/disch/">
+          Digitale Elektronische Schakelingen
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/disch/ch-1/" title="1. Inleiding" class="dd-item ">
+        <a href="../../archive/disch/ch-1/">
+        1. Inleiding
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/disch/ch-2/" title="2. Progammeerbare logica" class="dd-item ">
+        <a href="../../archive/disch/ch-2/">
+        2. Progammeerbare logica
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/disch/ch-3/" title="3. Geheugens" class="dd-item ">
+        <a href="../../archive/disch/ch-3/">
+        3. Geheugens
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/disch/ch-4/" title="4. Ontwerpprincipes voor synchrone logica" class="dd-item ">
+        <a href="../../archive/disch/ch-4/">
+        4. Ontwerpprincipes voor synchrone logica
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/disch/ch-5/" title="5. Simulatie" class="dd-item ">
+        <a href="../../archive/disch/ch-5/">
+        5. Simulatie
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../'>Maarten's notes</a> > <a href='../../courses/'>Current Courses</a> > Regeltechniek
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Regeltechniek
+            </h1>
+          
+
+        
+
+
+
+	
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../courses/obj/" title="Objectgeoriënteerd programmeren"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../scripts-commands/" title="Scripts &amp; commands" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../js/clipboard.min.js?1662466005"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1662466005"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1662466005"></script>
+    <script src="../../js/jquery.sticky.js?1662466005"></script>
+    <script src="../../js/featherlight.min.js?1662466005"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1662466005"></script>
+    <script src="../../js/learn.js?1662466005"></script>
+    <script src="../../js/hugo-learn.js?1662466005"></script>
+    
+        
+            <script src="../../mermaid/mermaid.js?1662466005"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    <script>
+    window.MathJax = {
+      chtml: {
+        scale: 2,                      
+        minScale: .5,                  
+        matchFontHeight: true,         
+        mtextInheritFont: false,       
+        merrorInheritFont: true,       
+        mathmlSpacing: false,          
+        skipAttributes: {},            
+        exFactor: .5,                  
+        displayAlign: 'center',        
+        displayIndent: '0'             
+      }
+    };
+    </script>
+    
+    
+
+  </body>
+</html>

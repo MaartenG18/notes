@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Analoge Elektronische Schakelingen on Maarten&#39;s notes</title>
+    <link>https://maarteng18.github.io/notes/archive/ansch/</link>
+    <description>Recent content in Analoge Elektronische Schakelingen on Maarten&#39;s notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>maartengielkens2000@gmail.com (Maarten Gielkens)</managingEditor>
+    <webMaster>maartengielkens2000@gmail.com (Maarten Gielkens)</webMaster><atom:link href="https://maarteng18.github.io/notes/archive/ansch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1. Herhaling MOSFET en BJT</title>
+      <link>https://maarteng18.github.io/notes/archive/ansch/ch-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/archive/ansch/ch-1/</guid>
+      <description>MOSFET Werking MOS transistor De MOS transistor bestaat uit: een gate gemaakt uit polykristallijn Si boven op een heel dun oxide dat op het Si neergelegd is. een source en een drain die geïmplementeerd zijn a.d.h.v. een pn-junctie gescheiden van de bulk. Wanneer er een spanning aangelegd wordt aan de gate: Eerst zorgen dat ladingsdragers van de bulk, die van een tegengesteld type zijn dan de gewenste ladingsdragers, voldoende ver van onder de gate verdwijnen.</description>
+    </item>
+    
+    <item>
+      <title>2. Transistor configuraties</title>
+      <link>https://maarteng18.github.io/notes/archive/ansch/ch-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/archive/ansch/ch-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3. Klasse A versterker</title>
+      <link>https://maarteng18.github.io/notes/archive/ansch/ch-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/archive/ansch/ch-3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>4. Klasse B versterker</title>
+      <link>https://maarteng18.github.io/notes/archive/ansch/ch-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/archive/ansch/ch-4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>5. voedingen</title>
+      <link>https://maarteng18.github.io/notes/archive/ansch/ch-5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/archive/ansch/ch-5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>6. GaN transistor toepassingen</title>
+      <link>https://maarteng18.github.io/notes/archive/ansch/ch-6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/archive/ansch/ch-6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>7. Thyristors</title>
+      <link>https://maarteng18.github.io/notes/archive/ansch/ch-7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/archive/ansch/ch-7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>8. Berekening van elektronische circuits</title>
+      <link>https://maarteng18.github.io/notes/archive/ansch/ch-8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/archive/ansch/ch-8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>9. Niet-lineaire OpAMP schakelingen</title>
+      <link>https://maarteng18.github.io/notes/archive/ansch/ch-9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/archive/ansch/ch-9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>10. OTA schakelingen</title>
+      <link>https://maarteng18.github.io/notes/archive/ansch/ch-10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/archive/ansch/ch-10/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
