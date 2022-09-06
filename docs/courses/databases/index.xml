@@ -8,14 +8,5 @@
     <language>en-us</language>
     <managingEditor>maartengielkens2000@gmail.com (Maarten Gielkens)</managingEditor>
     <webMaster>maartengielkens2000@gmail.com (Maarten Gielkens)</webMaster><atom:link href="https://maarteng18.github.io/notes/courses/databases/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Les 1</title>
-      <link>https://maarteng18.github.io/notes/courses/databases/les1/</link>
-      <pubDate>Fri, 01 Jul 2022 16:08:26 +0200</pubDate>
-      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
-      <guid>https://maarteng18.github.io/notes/courses/databases/les1/</guid>
-      <description>This is a the title of a new note </description>
-    </item>
-    
   </channel>
 </rss>

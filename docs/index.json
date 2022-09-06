@@ -203,13 +203,6 @@
 	"content": "Note {{% notice note %}} A notice disclaimer {{% /notice %}} renders as\nA notice disclaimer\n{{% notice todolist %}} A notice disclaimer {{% /notice %}} renders as\nA notice disclaimer\n{{% notice summary %}} A notice disclaimer {{% /notice %}} renders as\nA notice disclaimer\n{{% notice info %}} A notice disclaimer {{% /notice %}} renders as\nA notice disclaimer\n{{% notice tip %}} A notice disclaimer {{% /notice %}} renders as\nA notice disclaimer\n{{% notice warning %}} A notice disclaimer {{% /notice %}} renders as\nA notice disclaimer\n"
 },
 {
-	"uri": "https://maarteng18.github.io/notes/courses/databases/les1/",
-	"title": "Les 1",
-	"tags": [],
-	"description": "",
-	"content": "This is a the title of a new note "
-},
-{
 	"uri": "https://maarteng18.github.io/notes/archive/ansch/ch-10/",
 	"title": "10. OTA schakelingen",
 	"tags": [],
