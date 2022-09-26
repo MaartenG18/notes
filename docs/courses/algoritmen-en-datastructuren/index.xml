@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algoritmen en datasctructuren on Maarten&#39;s notes</title>
+    <link>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/</link>
+    <description>Recent content in Algoritmen en datasctructuren on Maarten&#39;s notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>maartengielkens2000@gmail.com (Maarten Gielkens)</managingEditor>
+    <webMaster>maartengielkens2000@gmail.com (Maarten Gielkens)</webMaster><atom:link href="https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1. week 1</title>
+      <link>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-1/</guid>
+      <description>Table of contents Initial Exercises Chapter 1: Why Data Structures Matter Chapter 2: Why Algorithms Matter Chapter 3: Big Oh Notation Initial Exercises You retrieve a list of all items that have been sold during the last trimester from a web shop’s database. Unfortunately, you end up with a simple array: if an item was sold three times, it occurs three times in that array. You want to count how many times one particular item has been sold.</description>
+    </item>
+    
+  </channel>
+</rss>
