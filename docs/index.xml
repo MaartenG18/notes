@@ -31,6 +31,15 @@ FPGA vs. microprocessor FPGA Bouwblokken van de FPGA CLB: Configurable Logic Blo
     </item>
     
     <item>
+      <title>1. week 1</title>
+      <link>https://maarteng18.github.io/notes/courses/algoritmen-en-datasctructuren/week-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/algoritmen-en-datasctructuren/week-1/</guid>
+      <description>Table of contents Initial Exercises Chapter 1: Why Data Structures Matter Chapter 2: Why Algorithms Matter Chapter 3: Big Oh Notation Initial Exercises You retrieve a list of all items that have been sold during the last trimester from a web shop’s database. Unfortunately, you end up with a simple array: if an item was sold three times, it occurs three times in that array. You want to count how many times one particular item has been sold.</description>
+    </item>
+    
+    <item>
       <title>2. Progammeerbare logica</title>
       <link>https://maarteng18.github.io/notes/archive/disch/ch-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

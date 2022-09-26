@@ -7,11 +7,11 @@ weight = 1
 
 ## Current courses
 
-- [Analoge Elektronische Schakelingen](/courses/ansch/)
-- [Digitale Elektronische Schakelingen](/courses/disch/)
-- Android App Development
-- Besturingssystemen en C
-- Software Engineering Skills
+- [Databases](/courses/databases/)
+- [Algoritmen en datastructuren](/courses/algoritmen-en-datastructuren/)
+- [Regeltechniek](/courses/regeltechniek/)
+- [Cloud computing & toepassingen](courses/cct/)
+- [Objectgeoriënteerd programmeren](/courses/obj/)
 
 ## Good to know
 
