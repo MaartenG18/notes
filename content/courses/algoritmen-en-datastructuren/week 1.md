@@ -25,7 +25,7 @@ Answer unordered:
 
 Answer ordered:
 
-- Best-case: 1
+- Best-case: 2
 - Worst-case: N
 
 {{% /task %}}
