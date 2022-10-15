@@ -1,0 +1,2034 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.100.2" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="../../../images/logo_transparent.png" type="image/png">
+
+    <title>2. week 2-3 :: Maarten&#39;s notes</title>
+
+    
+    <link href="../../../css/nucleus.css?1665827694" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1665827694" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1665827694" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1665827694" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1665827694" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1665827694" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1665827694" rel="stylesheet">
+    <link href="../../../css/theme.css?1665827694" rel="stylesheet">
+    <link href="../../../css/devselector.css?1665827694" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1665827694" rel="stylesheet">
+    <link href="../../../css/theme-kul.css?1665827694" rel="stylesheet">
+    
+
+    <script src="../../../js/jquery-3.3.1.min.js?1665827694"></script>
+    <script src="../../../js/devselector.js?1665827694"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="../../../courses/databases/week-2-3/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="https://maarteng18.github.io/" target="_blank">
+  <img src="../../../images/logo_transparent.png" alt="UHasselt" id="mglogo" />
+</a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../../js/lunr.min.js?1665827694"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1665827694"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/maarteng18.github.io\/notes\/";
+    
+</script>
+<script type="text/javascript" src="../../../js/search.js?1665827694"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='../../../'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/" title="Current Courses" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="../../../courses/">
+          Current Courses
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/algoritmen-en-datastructuren/" title="Algoritmen en datasctructuren" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../courses/algoritmen-en-datastructuren/">
+          Algoritmen en datasctructuren
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/courses/algoritmen-en-datastructuren/week-1/" title="1. week 1" class="dd-item ">
+        <a href="../../../courses/algoritmen-en-datastructuren/week-1/">
+        1. week 1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/courses/algoritmen-en-datastructuren/week-2/" title="2. week 2" class="dd-item ">
+        <a href="../../../courses/algoritmen-en-datastructuren/week-2/">
+        2. week 2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/courses/algoritmen-en-datastructuren/week-3/" title="" class="dd-item ">
+        <a href="../../../courses/algoritmen-en-datastructuren/week-3/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/cct/" title="Cloud Computing &amp; toepassingen" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../courses/cct/">
+          Cloud Computing &amp; toepassingen
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/courses/cct/week-1/" title="1. week 1" class="dd-item ">
+        <a href="../../../courses/cct/week-1/">
+        1. week 1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/databases/" title="Databases" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="../../../courses/databases/">
+          Databases
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/courses/databases/week-1/" title="1. week 1" class="dd-item ">
+        <a href="../../../courses/databases/week-1/">
+        1. week 1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/courses/databases/week-2-3/" title="2. week 2-3" class="dd-item active">
+        <a href="../../../courses/databases/week-2-3/">
+        2. week 2-3
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/courses/databases/week-4/" title="3. week 4" class="dd-item ">
+        <a href="../../../courses/databases/week-4/">
+        3. week 4
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/obj/" title="Objectgeoriënteerd programmeren" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../courses/obj/">
+          Objectgeoriënteerd programmeren
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/courses/obj/week-2/" title="1. week 2" class="dd-item ">
+        <a href="../../../courses/obj/week-2/">
+        1. week 2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/courses/obj/week-3/" title="2. week 3" class="dd-item ">
+        <a href="../../../courses/obj/week-3/">
+        2. week 3
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/courses/regeltechniek/" title="Regeltechniek" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../courses/regeltechniek/">
+          Regeltechniek
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/scripts-commands/" title="Scripts &amp; commands" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../scripts-commands/">
+          Scripts &amp; commands
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/scripts-commands/imagemagick/" title="Image Magick" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../scripts-commands/imagemagick/">
+          Image Magick
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/scripts-commands/imagemagick/montage/" title="Montage" class="dd-item ">
+        <a href="../../../scripts-commands/imagemagick/montage/">
+        Montage
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/scripts-commands/markdown/" title="Markdown" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../scripts-commands/markdown/">
+          Markdown
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/scripts-commands/markdown/notices/" title="Notices" class="dd-item ">
+        <a href="../../../scripts-commands/markdown/notices/">
+        Notices
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/archive/" title="Archive" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../archive/">
+          Archive
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/archive/ansch/" title="Analoge Elektronische Schakelingen" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../archive/ansch/">
+          Analoge Elektronische Schakelingen
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-1/" title="1. Herhaling MOSFET en BJT" class="dd-item ">
+        <a href="../../../archive/ansch/ch-1/">
+        1. Herhaling MOSFET en BJT
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-2/" title="2. Transistor configuraties" class="dd-item ">
+        <a href="../../../archive/ansch/ch-2/">
+        2. Transistor configuraties
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-3/" title="3. Klasse A versterker" class="dd-item ">
+        <a href="../../../archive/ansch/ch-3/">
+        3. Klasse A versterker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-4/" title="4. Klasse B versterker" class="dd-item ">
+        <a href="../../../archive/ansch/ch-4/">
+        4. Klasse B versterker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-5/" title="5. voedingen" class="dd-item ">
+        <a href="../../../archive/ansch/ch-5/">
+        5. voedingen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-6/" title="6. GaN transistor toepassingen" class="dd-item ">
+        <a href="../../../archive/ansch/ch-6/">
+        6. GaN transistor toepassingen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-7/" title="7. Thyristors" class="dd-item ">
+        <a href="../../../archive/ansch/ch-7/">
+        7. Thyristors
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-8/" title="8. Berekening van elektronische circuits" class="dd-item ">
+        <a href="../../../archive/ansch/ch-8/">
+        8. Berekening van elektronische circuits
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-9/" title="9. Niet-lineaire OpAMP schakelingen" class="dd-item ">
+        <a href="../../../archive/ansch/ch-9/">
+        9. Niet-lineaire OpAMP schakelingen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/ansch/ch-10/" title="10. OTA schakelingen" class="dd-item ">
+        <a href="../../../archive/ansch/ch-10/">
+        10. OTA schakelingen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/archive/disch/" title="Digitale Elektronische Schakelingen" class="dd-item
+        
+        
+        
+        ">
+      <a href="../../../archive/disch/">
+          Digitale Elektronische Schakelingen
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/disch/ch-1/" title="1. Inleiding" class="dd-item ">
+        <a href="../../../archive/disch/ch-1/">
+        1. Inleiding
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/disch/ch-2/" title="2. Progammeerbare logica" class="dd-item ">
+        <a href="../../../archive/disch/ch-2/">
+        2. Progammeerbare logica
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/disch/ch-3/" title="3. Geheugens" class="dd-item ">
+        <a href="../../../archive/disch/ch-3/">
+        3. Geheugens
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/disch/ch-4/" title="4. Ontwerpprincipes voor synchrone logica" class="dd-item ">
+        <a href="../../../archive/disch/ch-4/">
+        4. Ontwerpprincipes voor synchrone logica
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/archive/disch/ch-5/" title="5. Simulatie" class="dd-item ">
+        <a href="../../../archive/disch/ch-5/">
+        5. Simulatie
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../../'>Maarten's notes</a> > <a href='../../../courses/'>Current Courses</a> > <a href='../../../courses/databases/'>Databases</a> > 2. week 2-3
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              2. week 2-3
+            </h1>
+          
+
+        
+
+
+<ol>
+<li>Schrijf een query die alle Customers (volledige naam, customer ID en land) laat zien die niet wonen in de USA.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">customers</span> <span style="color:#00a8c8">WHERE</span> <span style="color:#111">Country</span> <span style="color:#f92672">!=</span> <span style="color:#d88200">&#39;USA&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">customers</span> <span style="color:#00a8c8">WHERE</span> <span style="color:#111">Country</span> <span style="color:#f92672">&lt;&gt;</span> <span style="color:#d88200">&#39;USA&#39;</span>
+</span></span></code></pre></div><ol start="2">
+<li>Schrijf een query die enkel de Customers laat zien die in Brazilië wonen.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">customers</span> <span style="color:#00a8c8">WHERE</span> <span style="color:#111">Country</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;Brazil&#39;</span><span style="color:#111">;</span>
+</span></span></code></pre></div><ol start="3">
+<li>Schrijf een query die alle Employees laat zien die werken in de Sales afdeling.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">employees</span> <span style="color:#00a8c8">WHERE</span> <span style="color:#111">Title</span> <span style="color:#00a8c8">like</span> <span style="color:#d88200">&#39;Sales%&#39;</span><span style="color:#111">;</span>
+</span></span></code></pre></div><ol start="4">
+<li>Schrijf een query die een unieke lijst van landen laat zien uit de Invoices tabel.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#00a8c8">DISTINCT</span> <span style="color:#111">BillingCountry</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">invoices</span><span style="color:#111">;</span>
+</span></span></code></pre></div><ol start="5">
+<li>Schrijf een query die alle Tracks laat zien waarvoor er geen componist bekend is.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">tracks</span> <span style="color:#00a8c8">WHERE</span> <span style="color:#111">Composer</span> <span style="color:#00a8c8">is</span> <span style="color:#00a8c8">NULL</span><span style="color:#111">;</span>
+</span></span></code></pre></div><ol start="6">
+<li>Schrijf een query van alle unieke Componisten. Als de componist niet bekend is, dan moet er ‘Onbekend’ weergegeven worden gesorteerd op naam.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">tracks</span> <span style="color:#00a8c8">WHERE</span> <span style="color:#111">Composer</span> <span style="color:#00a8c8">is</span> <span style="color:#00a8c8">NULL</span><span style="color:#111">;</span>
+</span></span></code></pre></div><ol start="7">
+<li>Schrijf een query die het maximumbedrag van een Invoice laat zien.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#00a8c8">MAX</span><span style="color:#111">(</span><span style="color:#111">total</span><span style="color:#111">)</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">invoices</span><span style="color:#111">;</span>
+</span></span></code></pre></div><ol>
+<li>Schrijf een query die alle Invoices laat zien van alle Customers uit Brazilië. Het resultaat moet de volledige naam van de Customer, Invoice ID, Invoice Datum en Billing Country weergeven.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#111">FirstName</span><span style="color:#111">,</span> <span style="color:#111">LastName</span><span style="color:#111">,</span> <span style="color:#111">InvoiceId</span><span style="color:#111">,</span> <span style="color:#111">InvoiceDate</span><span style="color:#111">,</span> <span style="color:#111">BillingCountry</span> 
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">FROM</span> <span style="color:#111">invoices</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">customers</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">customers</span><span style="color:#111">.</span><span style="color:#111">CustomerId</span> <span style="color:#f92672">=</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">CustomerId</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">WHERE</span> <span style="color:#111">customers</span><span style="color:#111">.</span><span style="color:#111">Country</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;Brazil&#39;</span><span style="color:#111">;</span>
+</span></span></code></pre></div><ol start="2">
+<li>Schrijf een query die alle Invoices laat zien voor elke Sales Agent. Het resultaat moet de volledige naam van de Sales Agent weergeven.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">FirstName</span><span style="color:#111">,</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">LastName</span><span style="color:#111">,</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#f92672">*</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">invoices</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">customers</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">customers</span><span style="color:#111">.</span><span style="color:#111">CustomerId</span> <span style="color:#f92672">=</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">CustomerId</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">employees</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">EmployeeId</span> <span style="color:#f92672">=</span> <span style="color:#111">customers</span><span style="color:#111">.</span><span style="color:#111">SupportRepId</span>
+</span></span></code></pre></div><ol start="3">
+<li>Schrijf een query die het Invoice Totaal, de Customer naam en land en de naam van de Sales Agent weergeeft voor alle Invoices en Customers.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">Total</span><span style="color:#111">,</span> <span style="color:#111">customers</span><span style="color:#111">.</span><span style="color:#111">FirstName</span><span style="color:#111">,</span> <span style="color:#111">customers</span><span style="color:#111">.</span><span style="color:#111">LastName</span><span style="color:#111">,</span> <span style="color:#111">customers</span><span style="color:#111">.</span><span style="color:#111">Country</span><span style="color:#111">,</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">FirstName</span><span style="color:#111">,</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">LastName</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">invoices</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">customers</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">customers</span><span style="color:#111">.</span><span style="color:#111">CustomerId</span> <span style="color:#f92672">=</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">CustomerId</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">employees</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">EmployeeId</span> <span style="color:#f92672">=</span> <span style="color:#111">customers</span><span style="color:#111">.</span><span style="color:#111">SupportRepId</span><span style="color:#111">;</span>
+</span></span></code></pre></div><ol start="4">
+<li>Schrijf een query die het aantal invoice lijnen weergeeft voor Invoice ID 37.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">InvoiceId</span><span style="color:#111">,</span> <span style="color:#111">invoice_items</span><span style="color:#111">.</span><span style="color:#f92672">*</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">invoice_items</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">invoices</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">InvoiceId</span> <span style="color:#f92672">=</span> <span style="color:#111">invoice_items</span><span style="color:#111">.</span><span style="color:#111">InvoiceId</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">WHERE</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">InvoiceId</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">37</span><span style="color:#111">;</span>
+</span></span></code></pre></div><ol start="5">
+<li>Schrijf een query die de track naam weergeeft langs elke invoice lijn.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#111">invoice_items</span><span style="color:#111">.</span><span style="color:#111">InvoiceLineId</span><span style="color:#111">,</span> <span style="color:#111">tracks</span><span style="color:#111">.</span><span style="color:#111">Name</span> <span style="color:#00a8c8">from</span> <span style="color:#111">tracks</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">invoice_items</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">invoice_items</span><span style="color:#111">.</span><span style="color:#111">TrackId</span> <span style="color:#f92672">=</span> <span style="color:#111">tracks</span><span style="color:#111">.</span><span style="color:#111">TrackId</span><span style="color:#111">;</span>
+</span></span></code></pre></div><ol start="6">
+<li>Schrijf een query die de track naam en de artiest naam weergeeft langs elke invoice lijn.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"></code></pre></div><ol start="7">
+<li>Schrijf een query die alle tracks laat zien, maar geen ID’s. Het resultaat moet de album titel, het media type en het genre bevatten.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"></code></pre></div><ol start="8">
+<li>Schrijf een query die alle genres weergeeft waarvoor er geen tracks bestaan.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"></code></pre></div><ol>
+<li>Schrijf een query die het aantal Invoices laat zien voor 2009 en 2011.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#111">strftime</span><span style="color:#111">(</span><span style="color:#d88200">&#39;%Y&#39;</span><span style="color:#111">,</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">InvoiceDate</span><span style="color:#111">),</span> <span style="color:#00a8c8">count</span><span style="color:#111">(</span><span style="color:#f92672">*</span><span style="color:#111">)</span> <span style="color:#00a8c8">from</span> <span style="color:#111">invoices</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">WHERE</span> <span style="color:#111">strftime</span><span style="color:#111">(</span><span style="color:#d88200">&#39;%Y&#39;</span><span style="color:#111">,</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">InvoiceDate</span><span style="color:#111">)</span> <span style="color:#00a8c8">in</span> <span style="color:#111">(</span><span style="color:#d88200">&#39;2009&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;2011&#39;</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">GROUP</span> <span style="color:#00a8c8">BY</span> <span style="color:#111">strftime</span><span style="color:#111">(</span><span style="color:#d88200">&#39;%Y&#39;</span><span style="color:#111">,</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">InvoiceDate</span><span style="color:#111">);</span>
+</span></span></code></pre></div><ol start="2">
+<li>Schrijf een query die het aantal invoices per land laat zien.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#111">BillingCountry</span><span style="color:#111">,</span> <span style="color:#00a8c8">count</span><span style="color:#111">(</span><span style="color:#f92672">*</span><span style="color:#111">)</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">invoices</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">GROUP</span> <span style="color:#00a8c8">BY</span> <span style="color:#111">BillingCountry</span><span style="color:#111">;</span>
+</span></span></code></pre></div><ol start="3">
+<li>Schrijf een query die per Invoice ID het aantal invoice lijnen laat zien.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#111">InvoiceId</span><span style="color:#111">,</span> <span style="color:#00a8c8">count</span><span style="color:#111">(</span><span style="color:#f92672">*</span><span style="color:#111">)</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">invoice_items</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">GROUP</span> <span style="color:#00a8c8">BY</span> <span style="color:#111">InvoiceId</span><span style="color:#111">;</span>
+</span></span></code></pre></div><ol start="4">
+<li>Schrijf een query die de naam van elke playlist laat zien, alsook het aantal tracks in elke playlist.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#111">Name</span><span style="color:#111">,</span> <span style="color:#00a8c8">count</span><span style="color:#111">(</span><span style="color:#f92672">*</span><span style="color:#111">)</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">playlists</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">playlist_track</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">playlists</span><span style="color:#111">.</span><span style="color:#111">PlaylistId</span> <span style="color:#f92672">=</span> <span style="color:#111">playlist_track</span><span style="color:#111">.</span><span style="color:#111">PlaylistId</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">GROUP</span> <span style="color:#00a8c8">BY</span> <span style="color:#111">playlists</span><span style="color:#111">.</span><span style="color:#111">PlaylistId</span><span style="color:#111">;</span>
+</span></span></code></pre></div><ol start="5">
+<li>Schrijf een query die alle data uit de Invoices tabel laat zien, aangevuld met het aantal invoice lijnen.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#f92672">*</span><span style="color:#111">,</span> <span style="color:#00a8c8">count</span><span style="color:#111">(</span><span style="color:#f92672">*</span><span style="color:#111">)</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">invoices</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">invoice_items</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">InvoiceId</span> <span style="color:#f92672">=</span> <span style="color:#111">invoice_items</span><span style="color:#111">.</span><span style="color:#111">InvoiceId</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">GROUP</span> <span style="color:#00a8c8">BY</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">InvoiceId</span>
+</span></span></code></pre></div><ol start="6">
+<li>Schrijf een query die de totale verkoopcijfers per Sales Agent laat zien.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">FirstName</span><span style="color:#111">,</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">LastName</span><span style="color:#111">,</span> <span style="color:#00a8c8">sum</span><span style="color:#111">(</span><span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">total</span><span style="color:#111">)</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">invoices</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">customers</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">customers</span><span style="color:#111">.</span><span style="color:#111">CustomerId</span> <span style="color:#f92672">=</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">CustomerId</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">employees</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">EmployeeId</span> <span style="color:#f92672">=</span> <span style="color:#111">customers</span><span style="color:#111">.</span><span style="color:#111">SupportRepId</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">GROUP</span> <span style="color:#00a8c8">BY</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">LastName</span><span style="color:#111">;</span>
+</span></span></code></pre></div><ol start="7">
+<li>Schrijf een query die laat zien welke Sales Agent de grootste verkoopcijfers heeft voor 2009.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">FirstName</span><span style="color:#111">,</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">LastName</span><span style="color:#111">,</span> <span style="color:#00a8c8">sum</span><span style="color:#111">(</span><span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">total</span><span style="color:#111">)</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">invoices</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">customers</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">customers</span><span style="color:#111">.</span><span style="color:#111">CustomerId</span> <span style="color:#f92672">=</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">CustomerId</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">employees</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">EmployeeId</span> <span style="color:#f92672">=</span> <span style="color:#111">customers</span><span style="color:#111">.</span><span style="color:#111">SupportRepId</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">GROUP</span> <span style="color:#00a8c8">BY</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">LastName</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">HAVING</span> <span style="color:#111">strftime</span><span style="color:#111">(</span><span style="color:#d88200">&#39;%Y&#39;</span><span style="color:#111">,</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">InvoiceDate</span><span style="color:#111">)</span> <span style="color:#00a8c8">in</span> <span style="color:#111">(</span><span style="color:#d88200">&#39;2009&#39;</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">ORDER</span> <span style="color:#00a8c8">BY</span> <span style="color:#00a8c8">sum</span><span style="color:#111">(</span><span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">total</span><span style="color:#111">)</span> <span style="color:#00a8c8">DESC</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">LIMIT</span> <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><ol start="8">
+<li>Schrijf een query die laat zien welke Sales Agent de grootste verkoopcijfers heeft voor 2010.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">FirstName</span><span style="color:#111">,</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">LastName</span><span style="color:#111">,</span> <span style="color:#00a8c8">sum</span><span style="color:#111">(</span><span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">total</span><span style="color:#111">)</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">invoices</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">customers</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">customers</span><span style="color:#111">.</span><span style="color:#111">CustomerId</span> <span style="color:#f92672">=</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">CustomerId</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">employees</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">EmployeeId</span> <span style="color:#f92672">=</span> <span style="color:#111">customers</span><span style="color:#111">.</span><span style="color:#111">SupportRepId</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">GROUP</span> <span style="color:#00a8c8">BY</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">LastName</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">HAVING</span> <span style="color:#111">strftime</span><span style="color:#111">(</span><span style="color:#d88200">&#39;%Y&#39;</span><span style="color:#111">,</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">InvoiceDate</span><span style="color:#111">)</span> <span style="color:#00a8c8">in</span> <span style="color:#111">(</span><span style="color:#d88200">&#39;2010&#39;</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">ORDER</span> <span style="color:#00a8c8">BY</span> <span style="color:#00a8c8">sum</span><span style="color:#111">(</span><span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">total</span><span style="color:#111">)</span> <span style="color:#00a8c8">DESC</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">LIMIT</span> <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><ol start="9">
+<li>Schrijf een query die laat zien welke Sales Agent de grootste verkoopcijfers heeft over alle jaren heen.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">FirstName</span><span style="color:#111">,</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">LastName</span><span style="color:#111">,</span> <span style="color:#00a8c8">sum</span><span style="color:#111">(</span><span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">total</span><span style="color:#111">)</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">invoices</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">customers</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">customers</span><span style="color:#111">.</span><span style="color:#111">CustomerId</span> <span style="color:#f92672">=</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">CustomerId</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">employees</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">EmployeeId</span> <span style="color:#f92672">=</span> <span style="color:#111">customers</span><span style="color:#111">.</span><span style="color:#111">SupportRepId</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">GROUP</span> <span style="color:#00a8c8">BY</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">LastName</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">ORDER</span> <span style="color:#00a8c8">BY</span> <span style="color:#00a8c8">sum</span><span style="color:#111">(</span><span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">total</span><span style="color:#111">)</span> <span style="color:#00a8c8">DESC</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">LIMIT</span> <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><ol start="10">
+<li>
+<p>Schrijf een query die het aantal Customers laat zien per Sales Agent.</p>
+</li>
+<li>
+<p>Schrijf een query die alle invoices laat zien die een track bevatten van Iron Maiden.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">invoices</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">WHERE</span> <span style="color:#00a8c8">EXISTS</span> <span style="color:#111">(</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">artists</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">invoice_items</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">InvoiceId</span> <span style="color:#f92672">=</span> <span style="color:#111">invoice_items</span><span style="color:#111">.</span><span style="color:#111">InvoiceId</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">tracks</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">invoice_items</span><span style="color:#111">.</span><span style="color:#111">TrackId</span> <span style="color:#f92672">=</span> <span style="color:#111">tracks</span><span style="color:#111">.</span><span style="color:#111">TrackId</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">albums</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">tracks</span><span style="color:#111">.</span><span style="color:#111">AlbumId</span> <span style="color:#f92672">=</span> <span style="color:#111">albums</span><span style="color:#111">.</span><span style="color:#111">AlbumId</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">where</span> <span style="color:#111">artists</span><span style="color:#111">.</span><span style="color:#111">Name</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#39;Iron Maiden&#39;</span> <span style="color:#00a8c8">AND</span> <span style="color:#111">albums</span><span style="color:#111">.</span><span style="color:#111">ArtistId</span> <span style="color:#f92672">=</span> <span style="color:#111">artists</span><span style="color:#111">.</span><span style="color:#111">ArtistId</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">);</span>
+</span></span></code></pre></div><ol start="2">
+<li>Schrijf een query die alle invoices laat zien die verkocht werden door Margaret Park.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">invoices</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">WHERE</span> <span style="color:#00a8c8">EXISTS</span> <span style="color:#111">(</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">SELECT</span> <span style="color:#ae81ff">1</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">employees</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">INNER</span> <span style="color:#00a8c8">JOIN</span> <span style="color:#111">customers</span> <span style="color:#00a8c8">ON</span> <span style="color:#111">customers</span><span style="color:#111">.</span><span style="color:#111">CustomerId</span> <span style="color:#f92672">=</span> <span style="color:#111">invoices</span><span style="color:#111">.</span><span style="color:#111">CustomerId</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">WHERE</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">FirstName</span> <span style="color:#00a8c8">LIKE</span> <span style="color:#d88200">&#39;Margaret&#39;</span> <span style="color:#00a8c8">AND</span> <span style="color:#111">employees</span><span style="color:#111">.</span><span style="color:#111">EmployeeId</span> <span style="color:#f92672">=</span> <span style="color:#111">customers</span><span style="color:#111">.</span><span style="color:#111">SupportRepId</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">);</span>
+</span></span></code></pre></div><ol start="3">
+<li>Schrijf een query die alle genres laat zien waarvoor er geen track bestaat.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">genres</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">WHERE</span> <span style="color:#00a8c8">NOT</span> <span style="color:#00a8c8">EXISTS</span> <span style="color:#111">(</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">SELECT</span> <span style="color:#ae81ff">1</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">tracks</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">WHERE</span> <span style="color:#111">tracks</span><span style="color:#111">.</span><span style="color:#111">GenreId</span> <span style="color:#f92672">=</span> <span style="color:#111">genres</span><span style="color:#111">.</span><span style="color:#111">GenreId</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">);</span>
+</span></span></code></pre></div><ol start="4">
+<li>Schrijf een query die alle invoices laat zien waarvan de prijs groter is dan het gemiddelde van alle invoices.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#00a8c8">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">invoices</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">WHERE</span> <span style="color:#111">Total</span> <span style="color:#f92672">&gt;</span> <span style="color:#111">(</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">SELECT</span> <span style="color:#00a8c8">avg</span><span style="color:#111">(</span><span style="color:#111">Total</span><span style="color:#111">)</span> <span style="color:#00a8c8">FROM</span> <span style="color:#111">invoices</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">);</span>
+</span></span></code></pre></div><ol start="5">
+<li>Schrijf een query die alle invoices laat zien waarin een Metallica track verkocht is, waarvan de prijs groter is dan het gemiddelde van alle invoices waarin een Metallica track verkocht is.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"></code></pre></div>
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../../courses/databases/week-1/" title="1. week 1"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../../courses/databases/week-4/" title="3. week 4" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../js/clipboard.min.js?1665827694"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1665827694"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1665827694"></script>
+    <script src="../../../js/jquery.sticky.js?1665827694"></script>
+    <script src="../../../js/featherlight.min.js?1665827694"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1665827694"></script>
+    <script src="../../../js/learn.js?1665827694"></script>
+    <script src="../../../js/hugo-learn.js?1665827694"></script>
+    <script src="../../../js/mermaid.min.js?1665827694"></script>
+    <script>
+    window.MathJax = {
+      chtml: {
+        scale: 2,                      
+        minScale: .5,                  
+        matchFontHeight: true,         
+        mtextInheritFont: false,       
+        merrorInheritFont: true,       
+        mathmlSpacing: false,          
+        skipAttributes: {},            
+        exFactor: .5,                  
+        displayAlign: 'center',        
+        displayIndent: '0'             
+      }
+    };
+    </script>
+    
+    
+
+  </body>
+</html>
+

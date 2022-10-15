@@ -9,7 +9,7 @@
 
     <link rel="icon" href="../../../images/logo_transparent.png" type="image/png">
 
-    <title>5. Simulatie :: Maarten&#39;s notes</title>
+    <title>1. week 1 :: Maarten&#39;s notes</title>
 
     
     <link href="../../../css/nucleus.css?1665827694" rel="stylesheet">
@@ -43,7 +43,7 @@
     </style>
     
   </head>
-  <body class="" data-url="../../../archive/disch/ch-5/">
+  <body class="" data-url="../../../courses/cct/week-1/">
     <nav id="sidebar" class="">
 
 
@@ -97,7 +97,7 @@
   
     
     <li data-nav-id="/courses/" title="Current Courses" class="dd-item
-        
+        parent
         
         
         ">
@@ -225,7 +225,7 @@
   
     
     <li data-nav-id="/courses/cct/" title="Cloud Computing &amp; toepassingen" class="dd-item
-        
+        parent
         
         
         ">
@@ -251,7 +251,7 @@
  
   
     
-      <li data-nav-id="/courses/cct/week-1/" title="1. week 1" class="dd-item ">
+      <li data-nav-id="/courses/cct/week-1/" title="1. week 1" class="dd-item active">
         <a href="../../../courses/cct/week-1/">
         1. week 1
         
@@ -642,7 +642,7 @@
   
     
     <li data-nav-id="/archive/" title="Archive" class="dd-item
-        parent
+        
         
         
         ">
@@ -917,7 +917,7 @@
   
     
     <li data-nav-id="/archive/disch/" title="Digitale Elektronische Schakelingen" class="dd-item
-        parent
+        
         
         
         ">
@@ -1027,7 +1027,7 @@
  
   
     
-      <li data-nav-id="/archive/disch/ch-5/" title="5. Simulatie" class="dd-item active">
+      <li data-nav-id="/archive/disch/ch-5/" title="5. Simulatie" class="dd-item ">
         <a href="../../../archive/disch/ch-5/">
         5. Simulatie
         
@@ -1108,7 +1108,7 @@
             
           
           
-            <a href='../../../'>Maarten's notes</a> > <a href='../../../archive/'>Archive</a> > <a href='../../../archive/disch/'>Digitale Elektronische Schakelingen</a> > 5. Simulatie
+            <a href='../../../'>Maarten's notes</a> > <a href='../../../courses/'>Current Courses</a> > <a href='../../../courses/cct/'>Cloud Computing & toepassingen</a> > 1. week 1
           
         
           
@@ -1125,18 +1125,8 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#table-of-contents">Table of contents</a></li>
-    <li><a href="#testbenches">Testbenches</a>
-      <ul>
-        <li><a href="#doelstelling-van-testbenches">Doelstelling van testbenches</a></li>
-        <li><a href="#voordelen-van-testbenches">Voordelen van testbenches</a></li>
-        <li><a href="#implementatie">Implementatie</a></li>
-        <li><a href="#basisstructuur-van-een-testbench">Basisstructuur van een testbench</a></li>
-        <li><a href="#kloksignaal-in-een-testbench">Kloksignaal in een testbench</a></li>
-        <li><a href="#berichten-in-een-testbench">Berichten in een testbench</a></li>
-      </ul>
-    </li>
-    <li><a href="#evalutie-van-een-hardware-ontwerp">Evalutie van een hardware-ontwerp</a></li>
+    <li><a href="#deel-1-intro">Deel 1: Intro</a></li>
+    <li><a href="#deel-2-isolatie">Deel 2: Isolatie</a></li>
   </ul>
 </nav>
     </div>
@@ -1154,144 +1144,18 @@
           
             <h1>
               
-              5. Simulatie
+              1. week 1
             </h1>
           
 
         
 
 
-<h2 id="table-of-contents">Table of contents</h2>
-<ol>
-<li><a href="#testbenches">Testbenches</a></li>
-<li><a href="#evalutie-van-een-hardware-ontwerp">Evalutie van een hardware-ontwerp</a></li>
-</ol>
-<h2 id="testbenches">Testbenches</h2>
-<h3 id="doelstelling-van-testbenches">Doelstelling van testbenches</h3>
-<ul>
-<li>Het testen van VHDL code (of delen van code) zodat de juiste werking kan getest worden voordat de code geïmplementeerd wordt in een hardware component.</li>
-<li>Het definiëren van een omgeving die in eens testmachine kan gebruikt worden om een bestaande component te testen.</li>
-</ul>
-<p>Een elektronisch ontwerp maken op zich volstaat niet. Bij een goed ontwerp bestaat minstens 50 % van de ontwerptijd uit het uitdenken en uitwerken van testen die verzekeren dat het ontwerp functioneert zoals het moet. Deze testen dienen zowel te gebeuren tijdens de verschillende iteraties en verbeteringen van het ontwerp als na de uiteindelijke realisatie. Het is ook goed om eerst de verschillende deelblokken uitvoerig en volledig te testen en pas daarna (als alle deelblokken correct werken) het geheel te testen. Het vlug wat signalen aanleggen nadat de VHDL code klaar is en het vlug even kijken of de uitgangssignalen zijn zoals we denken dat ze moeten zijn, volstaat duidelijk niet en is de foutieve aanpak.</p>
-<h3 id="voordelen-van-testbenches">Voordelen van testbenches</h3>
-<ul>
-<li>In een testbench kan je systematisch alle te voorziene situaties implementeren, zodat je de zekerheid hebt dat de component onder alles omstandigheden zal werken.</li>
-<li>Bij complexe systemen kan je niet manueel alle mogelijkheden testen.</li>
-<li>Debuggen kan gebeuren zonder de component in werkelijkheid te moeten programmeren.</li>
-</ul>
-<p>Bij een goed ontwerp zullen we gelijktijdig met het ontwerp (of zelfs vooraf) ook de testen waaraan het ontwerp dient te voldoen schrijven. Deze testen worden ook in VHDL beschreven en elke keer dat we het ontwerp testen, zullen we dat doen aan de hand van dezelfde testbench.</p>
-<h3 id="implementatie">Implementatie</h3>
-<ul>
-<li>Een nieuw bouwblok (van een hoger niveau) wordt gecreëerd.</li>
-<li>Deze bouwblok gebruikt de te testen blok (DUR of Device Under Test) als component:
-<ul>
-<li>Ingangssignalen worden hieraan aangelegd</li>
-<li>Uitgangssignalen worden opgemeten</li>
-<li>De verschillen tussen wat verwacht wordt en wat bekomen wordt, worden gerapporteerd.
-<ul>
-<li>Naar het scherm toe</li>
-<li>Naar een tekstfile</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><figure>
-	<a href="../../../img/DISCH/ch-5/DUT.PNG" data-featherlight="image">
-		<img src="../../../img/DISCH/ch-5/DUT.PNG"  >
-	</a>
-	
-</figure>
-</p>
-<h3 id="basisstructuur-van-een-testbench">Basisstructuur van een testbench</h3>
-<ul>
-<li>De entity van de testbench bevat geen port.</li>
-<li>De architecture vangt aan met de declaratie van alle input en output signalen van de DUT en eventueel ook de declaratie van ee log-file om resultaten in weg te schrijven.</li>
-<li>De component die moet getest worden, wordt vervolgens gedeclareerd.</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-VHDL" data-lang="VHDL"><span style="display:flex;"><span><span style="color:#00a8c8">entity</span> <span style="color:#75af00">testbench</span> <span style="color:#00a8c8">is</span>
-</span></span><span style="display:flex;"><span><span style="color:#00a8c8">end</span> <span style="color:#75af00">testbench</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#00a8c8">architecture</span> <span style="color:#75af00">test</span> <span style="color:#00a8c8">of</span> <span style="color:#75af00">tesbench</span> <span style="color:#00a8c8">is</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">signal</span> <span style="color:#111">in0</span><span style="color:#111">,</span><span style="color:#111">in1</span><span style="color:#111">,</span><span style="color:#111">in2</span><span style="color:#111">,</span><span style="color:#111">in3</span><span style="color:#f92672">:</span> <span style="color:#00a8c8">bit</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">signal</span> <span style="color:#111">output</span><span style="color:#f92672">:</span> <span style="color:#00a8c8">bit</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">component</span> <span style="color:#75af00">te_testen</span>
-</span></span><span style="display:flex;"><span>		<span style="color:#00a8c8">port</span><span style="color:#111">(</span><span style="color:#111">in0</span><span style="color:#111">,</span> <span style="color:#111">in1</span><span style="color:#111">,</span> <span style="color:#111">in2</span><span style="color:#111">,</span> <span style="color:#111">in3</span><span style="color:#f92672">:</span> <span style="color:#00a8c8">in</span> <span style="color:#00a8c8">bit</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>			 <span style="color:#111">output</span><span style="color:#f92672">:</span> <span style="color:#00a8c8">out</span> <span style="color:#00a8c8">bit</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">end</span> <span style="color:#00a8c8">component</span><span style="color:#111">;</span>
-</span></span></code></pre></div><ul>
-<li>In de body van de architectuur (na begin instructie) staat vervolgens de instantiatie van de resten component.</li>
-<li>Daarna volgen processen die inputs aanleggen of outputs wegschrijven.</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-VHDL" data-lang="VHDL"><span style="display:flex;"><span><span style="color:#00a8c8">begin</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#111">dut</span><span style="color:#f92672">:</span> <span style="color:#111">te_testen</span> <span style="color:#00a8c8">port</span> <span style="color:#00a8c8">map</span><span style="color:#111">(</span><span style="color:#111">in0</span><span style="color:#111">,</span> <span style="color:#111">in1</span><span style="color:#111">,</span> <span style="color:#111">in2</span><span style="color:#111">,</span> <span style="color:#111">in3</span><span style="color:#111">,</span> <span style="color:#111">output</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">process</span>
-</span></span><span style="display:flex;"><span>		<span style="color:#00a8c8">begin</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#111">in0</span> <span style="color:#f92672">&lt;=</span> <span style="color:#d88200">&#39;1&#39;</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#111">in1</span> <span style="color:#f92672">&lt;=</span> <span style="color:#d88200">&#39;0&#39;</span> <span style="color:#00a8c8">after</span> <span style="color:#ae81ff">1</span> <span style="color:#111">ns</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#00a8c8">wait</span> <span style="color:#00a8c8">for</span> <span style="color:#ae81ff">10</span> <span style="color:#111">ns</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#111">in2</span> <span style="color:#f92672">&lt;=</span> <span style="color:#d88200">&#39;0&#39;</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#111">in3</span> <span style="color:#f92672">&lt;=</span> <span style="color:#d88200">&#39;1&#39;</span> <span style="color:#00a8c8">after</span> <span style="color:#ae81ff">1</span> <span style="color:#111">ns</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#00a8c8">wait</span> <span style="color:#00a8c8">for</span> <span style="color:#ae81ff">10</span> <span style="color:#111">ns</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#111">in0</span> <span style="color:#f92672">&lt;=</span> <span style="color:#d88200">&#39;0&#39;</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#111">in1</span> <span style="color:#f92672">&lt;=</span> <span style="color:#d88200">&#39;1&#39;</span> <span style="color:#00a8c8">after</span> <span style="color:#ae81ff">1</span> <span style="color:#111">ns</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#00a8c8">wait</span> <span style="color:#00a8c8">for</span> <span style="color:#ae81ff">10</span> <span style="color:#111">ns</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#111">in2</span> <span style="color:#f92672">&lt;=</span> <span style="color:#d88200">&#39;1&#39;</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#111">in3</span> <span style="color:#f92672">&lt;=</span> <span style="color:#d88200">&#39;0&#39;</span> <span style="color:#00a8c8">after</span> <span style="color:#ae81ff">1</span> <span style="color:#111">ns</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#00a8c8">wait</span> <span style="color:#00a8c8">for</span> <span style="color:#ae81ff">10</span> <span style="color:#111">ns</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">end</span> <span style="color:#00a8c8">process</span><span style="color:#111">;</span>
-</span></span></code></pre></div><h3 id="kloksignaal-in-een-testbench">Kloksignaal in een testbench</h3>
-<ul>
-<li>De klok-periode kan als constant gedaclareerd worden</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-VHDL" data-lang="VHDL"><span style="display:flex;"><span><span style="color:#00a8c8">CONSTANT</span> <span style="color:#111">clk_period</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">time</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">10</span> <span style="color:#111">ns</span><span style="color:#111">;</span>
-</span></span></code></pre></div><ul>
-<li>De klok kan gegenereerd worden door een speciaal proces.</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-VHDL" data-lang="VHDL"><span style="display:flex;"><span><span style="color:#75af00">clk_process</span><span style="color:#f92672">:</span> <span style="color:#00a8c8">process</span>
-</span></span><span style="display:flex;"><span><span style="color:#00a8c8">begin</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#111">clk</span> <span style="color:#f92672">&lt;=</span> <span style="color:#d88200">&#39;0&#39;</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">wait</span> <span style="color:#00a8c8">for</span> <span style="color:#111">clk_period</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#111">clk</span> <span style="color:#f92672">&lt;=</span> <span style="color:#d88200">&#39;1&#39;</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">wait</span> <span style="color:#00a8c8">for</span> <span style="color:#111">clk_period</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#00a8c8">end</span> <span style="color:#00a8c8">process</span><span style="color:#111">;</span>
-</span></span></code></pre></div><h3 id="berichten-in-een-testbench">Berichten in een testbench</h3>
-<ul>
-<li>De assert instructie laat toe berichten mee te delen.</li>
-<li>De assert instructie wordt gevolgd door een booleaanse expressie.</li>
-<li>Als aan deze expressie niet voldaan is wordt een &ldquo;assetion violation&rdquo; gerapporteerd. (default)</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-VHDL" data-lang="VHDL"><span style="display:flex;"><span><span style="color:#00a8c8">assert</span> <span style="color:#111">(</span><span style="color:#00a8c8">out</span> <span style="color:#f92672">=</span> <span style="color:#111">(</span><span style="color:#111">in1</span> <span style="color:#00a8c8">and</span> <span style="color:#111">in2</span><span style="color:#111">));</span>
-</span></span></code></pre></div><ul>
-<li>Je kan hetgeen gerapporteerd wordt aanpassen met een report keyword</li>
-<li>Na de report moet altijd een string volgen.</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-VHDL" data-lang="VHDL"><span style="display:flex;"><span><span style="color:#00a8c8">assert</span> <span style="color:#111">(</span><span style="color:#00a8c8">out</span> <span style="color:#f92672">=</span> <span style="color:#111">(</span><span style="color:#111">in1</span> <span style="color:#00a8c8">and</span> <span style="color:#111">in2</span><span style="color:#111">))</span> <span style="color:#111">report</span> <span style="color:#d88200">&#34;De and-poort werkt niet&#34;</span><span style="color:#111">;</span>
-</span></span></code></pre></div><ul>
-<li>De report kan ook los staan.</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-VHDL" data-lang="VHDL"><span style="display:flex;"><span><span style="color:#111">report</span> <span style="color:#d88200">&#34;Ik ben nu in deze lus&#34;</span><span style="color:#111">;</span>
-</span></span></code></pre></div><ul>
-<li>De ernst van het bericht kan je aanpassen met het severity keyword.</li>
-<li>De ernst die hierop volgt moet van het type <code>severity_level</code> zijn.</li>
-<li>Je kan bepalen bij welke erns de simulator moet stoppen.</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-VHDL" data-lang="VHDL"><span style="display:flex;"><span><span style="color:#00a8c8">assert</span> <span style="color:#111">(</span><span style="color:#00a8c8">out</span> <span style="color:#f92672">=</span> <span style="color:#111">(</span><span style="color:#111">in1</span> <span style="color:#00a8c8">and</span> <span style="color:#111">in2</span><span style="color:#111">))</span> <span style="color:#111">report</span> <span style="color:#d88200">&#34;Fout&#34;</span> <span style="color:#00a8c8">severity</span> <span style="color:#111">ERROR</span><span style="color:#111">;</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-VHDL" data-lang="VHDL"><span style="display:flex;"><span><span style="color:#00a8c8">type</span> <span style="color:#00a8c8">severity_level</span> <span style="color:#00a8c8">is</span> <span style="color:#111">(</span><span style="color:#111">note</span><span style="color:#111">,</span> <span style="color:#111">warning</span><span style="color:#111">,</span> <span style="color:#111">error</span><span style="color:#111">,</span> <span style="color:#111">failure</span><span style="color:#111">);</span>
-</span></span></code></pre></div><h2 id="evalutie-van-een-hardware-ontwerp">Evalutie van een hardware-ontwerp</h2>
-<ul>
-<li><strong>Maximale klokfrequentie = 1/(vertraging van het kritisch pad)</strong></li>
-<li><strong>Bepaling van de maximale klokfrequentie door de tools:</strong>
-<ul>
-<li>Leg een bepaalde klokfrequentie op.</li>
-<li>Check via de ontwerptools of de opgelegde frequentie kan gehaald worden.</li>
-<li>Indien niet: herhaal met een lagere klokfrequentie</li>
-<li>Indien wel: herhaal met een hogere klokfrequentie</li>
-<li>De maximale klokfrequentie is gelijk aan de hoogste klokfrequentie waarover de tools rapporteren dat ze gehaald kan warden.</li>
-</ul>
-</li>
-</ul>
+<h2 id="deel-1-intro">Deel 1: Intro</h2>
+<p>Paper &lsquo;Future Generation Computer Systems&rsquo; lezen (misschien een examenvraag uit deze paper).</p>
+<hr>
+<h2 id="deel-2-isolatie">Deel 2: Isolatie</h2>
+<p>Zeer korte uitleg van de theorie, ppt nog studeren.</p>
 
 
 <footer class="footline">
@@ -1329,8 +1193,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1346,6 +1208,110 @@
             
             
                 
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1435,102 +1401,6 @@
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
             
             
@@ -1656,7 +1526,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1672,9 +1541,6 @@
             
                 
                     
-                        
-                        
-                    
                 
                 
 
@@ -1682,54 +1548,6 @@
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1843,42 +1661,6 @@
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
             
             
@@ -1927,11 +1709,90 @@
             
         
                     
+            
+        
+                    
                         
             
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1959,10 +1820,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../../archive/disch/ch-4/" title="4. Ontwerpprincipes voor synchrone logica"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../../courses/cct/" title="Cloud Computing &amp; toepassingen"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../../archive/disch/ch-1/" title="1. Inleiding" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../../courses/databases/" title="Databases" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

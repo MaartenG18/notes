@@ -8,5 +8,29 @@
     <language>en-us</language>
     <managingEditor>maartengielkens2000@gmail.com (Maarten Gielkens)</managingEditor>
     <webMaster>maartengielkens2000@gmail.com (Maarten Gielkens)</webMaster><atom:link href="https://maarteng18.github.io/notes/courses/obj/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1. week 2</title>
+      <link>https://maarteng18.github.io/notes/courses/obj/week-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/obj/week-2/</guid>
+      <description>Opdrachten Hoofdstuk 1-4 1.2.1 ✔️
+1.2.2 ✔️
+1.2.3 ✔️
+1.2.4 ✔️
+1.2.5 Welke voordelen biedt een klasse als Date ten opzichte van een datum steeds voor te stellen als drie aparte getallen? Zo is het vaak beter om bijvoorbeeld een positie of grootte niet steeds voor te stellen door twee getallen, maar door (heel eenvoudige) klassen of structures. Op die manier wordt code tevens duidelijker. Vergelijk de method drawRect(int, int, int, int) maar met drawRect(Point, Point) of drawRect(Point, Size).</description>
+    </item>
+    
+    <item>
+      <title>2. week 3</title>
+      <link>https://maarteng18.github.io/notes/courses/obj/week-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/obj/week-3/</guid>
+      <description>Opdrachten Hoofdstuk 5 2.2.1 Zoek uit hoe std::pair, std::map, std::tuple en std::get() gebruik maken van templates op basis van de documentatie. Waarvoor gebruikt std::map default template argumenten? Waarom geven bepaalde varianten van insert() bij std::map een std::pair terug?
+Ze maken gebruik van templates om objecten van alle types te kunnen opslaan zodat er niet voor alle mogelijke datastructuren een andere constructor moet gemaakt worden.
+std::map() gebruikt default argumenten voor de compare en allocater variabelen.</description>
+    </item>
+    
   </channel>
 </rss>

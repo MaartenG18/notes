@@ -40,6 +40,41 @@ FPGA vs. microprocessor FPGA Bouwblokken van de FPGA CLB: Configurable Logic Blo
     </item>
     
     <item>
+      <title>1. week 1</title>
+      <link>https://maarteng18.github.io/notes/courses/cct/week-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/cct/week-1/</guid>
+      <description>Deel 1: Intro Paper &amp;lsquo;Future Generation Computer Systems&amp;rsquo; lezen (misschien een examenvraag uit deze paper).
+Deel 2: Isolatie Zeer korte uitleg van de theorie, ppt nog studeren.</description>
+    </item>
+    
+    <item>
+      <title>1. week 1</title>
+      <link>https://maarteng18.github.io/notes/courses/databases/week-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/databases/week-1/</guid>
+      <description>RDBMS Database Basics ISBN is een string omdat er niet mee gerekend moet worden. Alles waar niet mee gerekend moet worden, wordt als string opgeslaan in een database.
+Laatste mermaid:
+Pijltje author naar author detail, 1 wil zeggen een boek heeft 1 author en 1&amp;hellip;* zegt dat een author meerdere boeken kan hebben.
+Database Componenten Excel bestand in orde maken en library.db bekijken voor te zien hoe het werkt.</description>
+    </item>
+    
+    <item>
+      <title>1. week 2</title>
+      <link>https://maarteng18.github.io/notes/courses/obj/week-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/obj/week-2/</guid>
+      <description>Opdrachten Hoofdstuk 1-4 1.2.1 ✔️
+1.2.2 ✔️
+1.2.3 ✔️
+1.2.4 ✔️
+1.2.5 Welke voordelen biedt een klasse als Date ten opzichte van een datum steeds voor te stellen als drie aparte getallen? Zo is het vaak beter om bijvoorbeeld een positie of grootte niet steeds voor te stellen door twee getallen, maar door (heel eenvoudige) klassen of structures. Op die manier wordt code tevens duidelijker. Vergelijk de method drawRect(int, int, int, int) maar met drawRect(Point, Point) of drawRect(Point, Size).</description>
+    </item>
+    
+    <item>
       <title>2. Progammeerbare logica</title>
       <link>https://maarteng18.github.io/notes/archive/disch/ch-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -62,6 +97,35 @@ FAMOS EPROM technologie (UV- erasable) FLOTOX EEPROM technologie Flash technolog
     </item>
     
     <item>
+      <title>2. week 2</title>
+      <link>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-2/</guid>
+      <description>Table of contents Initial Exercises Chapter 1: Why Data Structures Matter Chapter 2: Why Algorithms Matter Chapter 3: Big Oh Notation Initial Exercises </description>
+    </item>
+    
+    <item>
+      <title>2. week 2-3</title>
+      <link>https://maarteng18.github.io/notes/courses/databases/week-2-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/databases/week-2-3/</guid>
+      <description>Schrijf een query die alle Customers (volledige naam, customer ID en land) laat zien die niet wonen in de USA. SELECT * FROM customers WHERE Country != &amp;#39;USA&amp;#39; SELECT * FROM customers WHERE Country &amp;lt;&amp;gt; &amp;#39;USA&amp;#39; Schrijf een query die enkel de Customers laat zien die in Brazilië wonen. SELECT * FROM customers WHERE Country = &amp;#39;Brazil&amp;#39;; Schrijf een query die alle Employees laat zien die werken in de Sales afdeling.</description>
+    </item>
+    
+    <item>
+      <title>2. week 3</title>
+      <link>https://maarteng18.github.io/notes/courses/obj/week-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/obj/week-3/</guid>
+      <description>Opdrachten Hoofdstuk 5 2.2.1 Zoek uit hoe std::pair, std::map, std::tuple en std::get() gebruik maken van templates op basis van de documentatie. Waarvoor gebruikt std::map default template argumenten? Waarom geven bepaalde varianten van insert() bij std::map een std::pair terug?
+Ze maken gebruik van templates om objecten van alle types te kunnen opslaan zodat er niet voor alle mogelijke datastructuren een andere constructor moet gemaakt worden.
+std::map() gebruikt default argumenten voor de compare en allocater variabelen.</description>
+    </item>
+    
+    <item>
       <title>3. Geheugens</title>
       <link>https://maarteng18.github.io/notes/archive/disch/ch-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -77,6 +141,17 @@ FAMOS EPROM technologie (UV- erasable) FLOTOX EEPROM technologie Flash technolog
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
       <guid>https://maarteng18.github.io/notes/archive/ansch/ch-3/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>3. week 4</title>
+      <link>https://maarteng18.github.io/notes/courses/databases/week-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/databases/week-4/</guid>
+      <description>Vragen nog verbeteren.
+RDBMS Transacties Transaction Management Basics Er kan geen media recovery gebruikt worden omdat er bijvoorbeeld in een task een waarde veranderd wordt en deze daarna nog eens kan veranderen binnen dezelfde task. Als dit voorkomt en de data revocery valt toevallig tussen de 2 veranderingen dan zal de database op een fout moment gerecovered worden.
+Er kunnen problemen voorkomen zoals berekeningen doen met waarden die niet juist zijn omdat elke task nog de foute waarde ziet omdat de veranderingen van 1 task nog niet gecommit zijn.</description>
     </item>
     
     <item>
@@ -186,6 +261,19 @@ A notice disclaimer
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
       <guid>https://maarteng18.github.io/notes/archive/ansch/ch-10/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-3/</guid>
+      <description>2.1.2 N is x O(log n) Kan makkelijker door gewoon te berekenen
+2.1.3 N is irrelevant wat constant O(1) want vaste tijd
+2.1.4 M = lentge s =&amp;gt; O(M)
+N = # strings in array M = lengte langste string =&amp;gt; O(M*N)
+2.1.5 Niet echt kennen maar als de code er is, kunnen analyseren hoe snel het is en hoe het werkt.</description>
     </item>
     
   </channel>
