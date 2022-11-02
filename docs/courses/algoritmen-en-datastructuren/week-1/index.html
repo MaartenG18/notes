@@ -12,21 +12,21 @@
     <title>1. week 1 :: Maarten&#39;s notes</title>
 
     
-    <link href="../../../css/nucleus.css?1667392743" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1667392743" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1667392743" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1667392743" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1667392743" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1667392743" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1667392743" rel="stylesheet">
-    <link href="../../../css/theme.css?1667392743" rel="stylesheet">
-    <link href="../../../css/devselector.css?1667392743" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1667392743" rel="stylesheet">
-    <link href="../../../css/theme-kul.css?1667392743" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1667396928" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1667396928" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1667396928" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1667396928" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1667396928" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1667396928" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1667396928" rel="stylesheet">
+    <link href="../../../css/theme.css?1667396928" rel="stylesheet">
+    <link href="../../../css/devselector.css?1667396928" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1667396928" rel="stylesheet">
+    <link href="../../../css/theme-kul.css?1667396928" rel="stylesheet">
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1667392743"></script>
-    <script src="../../../js/devselector.js?1667392743"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1667396928"></script>
+    <script src="../../../js/devselector.js?1667396928"></script>
     <script id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1667392743"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1667392743"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1667396928"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1667396928"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/maarteng18.github.io\/notes\/";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1667392743"></script>
+<script type="text/javascript" src="../../../js/search.js?1667396928"></script>
 
     
   </div>
@@ -1134,12 +1134,12 @@
     </li>
     <li><a href="#why-algorithms-matter">Why Algorithms Matter</a>
       <ul>
-        <li><a href="#exercises-1">Exercises</a></li>
+        <li><a href="#exercises-on-why-algorithms-matter">Exercises on Why Algorithms Matter</a></li>
       </ul>
     </li>
     <li><a href="#big-oh-notation">Big Oh Notation</a>
       <ul>
-        <li><a href="#exercises-2">Exercises</a></li>
+        <li><a href="#exercises-on-big-oh-notation">Exercises on Big Oh Notation</a></li>
       </ul>
     </li>
   </ul>
@@ -1178,20 +1178,19 @@
 <div class="ex">
 	<div class="inner">
     	<p>You retrieve a list of all items that have been sold during the last trimester from a web shop’s database. Unfortunately, you end up with a simple array: if an item was sold three times, it occurs three times in that array. You want to count how many times one particular item has been sold. How many steps does it take to find this when the array is unordered? And when ordered? Answer in terms of N, both for the best-case and worst-case scenario.</p>
-<br>
-<p>Answer unordered:</p>
+
+	</div>
+</div>
+<p><em>Answer unordered:</em></p>
 <ul>
 <li>Best-case: N</li>
 <li>Worst-case: N</li>
 </ul>
-<p>Answer ordered:</p>
+<p><em>Answer ordered:</em></p>
 <ul>
 <li>Best-case: 2</li>
 <li>Worst-case: N</li>
 </ul>
-
-	</div>
-</div>
 
 <div class="ex">
 	<div class="inner">
@@ -1201,118 +1200,132 @@
 <li>How many steps would a binary search for a number take?</li>
 </ol>
 <p>Answer in therms of N, both for the best-case and worst-case scenario.</p>
-<br>
 <p>How would you define an average-case scenario? How many steps would both take in such a scenario? According to you, which scenario is most valuable to analyze: the best-case, worst-case or average-case scenario?</p>
-<br>
-<p>Answer 1:</p>
+
+	</div>
+</div>
+<p><em>Answer 1:</em></p>
 <ul>
 <li>Best-case: 1</li>
 <li>Worst-case: N</li>
 </ul>
-<p>Answer 2:</p>
+<p><em>Answer 2:</em></p>
 <ul>
 <li>Best-case: 1</li>
 <li>Worst-case: 3</li>
 </ul>
-<p>I would define the average-case scenario as the average between the best-case and worst-case scenario. So question one would have an average-case-scenario of (1+N)/2 = 4.5 and question two would have an averge-case-scenario of (1+3)/2 = 2. The best scenario to analyze would be the worst case scenario because this is the only way to be sure the algorithm is fully optimized.</p>
-
-	</div>
-</div>
+<p>I would define the average-case scenario as the average between the best-case and worst-case scenario. So question one would have an average-case-scenario of (1+N)/2 = 4.5 and question two would have an average-case-scenario of (1+3)/2 = 2. The best scenario to analyze would be the worst case scenario because this is the only way to be sure the algorithm is fully optimized.</p>
 
 <div class="ex">
 	<div class="inner">
-    	<p>Implement the algorithms from exercise 1.2.2: write two functions that search a certain number in a given array of numbers and return the index of that number when found (-1 if not found). One function uses linear search, the other function uses binary search.
-Extend or adapt your code to verify your answers from exercise 1.2.2. Add a counter to each algorithm that starts at 0 and increments each time you execute a step. Think about what qualifies as a ‘step’.
-Finally, compare the execution time of both algorithms. To this end, you can use the C++ std::chrono library (or similar approaches in Java, Python . . . ). Try measuring the execution time at the point where you call your functions, and also inside your functions. Experiment with various sizes of arrays, from small to very big. Can you explain the results?
-Note: in the next chapter, we will retake this exercise and you will be asked to extend your solution, so make sure that you have a working implementation.</p>
-<br>
-<p>Answer linear search:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C++" data-lang="C++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt; iostream &gt;</span><span style="color:#75715e">
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#00a8c8">using</span> <span style="color:#00a8c8">namespace</span> <span style="color:#111">std</span><span style="color:#111">;</span>
+    	<p>Implement the algorithms from exercise 1.2.2: write two functions that search a certain number in a given array of numbers and return the index of that number when found (-1 if not found). One function uses linear search, the other function uses binary search.</p>
+<p>Extend or adapt your code to verify your answers from exercise 1.2.2. Add a counter to each algorithm that starts at 0 and increments each time you execute a step. Think about what qualifies as a ‘step’.</p>
+<p>Finally, compare the execution time of both algorithms. To this end, you can use the C++ std::chrono library (or similar approaches in Java, Python . . . ). Try measuring the execution time at the point where you call your functions, and also inside your functions. Experiment with various sizes of arrays, from small to very big. Can you explain the results?</p>
+<p>Note: in the next chapter, we will retake this exercise and you will be asked to extend your solution, so make sure that you have a working implementation.</p>
+
+	</div>
+</div>
+<p><em>Answer linear search:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C++" data-lang="C++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">void</span> <span style="color:#75af00">linearSearch</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">array</span><span style="color:#111">[],</span> <span style="color:#00a8c8">int</span> <span style="color:#111">number</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#00a8c8">void</span> <span style="color:#75af00">linearSearch</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">array</span><span style="color:#111">[],</span> <span style="color:#00a8c8">int</span> <span style="color:#111">number</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">temp</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#ae81ff">5</span><span style="color:#111">]{};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;Enter 5 elements of the array.</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">cin</span> <span style="color:#f92672">&gt;&gt;</span> <span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;Enter an element to search.</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">num</span><span style="color:#111">{};</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">cin</span> <span style="color:#f92672">&gt;&gt;</span> <span style="color:#111">num</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">linearSearch</span><span style="color:#111">(</span><span style="color:#111">arr</span><span style="color:#111">,</span> <span style="color:#111">num</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">void</span> <span style="color:#75af00">linearSearch</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">array</span><span style="color:#111">[],</span> <span style="color:#00a8c8">int</span> <span style="color:#111">number</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">temp</span><span style="color:#111">{</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#111">};</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">array</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">number</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;Element found at index: &#34;</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">endl</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;Element found at index: &#34;</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">endl</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#111">temp</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">break</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">temp</span> <span style="color:#f92672">==</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;No Element Found&#34;</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">endl</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;No Element Found&#34;</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">endl</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><p>test 
+<em>Answer binary search:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C++" data-lang="C++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">binarySearch</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">array</span><span style="color:#111">[],</span> <span style="color:#00a8c8">int</span> <span style="color:#111">left</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">right</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">number</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#ae81ff">5</span><span style="color:#111">];</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;Please enter 5 elements of the Array&#34;</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">endl</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#111">cin</span> <span style="color:#f92672">&gt;&gt;</span> <span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#ae81ff">5</span><span style="color:#111">]{};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;Enter 5 elements of the array.</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">cin</span> <span style="color:#f92672">&gt;&gt;</span> <span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">];</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;Please enter an element to search&#34;</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">endl</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">num</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">cin</span> <span style="color:#f92672">&gt;&gt;</span> <span style="color:#111">num</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">linearSearch</span><span style="color:#111">(</span><span style="color:#111">arr</span><span style="color:#111">,</span> <span style="color:#111">num</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;Enter an element to search.</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">num</span><span style="color:#111">{};</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">cin</span> <span style="color:#f92672">&gt;&gt;</span> <span style="color:#111">num</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">result</span> <span style="color:#f92672">=</span> <span style="color:#111">binarySearch</span><span style="color:#111">(</span><span style="color:#111">arr</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#ae81ff">4</span><span style="color:#111">,</span> <span style="color:#111">num</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#111">(</span><span style="color:#111">result</span> <span style="color:#f92672">==</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">?</span> <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;Element is not present in array&#34;</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">endl</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">:</span> <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;Element is present at index &#34;</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">result</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">endl</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
-</span></span></code></pre></div><p>Answer binary search:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C++" data-lang="C++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#00a8c8">using</span> <span style="color:#00a8c8">namespace</span> <span style="color:#111">std</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">binarySearch</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">arr</span><span style="color:#111">[],</span> <span style="color:#00a8c8">int</span> <span style="color:#111">l</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">r</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">x</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">binarySearch</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">array</span><span style="color:#111">[],</span> <span style="color:#00a8c8">int</span> <span style="color:#111">left</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">right</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">number</span><span style="color:#111">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">r</span> <span style="color:#f92672">&gt;=</span> <span style="color:#111">l</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">mid</span> <span style="color:#f92672">=</span> <span style="color:#111">l</span> <span style="color:#f92672">+</span> <span style="color:#111">(</span><span style="color:#111">r</span> <span style="color:#f92672">-</span> <span style="color:#111">l</span><span style="color:#111">)</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">right</span> <span style="color:#f92672">&gt;=</span> <span style="color:#111">left</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">mid</span> <span style="color:#f92672">=</span> <span style="color:#111">left</span> <span style="color:#f92672">+</span> <span style="color:#111">(</span><span style="color:#111">right</span> <span style="color:#f92672">-</span> <span style="color:#111">left</span><span style="color:#111">)</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">mid</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">x</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">array</span><span style="color:#111">[</span><span style="color:#111">mid</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">number</span><span style="color:#111">)</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">return</span> <span style="color:#111">mid</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">mid</span><span style="color:#111">]</span> <span style="color:#f92672">&gt;</span> <span style="color:#111">x</span><span style="color:#111">)</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">return</span> <span style="color:#111">binarySearch</span><span style="color:#111">(</span><span style="color:#111">arr</span><span style="color:#111">,</span> <span style="color:#111">l</span><span style="color:#111">,</span> <span style="color:#111">mid</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">x</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">array</span><span style="color:#111">[</span><span style="color:#111">mid</span><span style="color:#111">]</span> <span style="color:#f92672">&gt;</span> <span style="color:#111">number</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">return</span> <span style="color:#111">binarySearch</span><span style="color:#111">(</span><span style="color:#111">array</span><span style="color:#111">,</span> <span style="color:#111">left</span><span style="color:#111">,</span> <span style="color:#111">mid</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">number</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#111">binarySearch</span><span style="color:#111">(</span><span style="color:#111">arr</span><span style="color:#111">,</span> <span style="color:#111">mid</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">r</span><span style="color:#111">,</span> <span style="color:#111">x</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#111">binarySearch</span><span style="color:#111">(</span><span style="color:#111">array</span><span style="color:#111">,</span> <span style="color:#111">mid</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">right</span><span style="color:#111">,</span> <span style="color:#111">number</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">(</span><span style="color:#00a8c8">void</span><span style="color:#111">)</span>
-</span></span><span style="display:flex;"><span><span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">arr</span><span style="color:#111">[]</span> <span style="color:#f92672">=</span> <span style="color:#111">{</span> <span style="color:#ae81ff">2</span><span style="color:#111">,</span> <span style="color:#ae81ff">3</span><span style="color:#111">,</span> <span style="color:#ae81ff">4</span><span style="color:#111">,</span> <span style="color:#ae81ff">10</span><span style="color:#111">,</span> <span style="color:#ae81ff">40</span> <span style="color:#111">};</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#111">arr</span><span style="color:#111">)</span> <span style="color:#f92672">/</span> <span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">]);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">result</span> <span style="color:#f92672">=</span> <span style="color:#111">binarySearch</span><span style="color:#111">(</span><span style="color:#111">arr</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">x</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">(</span><span style="color:#111">result</span> <span style="color:#f92672">==</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">)</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">?</span> <span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;Element is not present in array&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">:</span> <span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;Element is present at index &#34;</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">result</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span></code></pre></div>
-	</div>
-</div>
-
 <div class="ex">
 	<div class="inner">
     	<p>A binary tree is a tree in which each node has zero, one or two children (see figure). How many steps would a search for a number take in such a tree? Answer in terms of N.</p>
 <p><figure>
 	<a href="../../../img/ALG/week-1/tree.png" data-featherlight="image">
-		<img src="../../../img/ALG/week-1/tree.png"  >
+		<img src="../../../img/ALG/week-1/tree.png"  alt="Tree" >
 	</a>
 	
 </figure>
 </p>
-<br>
-<p>Answer:</p>
-<br>
-<p>In this three the worst-case would be 3 steps.</p>
 
 	</div>
 </div>
+<p><em>Answer:</em></p>
+<p>In this three the worst-case would be 3 steps.</p>
 <h2 id="why-data-structures-matter">Why Data Structures Matter</h2>
 <h3 id="exercises">Exercises</h3>
 
@@ -1327,7 +1340,10 @@ Note: in the next chapter, we will retake this exercise and you will be asked to
 <li>Deletion at the beginning of the array</li>
 <li>Deletion at the end of the array</li>
 </ol>
-<p>Answers:</p>
+
+	</div>
+</div>
+<p><em>Answers:</em></p>
 <ol>
 <li>1 step</li>
 <li>100 steps</li>
@@ -1336,9 +1352,6 @@ Note: in the next chapter, we will retake this exercise and you will be asked to
 <li>100 steps</li>
 <li>1 step</li>
 </ol>
-
-	</div>
-</div>
 
 <div class="ex">
 	<div class="inner">
@@ -1351,7 +1364,10 @@ Note: in the next chapter, we will retake this exercise and you will be asked to
 <li>Deletion at the beginning of the set</li>
 <li>Deletion at the end of the set</li>
 </ol>
-<p>Answers:</p>
+
+	</div>
+</div>
+<p><em>Answers:</em></p>
 <ol>
 <li>1 step</li>
 <li>100 steps</li>
@@ -1361,87 +1377,74 @@ Note: in the next chapter, we will retake this exercise and you will be asked to
 <li>1 step</li>
 </ol>
 
-	</div>
-</div>
-
 <div class="ex">
 	<div class="inner">
-    	<p>Normally the search operation in an array looks for the first instance of a given value. But sometimes we may want to look for every instance of a given value. For example, say we want to count how many times the value &ldquo;apple&rdquo; is found inside an array. How many steps would it take to find all the &ldquo;apples&rdquo;? Give your anwer in terms of N.</p>
-<br>
-<p>Answer:</p>
-<br>
-<p>N steps</p>
+    	<p>Normally the search operation in an array looks for the first instance of a given value. But sometimes we may want to look for every instance of a given value. For example, say we want to count how many times the value &ldquo;apple&rdquo; is found inside an array. How many steps would it take to find all the &ldquo;apples&rdquo;? Give your answer in terms of N.</p>
 
 	</div>
 </div>
+<p><em>Answer:</em></p>
+<p>N steps</p>
 <h2 id="why-algorithms-matter">Why Algorithms Matter</h2>
-<h3 id="exercises-1">Exercises</h3>
+<h3 id="exercises-on-why-algorithms-matter">Exercises on Why Algorithms Matter</h3>
 
 <div class="ex">
 	<div class="inner">
     	<p>How many steps would it take to perform a linear search for the number 8 in the ordered array, [2, 4, 6, 8, 10, 12, 13]?</p>
-<br>
-<p>Answer:</p>
-<br>
-<p>4 steps</p>
 
 	</div>
 </div>
+<p><em>Answer:</em></p>
+<p>4 steps</p>
 
 <div class="ex">
 	<div class="inner">
     	<p>How many steps would it take to perform a binary search for the number 8 in the ordered array, [2, 4, 6, 8, 10, 12, 13]?</p>
-<br>
-<p>Answer:</p>
-<br>
-<p>1 step</p>
 
 	</div>
 </div>
+<p><em>Answer:</em></p>
+<p>1 step</p>
 
 <div class="ex">
 	<div class="inner">
     	<p>What is the maximum number of steps it would take to perform a binary search on an array of size 100,000?</p>
-<br>
-<p>Answer:</p>
-<br>
-<p>16 steps</p>
 
 	</div>
 </div>
+<p><em>Answer:</em></p>
+<p>16 steps</p>
 <h2 id="big-oh-notation">Big Oh Notation</h2>
-<h3 id="exercises-2">Exercises</h3>
+<h3 id="exercises-on-big-oh-notation">Exercises on Big Oh Notation</h3>
 
 <div class="ex">
 	<div class="inner">
     	<p>Use Big O Notation to describe the time complexity of the following function that determines whether a given year is a leap year:</p>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00a8c8">function</span> <span style="color:#75af00">isLeapYear</span><span style="color:#111">(</span><span style="color:#75af00">year</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">return</span> <span style="color:#111">(</span><span style="color:#75af00">year</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#f92672">?</span> <span style="color:#111">(</span><span style="color:#75af00">year</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">400</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#f92672">:</span> <span style="color:#111">(</span><span style="color:#75af00">year</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">(</span><span style="color:#75af00">year</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#f92672">?</span> <span style="color:#111">(</span><span style="color:#75af00">year</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">400</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#f92672">:</span> <span style="color:#111">(</span><span style="color:#75af00">year</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
-</span></span></code></pre></div><p>Answer:</p>
-<br>
-<p>O(1)</p>
-
+</span></span></code></pre></div>
 	</div>
 </div>
+<p><em>Answer:</em></p>
+<p>O(1)</p>
 
 <div class="ex">
 	<div class="inner">
     	<p>Use Big O Notation to describe the time complexity of the following function that sums up all the numbers from a given array:</p>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00a8c8">function</span> <span style="color:#75af00">arraySum</span><span style="color:#111">(</span><span style="color:#75af00">array</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">let</span> <span style="color:#75af00">sum</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">let</span> <span style="color:#75af00">sum</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">for</span><span style="color:#111">(</span><span style="color:#00a8c8">let</span> <span style="color:#75af00">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#75af00">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#75af00">array</span><span style="color:#111">.</span><span style="color:#75af00">length</span><span style="color:#111">;</span> <span style="color:#75af00">i</span><span style="color:#f92672">++</span><span style="color:#111">){</span>
-</span></span><span style="display:flex;"><span>		<span style="color:#75af00">sum</span> <span style="color:#f92672">+=</span> <span style="color:#75af00">array</span><span style="color:#111">[</span><span style="color:#75af00">i</span><span style="color:#111">];</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#111">}</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">return</span> <span style="color:#75af00">sum</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span><span style="color:#111">(</span><span style="color:#00a8c8">let</span> <span style="color:#75af00">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#75af00">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#75af00">array</span><span style="color:#111">.</span><span style="color:#75af00">length</span><span style="color:#111">;</span> <span style="color:#75af00">i</span><span style="color:#f92672">++</span><span style="color:#111">){</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75af00">sum</span> <span style="color:#f92672">+=</span> <span style="color:#75af00">array</span><span style="color:#111">[</span><span style="color:#75af00">i</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#75af00">sum</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
-</span></span></code></pre></div><p>Answer:</p>
-<br>
-<p>O(N)</p>
-
+</span></span></code></pre></div>
 	</div>
 </div>
+<p><em>Answer:</em></p>
+<p>O(N)</p>
 
 <div class="ex">
 	<div class="inner">
@@ -1450,63 +1453,60 @@ Note: in the next chapter, we will retake this exercise and you will be asked to
 <p>Imagine you have a chessboard and put a single grain of rice on one square. On the second square, you put 2 grains of rice, since that is double the amount of rice on the previous square. On the third square, you put 4 grains. On the fourth square, you put 8 grains, and on the fifth square, you put 16 grains, and so on.</p>
 <p>The following function calculates which square you&rsquo;ll need to place a certain number of rice grains. For example, for 16 grains, the function will return 5 since you will place the 16 grains on the fifth square.</p>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00a8c8">function</span> <span style="color:#75af00">chessboardSpace</span><span style="color:#111">(</span><span style="color:#75af00">numberOfGrains</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">let</span> <span style="color:#75af00">chessboardSpaces</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">let</span> <span style="color:#75af00">placedGrains</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">let</span> <span style="color:#75af00">chessboardSpaces</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">let</span> <span style="color:#75af00">placedGrains</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#75af00">placedGrains</span> <span style="color:#f92672">&lt;</span> <span style="color:#75af00">numberOfGrains</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>		<span style="color:#75af00">placedGrains</span> <span style="color:#f92672">*=</span> <span style="color:#ae81ff">2</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>		<span style="color:#75af00">chessboardSpaces</span> <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#75af00">placedGrains</span> <span style="color:#f92672">&lt;</span> <span style="color:#75af00">numberOfGrains</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75af00">placedGrains</span> <span style="color:#f92672">*=</span> <span style="color:#ae81ff">2</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75af00">chessboardSpaces</span> <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">return</span> <span style="color:#75af00">chessboardSpaces</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#75af00">chessboardSpaces</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
-</span></span></code></pre></div><p>Answer:</p>
-<br>
-<p>O(log N)</p>
-
+</span></span></code></pre></div>
 	</div>
 </div>
+<p><em>Answer:</em></p>
+<p>O(log N)</p>
 
 <div class="ex">
 	<div class="inner">
     	<p>The following function accepts an array of strings and returns a new array that only contains the string that start with the character &ldquo;a&rdquo;. Use Big O Notation to describe the time complexity of the function:</p>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00a8c8">function</span> <span style="color:#75af00">selectAString</span><span style="color:#111">(</span><span style="color:#75af00">array</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">let</span> <span style="color:#75af00">newArray</span> <span style="color:#f92672">=</span> <span style="color:#111">[];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">let</span> <span style="color:#75af00">newArray</span> <span style="color:#f92672">=</span> <span style="color:#111">[];</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">for</span><span style="color:#111">(</span><span style="color:#00a8c8">let</span> <span style="color:#75af00">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#75af00">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#75af00">array</span><span style="color:#111">.</span><span style="color:#75af00">length</span><span style="color:#111">;</span> <span style="color:#75af00">i</span><span style="color:#f92672">++</span><span style="color:#111">){</span>
-</span></span><span style="display:flex;"><span>		<span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#75af00">array</span><span style="color:#111">[</span><span style="color:#75af00">i</span><span style="color:#111">].</span><span style="color:#75af00">startsWith</span><span style="color:#111">(</span><span style="color:#d88200">&#34;a&#34;</span><span style="color:#111">))</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#75af00">newArray</span><span style="color:#111">.</span><span style="color:#75af00">push</span><span style="color:#111">(</span><span style="color:#75af00">array</span><span style="color:#111">[</span><span style="color:#75af00">i</span><span style="color:#111">]);</span>
-</span></span><span style="display:flex;"><span>		<span style="color:#111">}</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span><span style="color:#111">(</span><span style="color:#00a8c8">let</span> <span style="color:#75af00">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#75af00">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#75af00">array</span><span style="color:#111">.</span><span style="color:#75af00">length</span><span style="color:#111">;</span> <span style="color:#75af00">i</span><span style="color:#f92672">++</span><span style="color:#111">){</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#75af00">array</span><span style="color:#111">[</span><span style="color:#75af00">i</span><span style="color:#111">].</span><span style="color:#75af00">startsWith</span><span style="color:#111">(</span><span style="color:#d88200">&#34;a&#34;</span><span style="color:#111">))</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75af00">newArray</span><span style="color:#111">.</span><span style="color:#75af00">push</span><span style="color:#111">(</span><span style="color:#75af00">array</span><span style="color:#111">[</span><span style="color:#75af00">i</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">return</span> <span style="color:#75af00">newArray</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#75af00">newArray</span><span style="color:#111">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
-</span></span></code></pre></div><p>Answer:</p>
-<br>
-<p>O(N)</p>
-
+</span></span></code></pre></div>
 	</div>
 </div>
+<p><em>Answer:</em></p>
+<p>O(N)</p>
 
 <div class="ex">
 	<div class="inner">
     	<p>The following function calculates the median from an ordered array. Describe its time complexity in therms of Big O Notation:</p>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00a8c8">function</span> <span style="color:#75af00">media</span><span style="color:#111">(</span><span style="color:#75af00">array</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#00a8c8">const</span> <span style="color:#75af00">middle</span> <span style="color:#f92672">=</span> <span style="color:#111">Math</span><span style="color:#111">.</span><span style="color:#75af00">floor</span><span style="color:#111">(</span><span style="color:#75af00">array</span><span style="color:#111">.</span><span style="color:#75af00">length</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">const</span> <span style="color:#75af00">middle</span> <span style="color:#f92672">=</span> <span style="color:#111">Math</span><span style="color:#111">.</span><span style="color:#75af00">floor</span><span style="color:#111">(</span><span style="color:#75af00">array</span><span style="color:#111">.</span><span style="color:#75af00">length</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// If array has even amount of numbers:
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#75af00">array</span><span style="color:#111">.</span><span style="color:#75af00">length</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>		<span style="color:#00a8c8">return</span> <span style="color:#111">(</span><span style="color:#75af00">array</span><span style="color:#111">[</span><span style="color:#75af00">middle</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">]</span> <span style="color:#f92672">+</span> <span style="color:#75af00">array</span><span style="color:#111">[</span><span style="color:#75af00">middle</span><span style="color:#111">])</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span><span style="color:#111">;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span> <span style="color:#75715e">// If array has odd amount of numbers:
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		<span style="color:#00a8c8">return</span> <span style="color:#75af00">array</span><span style="color:#111">[</span><span style="color:#75af00">middle</span><span style="color:#111">];</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#111">}</span>	
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// If array has even amount of numbers:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#75af00">array</span><span style="color:#111">.</span><span style="color:#75af00">length</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#111">(</span><span style="color:#75af00">array</span><span style="color:#111">[</span><span style="color:#75af00">middle</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">]</span> <span style="color:#f92672">+</span> <span style="color:#75af00">array</span><span style="color:#111">[</span><span style="color:#75af00">middle</span><span style="color:#111">])</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span> <span style="color:#75715e">// If array has odd amount of numbers:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#00a8c8">return</span> <span style="color:#75af00">array</span><span style="color:#111">[</span><span style="color:#75af00">middle</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
-</span></span></code></pre></div><p>Answer:</p>
-<br>
-<p>O(1)</p>
-
+</span></span></code></pre></div>
 	</div>
 </div>
+<p><em>Answer:</em></p>
+<p>O(1)</p>
 
 
 <footer class="footline">
@@ -2181,17 +2181,17 @@ Note: in the next chapter, we will retake this exercise and you will be asked to
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1667392743"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1667392743"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1667392743"></script>
-    <script src="../../../js/jquery.sticky.js?1667392743"></script>
-    <script src="../../../js/featherlight.min.js?1667392743"></script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1667392743"></script>
-    <script src="../../../js/learn.js?1667392743"></script>
-    <script src="../../../js/hugo-learn.js?1667392743"></script>
+    <script src="../../../js/clipboard.min.js?1667396928"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1667396928"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1667396928"></script>
+    <script src="../../../js/jquery.sticky.js?1667396928"></script>
+    <script src="../../../js/featherlight.min.js?1667396928"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1667396928"></script>
+    <script src="../../../js/learn.js?1667396928"></script>
+    <script src="../../../js/hugo-learn.js?1667396928"></script>
     
         
-            <script src="../../../mermaid/mermaid.js?1667392743"></script>
+            <script src="../../../mermaid/mermaid.js?1667396928"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
