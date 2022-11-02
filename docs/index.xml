@@ -32,15 +32,6 @@ FPGA vs. microprocessor FPGA Bouwblokken van de FPGA CLB: Configurable Logic Blo
     
     <item>
       <title>1. week 1</title>
-      <link>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
-      <guid>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-1/</guid>
-      <description>Table of contents Initial Exercises Chapter 1: Why Data Structures Matter Chapter 2: Why Algorithms Matter Chapter 3: Big Oh Notation Initial Exercises You retrieve a list of all items that have been sold during the last trimester from a web shop’s database. Unfortunately, you end up with a simple array: if an item was sold three times, it occurs three times in that array. You want to count how many times one particular item has been sold.</description>
-    </item>
-    
-    <item>
-      <title>1. week 1</title>
       <link>https://maarteng18.github.io/notes/courses/cct/week-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
@@ -94,15 +85,6 @@ FAMOS EPROM technologie (UV- erasable) FLOTOX EEPROM technologie Flash technolog
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
       <guid>https://maarteng18.github.io/notes/archive/ansch/ch-2/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>2. week 2</title>
-      <link>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
-      <guid>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-2/</guid>
-      <description>Table of contents Initial Exercises Chapter 1: Why Data Structures Matter Chapter 2: Why Algorithms Matter Chapter 3: Big Oh Notation Initial Exercises </description>
     </item>
     
     <item>
@@ -255,25 +237,42 @@ A notice disclaimer
     </item>
     
     <item>
+      <title>week 1</title>
+      <link>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-1/</guid>
+      <description>Table of contents Initial Exercises on Chapters 1, 2 and 3 Chapter 1: Why Data Structures Matter Chapter 2: Why Algorithms Matter Chapter 3: Big Oh Notation Initial Exercises on Chapters 1, 2 and 3 You retrieve a list of all items that have been sold during the last trimester from a web shop’s database. Unfortunately, you end up with a simple array: if an item was sold three times, it occurs three times in that array.</description>
+    </item>
+    
+    <item>
+      <title>week 2</title>
+      <link>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-2/</guid>
+      <description>Table of contents Exercises on Chapters 1, 2 and 3 Initial Exercises on Chapters 4, 5 and 6 Exercises on Chapters 1, 2 and 3 According to the documentation, which kind of functions do the C++ Standard Library and Java provide to search a value in an array? What kind of algorithms ara available in the Boost C++ Libraries? Use these libraries (unless instructed otherwise) to make your work easier.</description>
+    </item>
+    
+    <item>
+      <title>week 3</title>
+      <link>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-3/</guid>
+      <description>Table of contents Exercises on Chapters 4, 5 and 6 Initial Exercises on Chapters 7, 8 and 9 Exercises on Chapters 4, 5 and 6 Initial Exercises on Chapters 7, 8 and 9 2.1.2 N is x O(log n) Kan makkelijker door gewoon te berekenen
+2.1.3 N is irrelevant wat constant O(1) want vaste tijd
+2.1.4 M = lentge s =&amp;gt; O(M)
+N = # strings in array M = lengte langste string =&amp;gt; O(M*N)</description>
+    </item>
+    
+    <item>
       <title>10. OTA schakelingen</title>
       <link>https://maarteng18.github.io/notes/archive/ansch/ch-10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
       <guid>https://maarteng18.github.io/notes/archive/ansch/ch-10/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
-      <guid>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-3/</guid>
-      <description>2.1.2 N is x O(log n) Kan makkelijker door gewoon te berekenen
-2.1.3 N is irrelevant wat constant O(1) want vaste tijd
-2.1.4 M = lentge s =&amp;gt; O(M)
-N = # strings in array M = lengte langste string =&amp;gt; O(M*N)
-2.1.5 Niet echt kennen maar als de code er is, kunnen analyseren hoe snel het is en hoe het werkt.</description>
     </item>
     
   </channel>
