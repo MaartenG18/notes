@@ -264,6 +264,16 @@ Deel 2: Isolatie Zeer korte uitleg van de theorie, ppt nog studeren.</descriptio
     </item>
     
     <item>
+      <title>Week 4</title>
+      <link>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-4/</guid>
+      <description>Table of contents Exercises on Chapter 7 Exercises on Chapter 8 Exercises on Chapter 9 Exercises on Chapter 7 Extra oefeningen achteraan boek
+Exercises on Chapter 8 Given an array with votes, which are represented by a number, for example {2, 4, 1, 2, 2, 5, 2, 3, 1, 2, 2}. Write a function that returns the majority vote (a vote that appears more than N/2 times; 2 is a majority vote in the example), if present.</description>
+    </item>
+    
+    <item>
       <title>10. OTA schakelingen</title>
       <link>https://maarteng18.github.io/notes/archive/ansch/ch-10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

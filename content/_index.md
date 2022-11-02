@@ -14,7 +14,7 @@ weight = 1
 
 ## Good to know
 
-I'm currently making a [portfolio](https://maarteng18.github.io/), more coming soon
+I'm currently making a [portfolio](https://maarteng18.github.io/), more coming soon!
 
 ## Some usefull commands
 
