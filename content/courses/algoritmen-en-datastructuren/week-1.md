@@ -109,7 +109,6 @@ void linearSearch(int array[], int number)
 }
 ```
 
-test 
 *Answer binary search:*
 
 ```C++
