@@ -9,7 +9,7 @@
 
     <link rel="icon" href="../../../images/logo_transparent.png" type="image/png">
 
-    <title>6. GaN transistor toepassingen :: Maarten&#39;s notes</title>
+    <title>Week 6 :: Maarten&#39;s notes</title>
 
     
     <link href="../../../css/nucleus.css?1667407045" rel="stylesheet">
@@ -43,7 +43,7 @@
     </style>
     
   </head>
-  <body class="" data-url="../../../archive/ansch/ch-6/">
+  <body class="" data-url="../../../courses/algoritmen-en-datastructuren/week-6/">
     <nav id="sidebar" class="">
 
 
@@ -97,7 +97,7 @@
   
     
     <li data-nav-id="/courses/" title="Current Courses" class="dd-item
-        
+        parent
         
         
         ">
@@ -126,7 +126,7 @@
   
     
     <li data-nav-id="/courses/algoritmen-en-datastructuren/" title="Algoritmen en datastructuren" class="dd-item
-        
+        parent
         
         
         ">
@@ -257,7 +257,7 @@
  
   
     
-      <li data-nav-id="/courses/algoritmen-en-datastructuren/week-6/" title="Week 6" class="dd-item ">
+      <li data-nav-id="/courses/algoritmen-en-datastructuren/week-6/" title="Week 6" class="dd-item active">
         <a href="../../../courses/algoritmen-en-datastructuren/week-6/">
         Week 6
         
@@ -705,7 +705,7 @@
   
     
     <li data-nav-id="/archive/" title="Archive" class="dd-item
-        parent
+        
         
         
         ">
@@ -734,7 +734,7 @@
   
     
     <li data-nav-id="/archive/ansch/" title="Analoge Elektronische Schakelingen" class="dd-item
-        parent
+        
         
         
         ">
@@ -865,7 +865,7 @@
  
   
     
-      <li data-nav-id="/archive/ansch/ch-6/" title="6. GaN transistor toepassingen" class="dd-item active">
+      <li data-nav-id="/archive/ansch/ch-6/" title="6. GaN transistor toepassingen" class="dd-item ">
         <a href="../../../archive/ansch/ch-6/">
         6. GaN transistor toepassingen
         
@@ -1171,7 +1171,7 @@
             
           
           
-            <a href='../../../'></a> > <a href='../../../archive/'>Archive</a> > <a href='../../../archive/ansch/'>Analoge Elektronische Schakelingen</a> > 6. GaN transistor toepassingen
+            <a href='../../../'></a> > <a href='../../../courses/'>Current Courses</a> > <a href='../../../courses/algoritmen-en-datastructuren/'>Algoritmen en datastructuren</a> > Week 6
           
         
           
@@ -1186,7 +1186,14 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#table-of-contents">Table of contents</a></li>
+    <li><a href="#exercises-on-chapter-13">Exercises on Chapter 13</a></li>
+    <li><a href="#exercises-on-chapter-14">Exercises on Chapter 14</a></li>
+    <li><a href="#initial-exercises-on-chapter-15">Initial Exercises on Chapter 15</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -1202,13 +1209,105 @@
           
             <h1>
               
-              6. GaN transistor toepassingen
+              Week 6
             </h1>
           
 
         
 
 
+<h2 id="table-of-contents">Table of contents</h2>
+<ol>
+<li><a href="#exercises-on-chapter-13">Exercises on Chapter 13</a></li>
+<li><a href="#exercises-on-chapter-14">Exercises on Chapter 14</a></li>
+<li><a href="#initial-exercises-on-chapter-15">Initial Exercises on Chapter 15</a></li>
+</ol>
+<h2 id="exercises-on-chapter-13">Exercises on Chapter 13</h2>
+
+<div class="ex">
+	<div class="inner">
+    	<p>Given an unsorted array of integers, for example {1, 5, 2, 2, 2, 5, 5, 4}. Print all the pairs of integers with a given difference d. With d == 3, the example array would give the following output: (2, 5) and (1, 4).</p>
+<p>A naive solution considers every possible pair in the array, with a time complexity of O(N²). Try to find a more efficient solution (there are multiple approaches, using algorithms and data structures from previous chapters).</p>
+<p>To avoid duplicates in the output, you can first sort the array and skip adjacent duplicates in the array. Implementing a sorting algorithm is unnecessary: the C++ Standard Library, for instance, provides sorting functions.</p>
+<p>What is the time complexity of your solution?</p>
+
+	</div>
+</div>
+<p><em>Answer:</em></p>
+
+<div class="ex">
+	<div class="inner">
+    	<p>Like quicksort, merge sort uses a divide-and-conquer strategy (this pseudocode is still missing important steps that you need to determine yourself):</p>
+<pre tabindex="0"><code class="language-pseudocode" data-lang="pseudocode">mergeSort(array, l, r)
+    find middle point m to divide array into two halves
+    call mergeSort for first half: mergeSort(array, l, m)
+    call mergeSort for second half: mergeSort(array, m + 1, r)
+    merge two halves sorted in step 2 and 3 with helper function
+</code></pre><p>Implement merge sort for a given array of numbers. Use the random array generator from exercise 2.3.1 to produce data to test your implementation.</p>
+<p>What is the time complexity of your solution?</p>
+
+	</div>
+</div>
+<p><em>Answer:</em></p>
+
+<div class="ex">
+	<div class="inner">
+    	<p>Write a second version of your merge sort, where you use multiple threads to sort parts of the array. Is a quicksort with multiple threads also possible?</p>
+
+	</div>
+</div>
+<p><em>Answer:</em></p>
+
+<div class="ex">
+	<div class="inner">
+    	<p>In the Java documentation, you find that various algorithms are used to sort arrays. Explore two algorithms in particular: dual-pivot quicksort and timsort. How does a multi-pivot quicksort work and what are the advantages? Why is timsort called a hybrid sorting algorithm, how does it work, and why is it considered to be efficient?</p>
+
+	</div>
+</div>
+<p><em>Answer:</em></p>
+<h2 id="exercises-on-chapter-14">Exercises on Chapter 14</h2>
+
+<div class="ex">
+	<div class="inner">
+    	<p>An application of node-based data structures is the implementation of treebased structures, in which nodes are linked hierarchically. A binary tree is a tree in which each node has zero, one, or two children (see figure).</p>
+<p><figure>
+	<a href="../../../img/ALG/week-6/tree.png" data-featherlight="image">
+		<img src="../../../img/ALG/week-6/tree.png"  alt="Tree" >
+	</a>
+	
+</figure>
+</p>
+<p>Implement a binary tree, preferably in C++, with recursive functions that:</p>
+<ul>
+<li>calculate the amount of nodes in a tree;</li>
+<li>calculate the amount of levels in a tree;</li>
+<li>print each node&rsquo;s value in reverse level order.</li>
+</ul>
+<p>With <em>reverse level order traversal</em>, you first visit the last level of a tree, then
+the second-to-last level, and so on. For each level, you visit the nodes from
+left to right. (Questions like this are common during job interviews.)</p>
+<p>If you find such trees too difficult, first read the next chapter of the book.</p>
+
+	</div>
+</div>
+<p><em>Answer:</em></p>
+<h2 id="initial-exercises-on-chapter-15">Initial Exercises on Chapter 15</h2>
+
+<div class="ex">
+	<div class="inner">
+    	<p>In the book, they state that the time complexity of deleting from a binary search tree is typically <em>O(logN)</em>, because deletion requires a search plus a few extra steps. Analyze the code of the <code>delete()</code> function to verify this.</p>
+
+	</div>
+</div>
+<p><em>Answer:</em></p>
+
+<div class="ex">
+	<div class="inner">
+    	<p>Extend exercise 6.2.1 with a recursive function that, given a binary tree and a number, returns whether the tree has a root-to-leaf path (a sequence of nodes starting with the root, going down to a leaf) for which the sum of all values on that path equals the given number.</p>
+
+	</div>
+</div>
+<p><em>Answer:</em></p>
 
 
 <footer class="footline">
@@ -1246,381 +1345,6 @@
             
                 
                     
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -1746,6 +1470,9 @@
             
         
                     
+            
+        
+                    
                         
             
             
@@ -1753,6 +1480,375 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1924,10 +2020,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../../archive/ansch/ch-5/" title="5. voedingen"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../../courses/algoritmen-en-datastructuren/week-5/" title="Week 5"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../../archive/ansch/ch-7/" title="7. Thyristors" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../../courses/cct/" title="Cloud Computing &amp; toepassingen" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

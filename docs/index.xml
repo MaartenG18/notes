@@ -284,6 +284,16 @@ For example, x6 = (x3)2 and x11 = x ∗ (x5)2. Is the second version of the func
     </item>
     
     <item>
+      <title>Week 6</title>
+      <link>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-6/</guid>
+      <description>Table of contents Exercises on Chapter 13 Exercises on Chapter 14 Initial Exercises on Chapter 15 Exercises on Chapter 13 Given an unsorted array of integers, for example {1, 5, 2, 2, 2, 5, 5, 4}. Print all the pairs of integers with a given difference d. With d == 3, the example array would give the following output: (2, 5) and (1, 4).
+A naive solution considers every possible pair in the array, with a time complexity of O(N²).</description>
+    </item>
+    
+    <item>
       <title>10. OTA schakelingen</title>
       <link>https://maarteng18.github.io/notes/archive/ansch/ch-10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

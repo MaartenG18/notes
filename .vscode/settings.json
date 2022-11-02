@@ -4,6 +4,7 @@
         "chrono",
         "deque",
         "Hashtable",
+        "timsort",
         "todolist"
     ]
 }
