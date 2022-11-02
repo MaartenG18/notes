@@ -9,16 +9,7 @@
     <managingEditor>maartengielkens2000@gmail.com (Maarten Gielkens)</managingEditor>
     <webMaster>maartengielkens2000@gmail.com (Maarten Gielkens)</webMaster><atom:link href="https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2. week 2</title>
-      <link>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
-      <guid>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-2/</guid>
-      <description>Table of contents Exercises on Chapters 1, 2 and 3 Initial Exercises on Chapters 4, 5 and 6 Exercises on Chapters 1, 2 and 3 According to the documentation, which kind of functions do the C++ Standard Library and Java provide to search a value in an array? What kind of algorithms ara available in the Boost C++ Libraries? Use these libraries (unless instructed otherwise) to make your work easier.</description>
-    </item>
-    
-    <item>
-      <title>week 1</title>
+      <title>Week 1</title>
       <link>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
@@ -27,7 +18,16 @@
     </item>
     
     <item>
-      <title>week 3</title>
+      <title>Week 2</title>
+      <link>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-2/</guid>
+      <description>Table of contents Exercises on Chapters 1, 2 and 3 Initial Exercises on Chapters 4, 5 and 6 Exercises on Chapters 1, 2 and 3 According to the documentation, which kind of functions do the C++ Standard Library and Java provide to search a value in an array? What kind of algorithms ara available in the Boost C++ Libraries? Use these libraries (unless instructed otherwise) to make your work easier.</description>
+    </item>
+    
+    <item>
+      <title>Week 3</title>
       <link>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>

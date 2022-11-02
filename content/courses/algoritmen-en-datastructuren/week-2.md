@@ -1,5 +1,5 @@
 +++
-title= "2. week 2"
+title= "Week 2"
 weight= 3
 +++
 
