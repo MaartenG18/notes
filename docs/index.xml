@@ -274,6 +274,16 @@ Exercises on Chapter 8 Given an array with votes, which are represented by a num
     </item>
     
     <item>
+      <title>Week 5</title>
+      <link>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-5/</guid>
+      <description>Table of contents Exercises on Chapters 10, 11 and 12 Initial Exercises on Chapters 13 and 14 Exercises on Chapters 10, 11 and 12 Write a very simple recursive function power(x, n) that calculates xn. Next, write a second version of that function, using these rules:
+For example, x6 = (x3)2 and x11 = x ∗ (x5)2. Is the second version of the function more efficient? What is the time complexity of both versions?</description>
+    </item>
+    
+    <item>
       <title>10. OTA schakelingen</title>
       <link>https://maarteng18.github.io/notes/archive/ansch/ch-10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
