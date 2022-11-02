@@ -32,16 +32,6 @@ FPGA vs. microprocessor FPGA Bouwblokken van de FPGA CLB: Configurable Logic Blo
     
     <item>
       <title>1. week 1</title>
-      <link>https://maarteng18.github.io/notes/courses/cct/week-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
-      <guid>https://maarteng18.github.io/notes/courses/cct/week-1/</guid>
-      <description>Deel 1: Intro Paper &amp;lsquo;Future Generation Computer Systems&amp;rsquo; lezen (misschien een examenvraag uit deze paper).
-Deel 2: Isolatie Zeer korte uitleg van de theorie, ppt nog studeren.</description>
-    </item>
-    
-    <item>
-      <title>1. week 1</title>
       <link>https://maarteng18.github.io/notes/courses/databases/week-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
@@ -243,6 +233,16 @@ A notice disclaimer
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
       <guid>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-1/</guid>
       <description>Table of contents Initial Exercises on Chapters 1, 2 and 3 Chapter 1: Why Data Structures Matter Chapter 2: Why Algorithms Matter Chapter 3: Big Oh Notation Initial Exercises on Chapters 1, 2 and 3 You retrieve a list of all items that have been sold during the last trimester from a web shop’s database. Unfortunately, you end up with a simple array: if an item was sold three times, it occurs three times in that array.</description>
+    </item>
+    
+    <item>
+      <title>Week 1</title>
+      <link>https://maarteng18.github.io/notes/courses/cct/week-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
+      <guid>https://maarteng18.github.io/notes/courses/cct/week-1/</guid>
+      <description>Deel 1: Intro Paper &amp;lsquo;Future Generation Computer Systems&amp;rsquo; lezen (misschien een examenvraag uit deze paper).
+Deel 2: Isolatie Zeer korte uitleg van de theorie, ppt nog studeren.</description>
     </item>
     
     <item>
