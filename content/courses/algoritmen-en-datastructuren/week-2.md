@@ -1,5 +1,5 @@
 +++
-title= "week 2"
+title= "2. week 2"
 weight= 3
 +++
 
@@ -42,6 +42,10 @@ Use the Big O notation to describe its time complexity. Can you improve the effi
 
 *Answer:*
 
+N is x
+O(log n)
+Kan makkelijker door gewoon te berekenen
+
 {{% task %}}
 
 This simple function calculates the median from an ordered array. Describe its time complexity in terms of the Big O notation. What is the pitfall here, compared to similar exercises on arrays?
@@ -60,6 +64,9 @@ float median(float array[], int size)
 {{% /task %}}
 
 *Answer:*
+
+N is irrelevant wat constant
+O(1) want vaste tijd
 
 {{% task %}}
 
@@ -87,6 +94,12 @@ Can you improve (the time complexity of) the helper function? Another approach t
 
 *Answer:*
 
+M = lentge s => O(M)
+
+N = # strings in array
+M = lengte langste string
+=> O(M*N)
+
 {{% task %}}
 
 We often search within strings. Have a look at a few examples of algorithms in this context. First, explore how the Knuth–Morris–Pratt algorithm searches for occurrences of a word within a string and how it improves the time complexity compared to a naive approach of matching characters.
@@ -96,6 +109,8 @@ Next, explore how you can find the longest repeated substring in a given string.
 {{% /task %}}
 
 *Answer:*
+
+Niet echt kennen maar als de code er is, kunnen analyseren hoe snel het is en hoe het werkt.
 
 {{% task %}}
 
