@@ -46,7 +46,6 @@ SELECT * FROM tracks WHERE Composer is NULL;
 SELECT MAX(total) FROM invoices;
 ```
 
-
 1. Schrijf een query die alle Invoices laat zien van alle Customers uit Brazilië. Het resultaat moet de volledige naam van de Customer, Invoice ID, Invoice Datum en Billing Country weergeven.
 
 ```SQL
@@ -104,7 +103,6 @@ INNER JOIN invoice_items ON invoice_items.TrackId = tracks.TrackId;
 ```SQL
 
 ```
-
 
 1. Schrijf een query die het aantal Invoices laat zien voor 2009 en 2011.
 
@@ -189,7 +187,6 @@ LIMIT 1
 ```
 
 10. Schrijf een query die het aantal Customers laat zien per Sales Agent.
-
 
 
 1. Schrijf een query die alle invoices laat zien die een track bevatten van Iron Maiden.
