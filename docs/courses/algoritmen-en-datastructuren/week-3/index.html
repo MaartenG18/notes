@@ -12,21 +12,21 @@
     <title>week 3 :: Maarten&#39;s notes</title>
 
     
-    <link href="../../../css/nucleus.css?1667401071" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1667401071" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1667401071" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1667401071" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1667401071" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1667401071" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1667401071" rel="stylesheet">
-    <link href="../../../css/theme.css?1667401071" rel="stylesheet">
-    <link href="../../../css/devselector.css?1667401071" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1667401071" rel="stylesheet">
-    <link href="../../../css/theme-kul.css?1667401071" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1667402359" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1667402359" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1667402359" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1667402359" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1667402359" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1667402359" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1667402359" rel="stylesheet">
+    <link href="../../../css/theme.css?1667402359" rel="stylesheet">
+    <link href="../../../css/devselector.css?1667402359" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1667402359" rel="stylesheet">
+    <link href="../../../css/theme-kul.css?1667402359" rel="stylesheet">
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1667401071"></script>
-    <script src="../../../js/devselector.js?1667401071"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1667402359"></script>
+    <script src="../../../js/devselector.js?1667402359"></script>
     <script id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1667401071"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1667401071"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1667402359"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1667402359"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/maarteng18.github.io\/notes\/";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1667401071"></script>
+<script type="text/javascript" src="../../../js/search.js?1667402359"></script>
 
     
   </div>
@@ -1128,10 +1128,6 @@
     <li><a href="#table-of-contents">Table of contents</a></li>
     <li><a href="#exercises-on-chapters-4-5-and-6">Exercises on Chapters 4, 5 and 6</a></li>
     <li><a href="#initial-exercises-on-chapters-7-8-and-9">Initial Exercises on Chapters 7, 8 and 9</a></li>
-    <li><a href="#212">2.1.2</a></li>
-    <li><a href="#213">2.1.3</a></li>
-    <li><a href="#214">2.1.4</a></li>
-    <li><a href="#215">2.1.5</a></li>
   </ul>
 </nav>
     </div>
@@ -1162,21 +1158,115 @@
 <li><a href="#initial-exercises-on-chapters-7-8-and-9">Initial Exercises on Chapters 7, 8 and 9</a></li>
 </ol>
 <h2 id="exercises-on-chapters-4-5-and-6">Exercises on Chapters 4, 5 and 6</h2>
+
+<div class="ex">
+	<div class="inner">
+    	<p>Your friend is solving a programming exercise: he has to write a simple program that looks for the largest and smallest number in an array. He already wrote the following helper function, but its time complexity is O(N2), so he clearly needs your help! Start by explaining why the time complexity of his algorithm is O(N2).</p>
+<p>Next, write a more efficient solution to find both the largest and smallest number, and explain why your solution is more efficient. What is the overall time complexity of your solution? What are the best-, average-, and worst-case scenarios?</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C++" data-lang="C++"><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">max</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">array</span><span style="color:#111">[],</span> <span style="color:#00a8c8">int</span> <span style="color:#111">size</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span><span style="color:#111">{</span><span style="color:#ae81ff">0</span><span style="color:#111">};</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">size</span><span style="color:#111">;</span> <span style="color:#f92672">++</span><span style="color:#111">i</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">bool</span> <span style="color:#111">isMax</span><span style="color:#111">{</span><span style="color:#111">true</span><span style="color:#111">};</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">j</span><span style="color:#111">{</span><span style="color:#ae81ff">0</span><span style="color:#111">};</span> <span style="color:#111">j</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">size</span><span style="color:#111">;</span> <span style="color:#f92672">++</span><span style="color:#111">j</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">array</span><span style="color:#111">[</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">&gt;</span> <span style="color:#111">array</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">])</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">isMax</span> <span style="color:#f92672">=</span> <span style="color:#111">false</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">isMax</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">return</span> <span style="color:#111">array</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><p>Solve this without using the corresponding algorithms of the C++ Standard Library, but look them up afterwards. What is their time complexity?</p>
+
+	</div>
+</div>
+<p><em>Answer:</em></p>
+
+<div class="ex">
+	<div class="inner">
+    	<p>Are bubble, selection and insertion sort <em>stable</em> or <em>unstable</em> sorting algorithms? Are they <em>in-place</em> or <em>out-of-place</em>? Are they <em>online</em>? Are they <em>adaptive</em>?</p>
+<p>If you modify your insertion sort from exercise 2.3.1 to sort an array of strings in alphabetical order, is its time complexity affected? Why (not)? Could you
+improve insertion sort by combining it with binary search?</p>
+
+	</div>
+</div>
+<p><em>Answer:</em></p>
+
+<div class="ex">
+	<div class="inner">
+    	<p>How does this sorting algorithm work? Hint: the numbers in the array range between 0 and range. Analyze the time complexity of the algorithm and make sure to explain your analysis step by step.</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C++" data-lang="C++"><span style="display:flex;"><span><span style="color:#00a8c8">void</span> <span style="color:#75af00">sort</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">array</span><span style="color:#111">[],</span> <span style="color:#00a8c8">int</span> <span style="color:#111">size</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">range</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">sorted</span><span style="color:#111">[</span><span style="color:#111">size</span><span style="color:#111">],</span> <span style="color:#111">count</span><span style="color:#111">[</span><span style="color:#111">range</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span><span style="color:#111">{</span><span style="color:#ae81ff">0</span><span style="color:#111">};</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">range</span><span style="color:#111">;</span> <span style="color:#f92672">++</span><span style="color:#111">i</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">count</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span><span style="color:#111">{</span><span style="color:#ae81ff">0</span><span style="color:#111">};</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">size</span><span style="color:#111">;</span> <span style="color:#f92672">++</span><span style="color:#111">i</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">++</span><span style="color:#111">count</span><span style="color:#111">[</span><span style="color:#111">array</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]];</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span><span style="color:#111">{</span><span style="color:#ae81ff">1</span><span style="color:#111">};</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">range</span><span style="color:#111">;</span> <span style="color:#f92672">++</span><span style="color:#111">i</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">count</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">count</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">+</span> <span style="color:#111">count</span><span style="color:#111">[</span><span style="color:#111">i</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span><span style="color:#111">{</span><span style="color:#ae81ff">0</span><span style="color:#111">};</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">size</span><span style="color:#111">;</span> <span style="color:#f92672">++</span><span style="color:#111">i</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">sorted</span><span style="color:#111">[</span><span style="color:#f92672">--</span><span style="color:#111">count</span><span style="color:#111">[</span><span style="color:#111">array</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]]]</span> <span style="color:#f92672">=</span> <span style="color:#111">array</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span><span style="color:#111">{</span><span style="color:#ae81ff">0</span><span style="color:#111">};</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">size</span><span style="color:#111">;</span> <span style="color:#f92672">++</span><span style="color:#111">i</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#111">array</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">sorted</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><p>What are its benefits and limitations? Can you modify the algorithm so it also works with negative numbers?</p>
+
+	</div>
+</div>
+<p><em>Answer:</em></p>
+
+<div class="ex">
+	<div class="inner">
+    	<p>How does radix sort work? Add your own implementation of this algorithm to exercise 2.3.1 (note that there are various ways to implement radix sort).</p>
+<p>How does radix sort compare to insertion sort? What is its time complexity? Why is it called  <em>non-comparative</em> sorting algorithm? Is it stable or unstable? In-place or out-of-place?</p>
+<p>When would you use radix sort? Can you use it to sort an array of strings in alphabetical order? How?</p>
+
+	</div>
+</div>
+<p><em>Answer:</em></p>
+
+<div class="ex">
+	<div class="inner">
+    	<p>Can you deduce from the C++ documentation if std::sort uses one of the algorithms from this lesson? Is it a comparative sorting algorithm? Stable? What about sorting arrays in Java or Boost?</p>
+
+	</div>
+</div>
+<p><em>Answer:</em></p>
+
+<div class="ex">
+	<div class="inner">
+    	<p>In exercise 2.3.2, you analyzed the time complexity of a few additional sorting algorithms by testing them on randomly generated arrays. Now, describe their time complexity by analyzing the algorithms step by step.</p>
+
+	</div>
+</div>
+<p><em>Answer:</em></p>
 <h2 id="initial-exercises-on-chapters-7-8-and-9">Initial Exercises on Chapters 7, 8 and 9</h2>
-<h2 id="212">2.1.2</h2>
-<p>N is x
-O(log n)
-Kan makkelijker door gewoon te berekenen</p>
-<h2 id="213">2.1.3</h2>
-<p>N is irrelevant wat constant
-O(1) want vaste tijd</p>
-<h2 id="214">2.1.4</h2>
-<p>M = lentge s =&gt; O(M)</p>
-<p>N = # strings in array
-M = lengte langste string
-=&gt; O(M*N)</p>
-<h2 id="215">2.1.5</h2>
-<p>Niet echt kennen maar als de code er is, kunnen analyseren hoe snel het is en hoe het werkt.</p>
+
+<div class="ex">
+	<div class="inner">
+    	<p>1 Consult the documentation of the C++ Standard Library: how do the data structures <code>std::unordered_map</code> and <code>std::unordered_set</code> differ? What about the time complexity of their operations?</p>
+<p>What can you learn from the Java documentation about the load factor and capacity of a <code>Hashtable</code>, and their effects on efficiency? What is the purpose of the <code>HashMap</code> and <code>HashSet</code> classes in Java? For which purposes can you use multi-index containers, such as bimap in the Boost C++ Libraries?</p>
+
+	</div>
+</div>
+<p><em>Answer:</em></p>
+
+<div class="ex">
+	<div class="inner">
+    	<p>What is the time complexity of finding the ‘smallest’ and ‘largest’ value in a hash table? Why? What would you do when you have inserted so many keys into your hash table that collisions occur every time?</p>
+<p>Try to come up with a hash function for strings by yourself. Afterwards, look up solutions that are used in practice and why these are effective at hashing strings. Would a cryptographic hash function like SHA-3 be suitable?</p>
+
+	</div>
+</div>
+<p><em>Answer:</em></p>
 
 
 <footer class="footline">
@@ -1854,17 +1944,17 @@ M = lengte langste string
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1667401071"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1667401071"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1667401071"></script>
-    <script src="../../../js/jquery.sticky.js?1667401071"></script>
-    <script src="../../../js/featherlight.min.js?1667401071"></script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1667401071"></script>
-    <script src="../../../js/learn.js?1667401071"></script>
-    <script src="../../../js/hugo-learn.js?1667401071"></script>
+    <script src="../../../js/clipboard.min.js?1667402359"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1667402359"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1667402359"></script>
+    <script src="../../../js/jquery.sticky.js?1667402359"></script>
+    <script src="../../../js/featherlight.min.js?1667402359"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1667402359"></script>
+    <script src="../../../js/learn.js?1667402359"></script>
+    <script src="../../../js/hugo-learn.js?1667402359"></script>
     
         
-            <script src="../../../mermaid/mermaid.js?1667401071"></script>
+            <script src="../../../mermaid/mermaid.js?1667402359"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

@@ -260,10 +260,7 @@ A notice disclaimer
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>maartengielkens2000@gmail.com (Maarten Gielkens)</author>
       <guid>https://maarteng18.github.io/notes/courses/algoritmen-en-datastructuren/week-3/</guid>
-      <description>Table of contents Exercises on Chapters 4, 5 and 6 Initial Exercises on Chapters 7, 8 and 9 Exercises on Chapters 4, 5 and 6 Initial Exercises on Chapters 7, 8 and 9 2.1.2 N is x O(log n) Kan makkelijker door gewoon te berekenen
-2.1.3 N is irrelevant wat constant O(1) want vaste tijd
-2.1.4 M = lentge s =&amp;gt; O(M)
-N = # strings in array M = lengte langste string =&amp;gt; O(M*N)</description>
+      <description>Table of contents Exercises on Chapters 4, 5 and 6 Initial Exercises on Chapters 7, 8 and 9 Exercises on Chapters 4, 5 and 6 Your friend is solving a programming exercise: he has to write a simple program that looks for the largest and smallest number in an array. He already wrote the following helper function, but its time complexity is O(N2), so he clearly needs your help! Start by explaining why the time complexity of his algorithm is O(N2).</description>
     </item>
     
     <item>
