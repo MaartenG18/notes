@@ -1,3 +1,9 @@
++++
+title= "2. week 2"
+weight= 3
++++
+
+
 ## 2.1.2 
 N is x
 O(log n)
