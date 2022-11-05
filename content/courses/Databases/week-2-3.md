@@ -188,7 +188,6 @@ LIMIT 1
 
 10. Schrijf een query die het aantal Customers laat zien per Sales Agent.
 
-
 1. Schrijf een query die alle invoices laat zien die een track bevatten van Iron Maiden.
 
 ```SQL
