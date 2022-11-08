@@ -2,9 +2,14 @@
     "cSpell.words": [
         "bimap",
         "chrono",
+        "cout",
         "deque",
         "Hashtable",
+        "iostream",
+        "subarray",
+        "subarrays",
         "timsort",
-        "todolist"
+        "todolist",
+        "treebased"
     ]
 }

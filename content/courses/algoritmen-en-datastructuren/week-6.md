@@ -125,8 +125,7 @@ void merge(int array[], int const left, int const mid, int const right)
         = left; // Initial index of merged array
 
     // Merge the temp arrays back into array[left..right]
-    while (indexOfSubArrayOne < subArrayOne
-        && indexOfSubArrayTwo < subArrayTwo) {
+    while (indexOfSubArrayOne < subArrayOne && indexOfSubArrayTwo < subArrayTwo) {
         if (leftArray[indexOfSubArrayOne]
             <= rightArray[indexOfSubArrayTwo]) {
             array[indexOfMergedArray]
