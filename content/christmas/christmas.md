@@ -5,6 +5,21 @@ weight= 3
 
 ## Taakverdeling Kerstmis
 
+### BELANGRIJKE MEDEDELING
+
+
+{{% notice note %}}
+Iedereen voorziet 5 pakjes die samen niet meer dan €5 kosten, dit moet voor mannen en vrouwen passen.
+{{% /notice %}}
+
+{{% notice note %}}
+Iedereen zijn outfit moet een kerstattribuut bevatten!
+{{% /notice %}}
+
+### Klaarzetten
+
+Klaarzetten zal gebeuren op vrijdag 23/12/2022 om 13:00 op de tennis in Zutendaal. Iedereen brengt versiering mee.
+
 ### Aanwezigen
 
 - Karien & Geert: 2
@@ -29,6 +44,8 @@ weight= 3
 - Kwarteleieren
 - sla + tomaten
 - Crème brûlée
+- Tafellakens
+- Servieten
 
 ### Voorbereidingen Mieke & Gert
 
@@ -59,3 +76,4 @@ weight= 3
 - Champignonschijfjes + room
 - Pepersaus + champignonsaus
 - Cocktailsaus
+- Mini kerstboom + lichtjes
