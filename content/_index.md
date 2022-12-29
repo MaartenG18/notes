@@ -16,6 +16,6 @@ weight = 1
 
 I'm currently making a [portfolio](https://maarteng18.github.io/), more coming soon!
 
-## Some usefull commands
+## Some useful commands
 
 - [ImageMagick](/scripts-commands/imagemagick/)
