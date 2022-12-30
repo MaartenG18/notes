@@ -5,190 +5,95 @@ weight= 3
 
 ## Winkellijstje
 
-### Voor 12 personen
-
-- **36** scampi
-- **3 el** vloeibare honing
-- **6 el** fijngehakte citroengras
-- **3 teentje** look, geperst of fijngehakt
-- **6 stengels** lente-ui, fijngehakt
-- **3 kl** kurkumapoeder
-- **3 el** vissaus
-- **3 el** olie
-
-### Voor 16 personen
-
-- **1000 gr** varkens-rundsgehakt
-- **enkele takjes** tijm, fijngehakt
-- **20-tal** gedroogde abrikozen, fijngehakt
-- **2 handjes** pistachenoten
-- **2** eieren
-- **400 gr** gerookt spek
-- Peper
-- Zout
-
-### Voor 12 personen
-
-- **3** komkommers
-- **750 gr** sushirijst
-- **3 el** suiker
-- **3 el** sushiazijn
-- **3** zalmmoot
-- **3 tl** mayonaise
-- **3 tl** pikante chilisaus
-- **3 tl** sojasaus
-- **enkele blaadjes** koriander, fijngehakt
-- **3 tl** sesamzaadjes
-
-### Voor 12 personen
-
-- **1200 gr** kippengehakt
-- **3** wortel, geraspt
-- **3 stengels** lente-ui, fijngehakt
-- **3 kl** sojasaus
-- **3 kl** zoetzure chilisaus
-- **3 teentjes** look, geperst
-- **90 gr** broodkruim
-- **300 gr** cornflakes
-- **6** eieren
-- olie om te frituren
-
-### Voor 4 personen
-
-- **100 gr** ongezouten boter
-- **2 teentjes** look, geperst
-- **0,75 tl** zout
-- **1 el** fijngehakte peterselie
-- **1** brood
-- **2 bollen** mozzarella
-
-### Voor 10 personen
-
-- **1000 gr** gemengd gehakt
-- **6 teentjes** look
-- **6 kl** komijn
-- **3 kl** kaneel
-- **1200 gr** tomatenblokjes uit blik
-- **3** stokbrood
+- **10 el** citroengras
+- **16 stengels** lente-ui
+- **1 zak** rucolablaadjes
+- **150 gr** witte kool
+- **6 bollen** look
+- **1 grote** ui
+- **1** rode ui
+- **4** komkommers
+- **8** wortels
+- **2** chilipepers
+- **1** limoen
+- **enkele takjes** tijm
 - **enkele takjes** peterselie
+- **enkele blaadjes** basilicum
+- bieslook
 
-### Voor 6 personen
+- **500 gr** bladerdeeg
 
-***Voor de loempia's***
+- **genoeg** scampi
+- **3** zalmmoten
+- **2** kipfilet, in stukjes
+- **800 gr** kippengehakt
+- **400 gr** gerookt spek
+- **400 gr** pulled pork
+- **1700 gr** varkens-rundsgehakt
+- **12 sneetjes** Parmaham
+- **10 plakjes** prosciutto
 
-- **2** wortels, geraspt
-- **2 stengels** lente-ui, fijngehakt
-- **1** kipfilet, in stukjes
-- **200 gr** sojascheuten
-- **1 tl** sesamolie
-- **100 gr** glasnoedels
-- **1 pak** loempiavellen
-- **2** eitjes
-- peper
-- zout
-- olie
+- **2 bollen** mozzarella
+- **2 bol** burrata
+- **200 gr** manchego kaas
+- **100 gr** parmezaanse kaas
 
-***Voor de zoetzure saus***
+- **1** brood
+- **4** stokbrood
 
-- **240 ml** water
-- **120 ml** rijstazijn
-- **160 gr** kristalsuiker
-- **1 el** sojasaus
-- **0,5 tl** cayennepeper
-- **4 teentjes** look, geperst
-- **1** chilipeper, fijngehakt
-- **2 el** maïzena
-- **2 el** water
+- **75 g** boter
+- **125 g** ongezouten boter
+- **350 ml** slagroom
+- **120 ml** crème fraîche
 
-### Voor 28 stuks
+- **13** eieren
 
-***Voor de ragout***
+- **750 gr** sushirijst
+- **3 el** sushiazijn
+- **240 ml** rijstazijn
+- **1 fles** sojasaus
+- **400 gr** sojascheuten
+- **200 gr** glasnoedels
+- **2 tl** sesamolie
 
-- **75 gr** boter
+- **600 gr** tomatenblokjes uit blik
+- **70 gr** tomatenpuree
+- **2 potjes** gegrilde paprika's
+- **200 gr** groene olijven, ontpit
+- **2 potje** paprikatapenade
+- **2 potje** olijventapenade
+- **20** appelkappertjes
+
+- **5 kl** kurkumapoeder
+- **3 tl** sesamzaadjes
+- **3 kl** komijn
+- **2 kl** kaneel
+- **1 tl** cayennepeper
+- **2 tl** gerookt paprikapoeder
+- **8 el** geroosterde pijnboompitten
+- **5 tl** fijngehakte rozemarijn
+- **1 el** karwijzaad
+
 - **75 gr** bloem
-- **500 ml** runderbouillon
-- **0,5 tl** gerookt paprikapoeder
-- **3 blaadjes** gelatine
-- **50 ml** slagroom, opgeklopt
-- **400 gr** pulled pork, fijngesneden
-- peper
-- zout
-
-***Om te paneren***
-
 - **100 gr** paneermeel
-- **2** losgeklopte eieren
 - **100 gr** panko
 
-### Voor 6 personen
+- azijn
+- olie om te frituren
+- stokjes voor scampi en chicken nuggets
 
-***Voor de paprika tapenade***
+- **20-tal** gedroogde abrikozen, fijngehakt
+- **2 handjes** pistachenoten
 
-- **1 potje** gegrilde paprika's
-- **1 teen** look
-- **2 el** geroosterde pijnboompitten
-- **2 el** olie (van de paprika's)
-- **enkele blaadjes** basilicum
-- peper
-- zout
+- **12** tacos
+- **200 gr** cornflakes
 
-***Voor de torentjes***
-
-- **6 sneetjes** Parmaham
-- **1 handje** rucolablaadjes
-- **1 bol** burrata
-
-### Voor 5 personen
-
-- **1** stokbrood
-- **1 potje** paprikatapenade
-- **1 potje** olijventapenade
-- **5 plakjes** prosciutto
-- **20** appelkappertjes
-- **100 gr** manchego kaas
-- **2 el** pijnboompitten
-- **2 handjes** rucola
-
-### Voor 4 personen
+- **2 pakken** loempiavellen
 
 - **300 gr** jamón Ibérico de Bellota, fijngesneden
+- **1** kip aan't spit
 - **1** stokbrood of ciabatta
 - **6** tomaten
-- **20 gr** olijfolie
-- **3 gr** zout
-- **0,33** knoflookteen, geperst
-- **enkele blaadjes** basilicum
-- bieslook, fijngesneden
-- peper
-
-### Voor 4 personen
-
-***Voor de groeten***
-
-- **1 el** suiker
-- **120 ml** water
-- **80 ml** azijn
-- **0,33** komkommer, in reepjes
-- **2** wortels, in slierten
-
-***Overige ingrediënten***
-
-- **150 gr** witte kool, geraspt
-- **4 el** mayonaise
-- **0,5** limoensoep
-- **1** kip aan't spit
-- **70 gr** tomatenpuree
-- **1 el** ketchup
-- **1 el** azijn
-- **1 tl** gerookte paprikapoeder
-- **0,5 tl** tabasco
-- **12** wonton vellen, ontdooid
-- maïsolie
-- **1 el** sesam zaad
-- **0,5** rode ui, fijngesnipperd
-- verse koriander
-- peper
-- zout
 
 ## Gerechten
 
@@ -204,6 +109,9 @@ weight= 3
 10. [Pintxos: Manchego-prosciutto](https://njam.tv/recepten/pintxos-manchego-prosciutto)
 11. [Pan con tomate met jamón Ibérico de Bellota](https://njam.tv/recepten/pan-con-tomate-met-jamon-iberico-de-bellota)
 12. [Wonton taco's met bbq chicken](https://njam.tv/recepten/wonton-tacos-met-bbq-chicken)
+13. [Stengels](#stengels)
+14. [Knoflook roomdip](#knoflook-roomdip)
+15. [Groene olijvendip](#groene-olijvendip)
 
 ### Gegrilde Scampi met Honing en citroengras
 
@@ -221,17 +129,6 @@ weight= 3
 - **1 kl** kurkumapoeder
 - **1 el** vissaus
 - **1 el** olie
-
-##### Voor 12 personen
-
-- **36** scampi
-- **3 el** vloeibare honing
-- **6 el** fijngehakte citroengras
-- **3 teentje** look, geperst of fijngehakt
-- **6 stengels** lente-ui, fijngehakt
-- **3 kl** kurkumapoeder
-- **3 el** vissaus
-- **3 el** olie
 
 #### Bereiden
 
@@ -255,17 +152,6 @@ Spies telkens drie scampi's op een spiesje. Verhit de olie in een pan en bak de 
 - **1 handje** pistachenoten
 - **1** ei
 - **200 gr** gerookt spek
-- Peper
-- Zout
-
-##### Voor 16 personen
-
-- **1000 gr** varkens-rundsgehakt
-- **enkele takjes** tijm, fijngehakt
-- **20-tal** gedroogde abrikozen, fijngehakt
-- **2 handjes** pistachenoten
-- **2** eieren
-- **400 gr** gerookt spek
 - Peper
 - Zout
 
@@ -294,19 +180,6 @@ Neem een stuk zilverpapier en leg er de stukjes gerookt spek, dicht tegen mekaar
 - **enkele blaadjes** koriander, fijngehakt
 - **1 tl** sesamzaadjes
 
-##### Voor 12 personen
-
-- **3** komkommers
-- **750 gr** sushirijst
-- **3 el** suiker
-- **3 el** sushiazijn
-- **3** zalmmoten
-- **3 tl** mayonaise
-- **3 tl** pikante chilisaus
-- **3 tl** sojasaus
-- **enkele blaadjes** koriander, fijngehakt
-- **3 tl** sesamzaadjes
-
 #### Bereiden
 
 Spoel de sushirijst onder koud stromend water. Doe de rijst in een pot op het vuur, voeg water en een snuifje zout toe en kook gaar. Laat de rijst afkoelen en meng er suiker en sushiazijn onder.
@@ -332,19 +205,6 @@ Snijd de komkommer met een dunschiller in linten. Leg er telkens een klein balle
 - **30 gr** broodkruim
 - **100 gr** cornflakes
 - **2** eieren
-- olie om te frituren
-
-##### Voor 12 personen
-
-- **1200 gr** kippengehakt
-- **3** wortel, geraspt
-- **3 stengels** lente-ui, fijngehakt
-- **3 kl** sojasaus
-- **3 kl** zoetzure chilisaus
-- **3 teentjes** look, geperst
-- **90 gr** broodkruim
-- **300 gr** cornflakes
-- **6** eieren
 - olie om te frituren
 
 #### Bereiden
@@ -583,7 +443,7 @@ Dresseer de jamón volumineus op een schaal. Schep de tomatencompote op de toast
 
 ##### Voor 4 personen
 
-***Voor de groeten***
+***Voor de groenten***
 
 - **1 el** suiker
 - **120 ml** water
@@ -621,3 +481,69 @@ Doe tomatenpuree, ketchup, azijn, gerookt paprikapoeder en tabasco samen in een 
 Besmeer de wontonvellen langs beide zijden met olie en hang ze over de rand van een ovenschotel, met voldoende ruimte tussen de vellen (bak eventueel in meerdere keren). Schuif de ovenschotel in een voorverwarmde oven van 180°C gedurende 5-10minuten tot de wontonvellen krokant en goudbruin zijn.
 
 Vul de gleuf van de wontonvellen met witte kool, rode ui, opgelegde wortel en komkommer, BBQ chicken, sesamzaad en verse koriander.
+
+### Stengels
+
+#### Ingrediënten
+
+##### Voor de stengels
+
+- **500 gr** bladerdeeg
+- **1** losgeklopt ei
+- **100 gr** parmezaanse kaas
+- **5 tl** fijngehakte rozemarijn
+- **3 tl** paprikapoeder
+- **1 el** karwijzaad
+
+#### Bereiden
+
+Rol het deeg circa 3 mm dik uit op een met bloem bestoven werkvlak. Snijd de deeglap in 3 gelijke delen. Bestrijk ze met losgeklopt ei en bestrooi elk stuk met parmezaanse kaas. Bestrooi een deel met kruiden, een deel met paprikapoeder en het het laatste met karwijzaad.
+
+Vouw elke deeglap dubbel en rol ze weer 3 mm dik uit. Snijd repen deeg van 15cm lang en 5cm breed. Rol de repen met beide handen in tegengestelde richting, zodat er spiralen ontstaan. Laat ze minstens 20 minuten op een koele plaats rusten.
+
+Bak ze op een licht ingevette bakplaat in 10-12 minuten knapperig en goudbruin in een voorverwarmde oven van 200°C.
+
+### Knoflook roomdip
+
+#### Ingrediënten
+
+##### Voor de volledige dip
+
+- **3 bollen** knoflook
+- **25 g** ongezouten boter
+- **2 el** olijfolie
+- **1 grote** ui, in plakken
+- **1** laurierblad
+- **300 ml** slagroom
+- zout
+- peper
+
+#### Bereiden
+
+Pel alle knoflooktenen en snijd ze doormidden. Blancheer ze drie keer keer 5 minuten in steeds vers water. Giet het af.
+
+Verhit de boter en de olie en smoor knoflook met ui en laurier 20 minuten op heel laag vuur; roer regelmatig.
+
+Voeg de slagroom toe en breng deze al roerend aan de kook; laat haar zachtjes koken tot ze gebonden is. Voeg zout en peper naar smaak toe. Laat de saus iets afkoelen, pureer haar in een blender of foodprocessor en zeef haar eventueel.
+
+### Groene olijvendip
+
+#### Ingrediënten
+
+##### Voor de volledige dip
+
+- **1 el** olijfolie
+- **2 el** fijngehakte sjalot
+- **1 teen** knoflook, geperst
+- **200 gr** groene olijven, ontpit
+- **250 ml** kippen- of groentebouillon
+- **120 ml** crème fraîche
+- **1/2** sap van limoen
+- zout
+- peper
+
+#### Bereiden
+
+Verhit de olie in een lage sauspan en smoor de sjalot glazig. Laat het knoflook even meesmoren. Hak de olijven heel fijn en voeg ze met de bouillon toe. Laat in de open pan 20 minuten zachtjes koken, tot alle vloeistof is verdwenen.
+
+Roer de crème fraîche en het limoensap erdoor en laat de dip binden. Voeg zout en peper naar smaak toe.
